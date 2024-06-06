@@ -11,20 +11,20 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Emily Willis | Graphic Communication and Illustration',
+    template: '%s | Emily Willis',
   },
-  description: 'This is my portfolio.',
+  description: 'Hi! I’m Emily, I study Graphic Communication and Illustration at Loughborough University. I am skilled at Adobe Photoshop, Illustrator and InDesign.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Emily Willis | Portfolio',
+    description: 'Hi! I’m Emily, I study Graphic Communication and Illustration at Loughborough University. I am skilled at Adobe Photoshop, Illustrator and InDesign.',
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
+    siteName: 'Emily Willis',
+    locale: 'en_GB',
     type: 'website',
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
     googleBot: {
       index: true,
