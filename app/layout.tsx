@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
     googleBot: {
-      index: true,
+      index: false,
       follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
@@ -52,14 +52,14 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased m-8">
+        <main className="flex-auto flex flex-row gap-12 px-2 md:px-0">
           <Navbar />
           {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
         </main>
+        {/* <Footer /> */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
