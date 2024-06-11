@@ -28,7 +28,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-hover:text-neutral-800 dark:hover:text-neutral-200 hover:underline flex align-middle relative"
+                  className="transition-all text-lg hover:text-hover:text-neutral-800 dark:hover:text-neutral-200 hover:underline flex align-middle relative"
                 >
                   {name}
                 </Link>
@@ -40,7 +40,7 @@ export function Navbar() {
               target="_blank"
               href="https://www.linkedin.com/in/emily-willis-646bb2171/"
             >
-              <p className="mr-2">LinkedIn</p>
+              <p className="mr-2 text-lg">LinkedIn</p>
             </Link>
 
             <div className="flex flex-row">
@@ -50,7 +50,7 @@ export function Navbar() {
                 target="_blank"
                 href="mailto:willisjemily@gmail.com"
               >
-                <p className="mr-2">Email</p>
+                <p className="mr-2 text-lg">Email</p>
               </Link>
             </div>
           </div>
