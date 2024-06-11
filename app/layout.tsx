@@ -1,11 +1,11 @@
 import './global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+// import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
+// import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
@@ -49,11 +49,11 @@ export default function RootLayout({
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
-        GeistMono.variable
+        // GeistMono.variable
       )}
     >
       <body className="antialiased m-8">
-        <main className="flex-auto flex flex-row gap-12 px-2 md:px-0">
+        <main className="flex-auto flex flex-col lg:flex-row gap-12">
           <Navbar />
           {children}
         </main>

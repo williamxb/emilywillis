@@ -16,11 +16,11 @@ export default function Page() {
             height={1754}
             alt="Picture of the author"
           />
-          <div className="flex justify-between text-2xl tracking-tight border-b p-2 mb-1">
-            <p className="w-fit">Oasen</p>
-            <p className="w-fit">Competition Brief</p>
+          <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
+            <p className="w-fit text-2xl">Oasen</p>
+            <p className="w-fit text-right text-lg lg:text-2xl font-semilight lg:font-normal">Competition Brief</p>
           </div>
-          <div className="w-1/2 px-2">
+          <div className="lg:w-1/2 px-2">
             <p className='mb-2'>A skincare brand designed to cater to those with sensory differences.</p>
             <p><i>Shortlisted for RSA In Your Skin Design Award</i></p>
           </div>
@@ -34,11 +34,11 @@ export default function Page() {
             height={1158}
             alt="Picture of the author"
           />
-          <div className="flex justify-between text-2xl tracking-tight border-b p-2 mb-1">
-            <p className="w-fit">Zophos - The Drosulites</p>
-            <p className="w-fit">Competition Brief</p>
+          <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
+            <p className="w-fit text-2xl">Zophos - The&nbsp;Drosulites</p>
+            <p className="w-fit text-right text-lg lg:text-2xl font-semilight lg:font-normal">Competition Brief</p>
           </div>
-          <div className="w-1/2 px-2">
+          <div className="lg:w-1/2 px-2">
             <p className='mb-2'>Visual identity for a rare natural ghost experience - The&nbsp;Drosulites&nbsp;of&nbsp;Crete.</p>
           </div>
         </Link>
@@ -51,11 +51,11 @@ export default function Page() {
             height={1448}
             alt="Picture of the author"
           />
-          <div className="flex justify-between text-2xl tracking-tight border-b p-2 mb-1">
-            <p className="w-fit">Keep Dancing</p>
-            <p className="w-fit">Personal Project</p>
+          <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
+            <p className="w-fit text-2xl">Keep Dancing</p>
+            <p className="w-fit text-right text-lg lg:text-2xl font-semilight lg:font-normal">Personal Project</p>
           </div>
-          <div className="w-1/2 px-2">
+          <div className="lg:w-1/2 px-2">
             <p className='mb-2'>A campaign to encourage elderly women to dance.</p>
           </div>
         </Link>
