@@ -53,7 +53,7 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased m-8">
-        <main className="flex-auto flex flex-col lg:flex-row gap-12">
+        <main className="flex-auto flex flex-col lg:flex-row gap-12 justify-center">
           <Navbar />
           {children}
         </main>

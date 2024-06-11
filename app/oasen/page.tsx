@@ -11,7 +11,7 @@ import oasen05 from '../images/oasen05.png'
 
 export default function Page() {
   return (
-    <section className="prose">
+    <section className="prose max-w-7xl">
       <h1 className="title mb-2! text-3xl tracking-tighter font-normal!">
         Oasen - <i className="font-italic">RSA In Your Skin Competition Brief</i>
       </h1>

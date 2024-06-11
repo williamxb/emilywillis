@@ -7,7 +7,7 @@ import keepdancing01 from './images/keepdancing01.png'
 
 export default function Page() {
   return (
-    <section>
+    <section className="max-w-7xl">
       <div className="mb-10">
         <Link href="/oasen">
           <Image
@@ -44,7 +44,7 @@ export default function Page() {
         </Link>
       </div>
       <div className="mb-10">
-        <Link href="/keepdancing">
+        <Link href="/keep-dancing">
           <Image
             src={keepdancing01}
             width={2573}
