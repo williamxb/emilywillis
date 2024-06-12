@@ -11,10 +11,11 @@ export default function Page() {
       <div className="mb-10">
         <Link href="/oasen">
           <Image
+            priority={true}
+            placeholder="blur"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
             src={oasen01}
-            width={3118}
-            height={1754}
-            alt="Picture of the author"
+            alt=""
           />
           <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
             <p className="w-fit text-2xl">Oasen</p>
@@ -30,9 +31,8 @@ export default function Page() {
         <Link href="/zophos">
           <Image
             src={zophos01}
-            width={1637}
-            height={1158}
-            alt="Picture of the author"
+            placeholder="blur"
+            alt=""
           />
           <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
             <p className="w-fit text-2xl">Zophos - The&nbsp;Drosulites</p>
@@ -47,9 +47,8 @@ export default function Page() {
         <Link href="/keep-dancing">
           <Image
             src={keepdancing01}
-            width={2573}
-            height={1448}
-            alt="Picture of the author"
+            placeholder="blur"
+            alt=""
           />
           <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
             <p className="w-fit text-2xl">Keep Dancing</p>
