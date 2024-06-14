@@ -52,7 +52,7 @@ export default function RootLayout({
         // GeistMono.variable
       )}
     >
-      <body className="antialiased m-8">
+      <body className="subpixel-antialiased m-6 sm:m-8">
         <main className="flex-auto flex flex-col lg:flex-row gap-12 justify-center">
           <Navbar />
           {children}

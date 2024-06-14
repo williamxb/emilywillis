@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import oasen01 from './images/oasen01.png'
 import zophos01 from './images/zophos01.png'
-import keepdancing01 from './images/keepdancing01.png'
+import keepdancing01 from './images/keepdancing02.png'
 
 export default function Page() {
   return (

@@ -7,7 +7,7 @@ import Image from 'next/image'
 import link from 'next/link'
 
 import oasen01 from '../images/oasen01.png'
-import oasen08 from '../images/oasen-replace08.png'
+import oasen08 from '../images/oasen08.png'
 import oasen07 from '../images/oasen07.png'
 import oasen02 from '../images/oasen02.png'
 import oasen04 from '../images/oasen04.png'
