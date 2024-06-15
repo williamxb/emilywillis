@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import oasen01 from './images/oasen01.png'
-import zophos01 from './images/zophos01.png'
-import keepdancing01 from './images/keepdancing02.png'
+import oasen from './images/oasen01.png'
+import zophos from './images/zophos01.png'
+import keepdancing from './images/keepdancing01.png'
 
 export default function Page() {
   return (
@@ -13,8 +13,8 @@ export default function Page() {
           <Image
             priority={true}
             placeholder="blur"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
-            src={oasen01}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+            src={oasen}
             alt=""
           />
           <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
@@ -30,7 +30,7 @@ export default function Page() {
       <div className="mb-10">
         <Link href="/zophos">
           <Image
-            src={zophos01}
+            src={zophos}
             placeholder="blur"
             alt=""
           />
@@ -46,7 +46,7 @@ export default function Page() {
       <div className="mb-10">
         <Link href="/keep-dancing">
           <Image
-            src={keepdancing01}
+            src={keepdancing}
             placeholder="blur"
             alt=""
           />

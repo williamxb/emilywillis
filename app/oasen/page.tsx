@@ -1,10 +1,11 @@
 "use client";
 import * as React from "react";
+import Image from 'next/image';
+import Link from 'next/link'
+
 import Lightbox from "yet-another-react-lightbox";
 import NextJsImage from "../components/ImageLightbox";
 import "yet-another-react-lightbox/styles.css";
-import Image from 'next/image'
-import link from 'next/link'
 
 import oasen01 from '../images/oasen01.png'
 import oasen08 from '../images/oasen08.png'
@@ -20,14 +21,16 @@ export default function Page() {
   return (
     <>
       <section className="prose max-w-7xl">
-        <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
+        <h1 className="text-balance mb-2! text-3xl font-normal! tracking-tighter">
           Oasen - <i className="font-italic">RSA In Your Skin Competition Brief</i>
         </h1>
         <p>Group Project / Naming / Branding / Experimental Design / Research</p>
+        <p className="font-bold"><Link target="_blank" href="https://www.thersa.org/student-design-awards/news-and-events/shortlist-2024#in-your-skin">Shortlisted for RSA In Your Skin Design Award</Link></p>
+        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accomodating pop-up store experience taht creates an environment to foster confidence and skin health.</p>
         <Image
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
           src={oasen01}
           alt=""
           onClick={() => setIndex(0)}
@@ -37,7 +40,7 @@ export default function Page() {
         <p className="text-lg">My group partner Ju and I decided to focus on sensory issues that neurodiverse people face. Our solution was to create a brand, Oasen, which shows skin diversity, has sensory-safe products, creates community through a pop-up store and or line, uses positive language and is accessible.</p>
         <Image
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"          
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 85vw, 85vw"
           src={oasen08}
           alt=""
           onClick={() => setIndex(1)}
@@ -47,50 +50,50 @@ export default function Page() {
         <p className="text-lg">We decided to name the brand Oasen as a spin on the word 'Oasis' meaning a safe space, a sanctuary.</p>
         <Image
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
           src={oasen07}
           alt=""
           onClick={() => setIndex(2)}
-          className="cursor-pointer"
+          className="cursor-pointer w-full"
         />
         <p className="text-lg">The blob illustrations were inspired by lava lamps, which are a sensory light, and can be used as a stim toy.</p>
-        <div className="flex-auto flex flex-row gap-12 mb-12">
-          <div className="">
+        <div className="flex-auto flex flex-row mb-6 gap-6">
+          <div className="grow">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"    
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
               src={oasen02}
               alt=""
               className="w-full h-full object-cover cursor-pointer"
               onClick={() => setIndex(3)}
             />
           </div>
-          <div className="">
+          <div className="grow">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"              
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
               src={oasen04}
               alt=""
-              className="w-full h-full object-cover cursor-pointer"
+              className="w-full object-cover cursor-pointer"
               onClick={() => setIndex(4)}
             />
           </div>
         </div>
-        <div className="flex-auto flex flex-row gap-12">
-          <div className="">
+        <div className="flex-auto flex flex-row gap-6">
+          <div className="grow">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"              
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
               src={oasen03}
               alt=""
               className="w-full h-full object-cover cursor-pointer"
               onClick={() => setIndex(5)}
             />
           </div>
-          <div className="">
+          <div className="grow ">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"              
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
               src={oasen05}
               alt=""
               className="w-full h-full object-cover cursor-pointer"
