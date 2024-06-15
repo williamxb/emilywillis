@@ -83,7 +83,7 @@ export default function Page() {
                             alt=""
                             onClick={() => setIndex(5)} />
                     </div>
-                    <div className="grid grid-cols-subgrid auto-rows-min col-span-1 gap-2 md:gap-4 justify-start">
+                    <div className="grid grid-cols-subgrid col-span-1 gap-2 md:gap-4 justify-start">
                         <div>
                             <Image
                                 className="cursor-pointer"
