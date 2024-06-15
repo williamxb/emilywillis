@@ -4,8 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link'
 
 import Lightbox from "yet-another-react-lightbox";
+import { Zoom, Thumbnails } from "yet-another-react-lightbox/plugins";
 import NextJsImage from "../components/ImageLightbox";
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import oasen01 from '../images/oasen01.png'
 import oasen08 from '../images/oasen08.png'
@@ -109,6 +111,7 @@ export default function Page() {
         close={() => [setIndex(-1)]}
         slides={[oasen01, oasen08, oasen07, oasen02, oasen04, oasen03, oasen05]}
         render={{ slide: NextJsImage }}
+        plugins={[Zoom, Thumbnails]}
       />
     </>
   );

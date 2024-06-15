@@ -3,8 +3,10 @@ import * as React from "react";
 import Image from 'next/image';
 
 import Lightbox from "yet-another-react-lightbox";
+import { Zoom, Thumbnails } from "yet-another-react-lightbox/plugins";
 import NextJsImage from "../components/ImageLightbox";
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import zophos01 from '../images/zophos01.png';
 import zophos02 from '../images/zophos02.png';
@@ -121,6 +123,7 @@ export default function Page() {
                 close={() => [setIndex(-1)]}
                 slides={[zophos01, zophos02, zophos03, zophos04, zophos05, zophos06, zophos07, zophos08, zophos09]}
                 render={{ slide: NextJsImage }}
+                plugins={[Zoom, Thumbnails]}
             />
         </>
     );
