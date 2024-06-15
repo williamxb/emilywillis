@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <>
       <section className="prose max-w-7xl">
-        <h1 className="title mb-2! text-3xl tracking-tighter font-normal!">
+                <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
           Zophos - <i className="font-italic">Pearlfisher Competition Brief</i>
         </h1>
         <p>Naming / Branding / Illustration / Website Design</p>

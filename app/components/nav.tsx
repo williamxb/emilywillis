@@ -23,7 +23,7 @@ export function Navbar() {
   return (
     <aside className="lg:min-w-96 mb-16 tracking-tight">
       <div className="pr-6 sticky top-8">
-        <Link href="/"><h1 className="text-4xl tracking-tight mb-6">Emily Willis</h1></Link>
+        <Link href="/"><h1 className="text-balance text-4xl tracking-tight mb-6">Emily Willis</h1></Link>
         <h2 className="text-lg mb-6 max-width-96">London-based Graphic Designer, specialised in branding and illustration.</h2>
         <nav
           className="flex flex-col items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"

@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <>
       <section className="prose max-w-7xl">
-        <h1 className="title mb-2! text-3xl tracking-tighter font-normal!">
+        <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
           Oasen - <i className="font-italic">RSA In Your Skin Competition Brief</i>
         </h1>
         <p>Group Project / Naming / Branding / Experimental Design / Research</p>

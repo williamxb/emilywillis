@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <>
       <section className="prose max-w-7xl">
-        <h1 className="title mb-2! text-3xl tracking-tighter font-normal!">
+        <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
           Keep Dancing - <i className="font-italic">Personal Brief</i>
         </h1>
         <p>Branding / Illustration / Layout Design / Campaign</p>
