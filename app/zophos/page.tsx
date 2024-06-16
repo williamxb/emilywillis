@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import Image from 'next/image';
+import Link from "next/link";
 
 import Lightbox from "yet-another-react-lightbox";
 import { Zoom, Thumbnails } from "yet-another-react-lightbox/plugins";
@@ -28,6 +29,7 @@ export default function Page() {
                     Zophos - <i className="font-italic">Pearlfisher Competition Brief</i>
                 </h1>
                 <p>Naming / Branding / Illustration / Website Design</p>
+                <p className="font-bold text-balance"><Link target="_blank" href="https://pearlfisher.com/news/pearlfisher-london-calling-creatives-for-fresh-pearls-2024-competition/">Pearlfisher 2024 Fresh Pearls | Design for Life: Once in a Blue Moon</Link></p>
                 <p className="text-lg font-bold tracking-tight">'How can we unlock rarity as a journey into the extraordinary?'</p>
                 <p className="text-lg">Legends unveiled with the rising sun. Meet nature's ghost army, the Drosoulites. Their shadows weave tales of their forgotten rebellion. In the glow of the dawn, the Drosoulites reveal their timeless dance between the realm of the living and the spirits that dwell beyond the veil of reality.</p>
                 <Image
