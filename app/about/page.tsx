@@ -41,7 +41,7 @@ export default function About() {
         <p className="text-lg">As a self proclaimed nerdy gym-rat, you'll find me watching the latest anime, reading fantasy or lifting heavy objects and putting them back down again.</p>
         <p className="text-lg">Creativity has always been at the heart of what I enjoy and what my free time revolves around.</p>
         <p className="text-lg font-bold">Skills:</p>
-        <ul className="flex flex-col space-x-0 pr-10">
+        <ul className="flex flex-col space-x-0 pr-10 text-lg">
           {Object.entries(skillItems).map(([key, { name }]) => {
             return (
               <li key={key}>
