@@ -29,7 +29,7 @@ export default function Page() {
                 </h1>
                 <p>Naming / Branding / Illustration / Website Design</p>
                 <p className="text-lg font-bold tracking-tight">'How can we unlock rarity as a journey into the extraordinary?'</p>
-                <p className="text-lg">Legends unveiled with the rising sun. Meet nature's ghost army, the drosoulites. Their shadows weave tales of their forgotten rebellion. In the glow of the dawn, the drosoulites reveal their timeless dance between the realm of the living and the spirits that dwell beyond the veil of reality.</p>
+                <p className="text-lg">Legends unveiled with the rising sun. Meet nature's ghost army, the Drosoulites. Their shadows weave tales of their forgotten rebellion. In the glow of the dawn, the Drosoulites reveal their timeless dance between the realm of the living and the spirits that dwell beyond the veil of reality.</p>
                 <Image
                     className="w-full cursor-pointer"
                     priority={true}
@@ -39,7 +39,7 @@ export default function Page() {
                     alt=""
                     onClick={() => setIndex(0)}
                 />
-                <p className="text-lg">The drosoulites - dew shadows - are a naturally occuring ghost army in Sfakia, Crete. During the Greek War of Independence, on 17th May 1828, a battle between Greeks and Turks at Frangokastello Castle occurred. 335 Greek soldiers were killed. These fallen rebels are said to haunt the area.</p>
+                <p className="text-lg">The Drosoulites - dew shadows - are a naturally occuring ghost army in Sfakia, Crete. During the Greek War of Independence, on 17th May 1828, a battle between Greeks and Turks at Frangokastello Castle occurred. 335 Greek soldiers were killed. These fallen rebels are said to haunt the area.</p>
                 <Image
                     className="w-full cursor-pointer"
                     placeholder="blur"

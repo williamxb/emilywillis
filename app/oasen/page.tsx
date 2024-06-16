@@ -28,7 +28,7 @@ export default function Page() {
         </h1>
         <p>Group Project / Naming / Branding / Experimental Design / Research</p>
         <p className="font-bold"><Link target="_blank" href="https://www.thersa.org/student-design-awards/news-and-events/shortlist-2024#in-your-skin">Shortlisted for RSA In Your Skin Design Award</Link></p>
-        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accomodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
+        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accommodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
         <Image
           priority={true}
           placeholder="blur"
@@ -38,7 +38,7 @@ export default function Page() {
           onClick={() => setIndex(0)}
           className="cursor-pointer"
         />
-        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accomodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
+        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accommodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
         <p className="text-lg">My group partner Ju and I decided to focus on sensory issues that neurodiverse people face. Our solution was to create a brand, Oasen, which shows skin diversity, has sensory-safe products, creates community through a pop-up store and or line, uses positive language and is accessible.</p>
         <Image
           placeholder="blur"

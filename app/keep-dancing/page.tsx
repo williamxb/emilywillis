@@ -24,7 +24,7 @@ export default function Page() {
           Keep Dancing - <i className="font-italic">Personal Brief</i>
         </h1>
         <p>Branding / Illustration / Layout Design / Campaign</p>
-        <p className="text-lg">Inspired by '<i className="font-italic">Live to 100: Secrets of the Blue Zone</i>' I decided to do a project focusing on helping elderly women become more active. Dacne was one of the activities that increased longevity in the blue zones.</p>
+        <p className="text-lg">Inspired by '<i className="font-italic">Live to 100: Secrets of the Blue Zone</i>' I decided to do a project focusing on helping elderly women become more active. Dance was one of the activities that increased longevity in the blue zones.</p>
         <p className="text-lg">'Keep Dancing' is a campaign launched by the 'NHS' in collaboration with 'Strictly Come Dancing', sending information packs to elderly women, teaching them basic dance moves and offering a range of fun, sociable dance classes in their local area. This will help women aged 75 and over have easy access to resources for dance and an easier way of finding classes in their local area.</p>
         <Image
           className="cursor-pointer"
