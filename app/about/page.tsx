@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'About Me',
+};
+
 const skillItems = {
   '1': {
     name: 'Branding',
