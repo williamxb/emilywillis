@@ -28,7 +28,7 @@ export default function Page() {
         </h1>
         <p>Group Project / Naming / Branding / Experimental Design / Research</p>
         <p className="font-bold"><Link target="_blank" href="https://www.thersa.org/student-design-awards/news-and-events/shortlist-2024#in-your-skin">Shortlisted for RSA In Your Skin Design Award</Link></p>
-        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accomodating pop-up store experience taht creates an environment to foster confidence and skin health.</p>
+        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accomodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
         <Image
           priority={true}
           placeholder="blur"
