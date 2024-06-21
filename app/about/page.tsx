@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Image from 'next/image'
+import emily from "../images/emily.jpeg"
 
 export const metadata: Metadata = {
   title: 'About Me',
@@ -28,12 +30,19 @@ const experienceItems = {
     position: 'Junior Graphic Designer · Internship'
   }
 }
-  
+
 export default function About() {
   return (
-    <section className="flex flex-row">
-      <div className="">
-        
+    <section className="md:grid md:auto-rows-fr grid-cols-2 gap-12">
+      <div className="max-h-min">
+        <Image
+          className="w-1/2 mx-auto mb-12 md:mb-0 md:w-full"
+          priority={true}
+          placeholder="blur"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          src={emily}
+          alt=""
+        />
       </div>
       <div className="prose">
         <p className="text-2xl tracking-tight text-balance">Hi, I'm Emily, a graphic designer based in London with a particular interest in branding.</p>
