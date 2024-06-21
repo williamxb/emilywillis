@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import oasen from './images/oasen01.png'
+import oasen from './images/oasen07.png'
 import zophos from './images/zophos01.png'
 import keepdancing from './images/keepdancing01.png'
 
