@@ -35,11 +35,11 @@ export default function Page() {
             alt=""
           />
           <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
-            <p className="w-fit text-2xl">Zophos - The&nbsp;Drosoulites</p>
+            <p className="w-fit text-2xl">Zophos · The&nbsp;Drosoulites</p>
             <p className="w-fit text-right text-lg lg:text-2xl font-semilight lg:font-normal">Competition Brief</p>
           </div>
           <div className="lg:w-1/2 px-2">
-            <p className='mb-2'>Visual identity for a rare natural ghost experience - The&nbsp;Drosoulites&nbsp;of&nbsp;Crete.</p>
+            <p className='mb-2'>Visual identity for a rare natural ghost experience; The&nbsp;Drosoulites&nbsp;of&nbsp;Crete.</p>
           </div>
         </Link>
       </div>

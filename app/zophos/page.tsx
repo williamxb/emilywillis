@@ -26,7 +26,7 @@ export default function Page() {
         <>
             <section className="prose max-w-7xl">
                 <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
-                    Zophos - <i className="font-italic">Pearlfisher Competition Brief</i>
+                    Zophos · <i className="font-italic">Pearlfisher Competition Brief</i>
                 </h1>
                 <p>Naming / Branding / Illustration / Website Design</p>
                 <p className="font-bold text-balance"><Link target="_blank" href="https://pearlfisher.com/news/pearlfisher-london-calling-creatives-for-fresh-pearls-2024-competition/">Pearlfisher 2024 Fresh Pearls | Design for Life: Once in a Blue Moon</Link></p>

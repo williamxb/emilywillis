@@ -21,7 +21,7 @@ export default function Page() {
     <>
       <section className="prose max-w-7xl">
         <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
-          Keep Dancing - <i className="font-italic">Personal Brief</i>
+          Keep Dancing · <i className="font-italic">Personal Brief</i>
         </h1>
         <p>Branding / Illustration / Layout Design / Campaign</p>
         <p className="text-lg">Inspired by '<i className="font-italic">Live to 100: Secrets of the Blue Zone</i>' I decided to do a project focusing on helping elderly women become more active. Dance was one of the activities that increased longevity in the blue zones.</p>
