@@ -3,19 +3,23 @@ import Link from 'next/link'
 const navItems = {
   '/': {
     name: 'Home',
-    ulClass: ''
+    ulClass: '',
+    target: ''
   },
   '/about': {
     name: 'About',
-    ulClass: ''
+    ulClass: '',
+    target: ''
   },
   'https://www.linkedin.com/in/emily-willis-646bb2171/': {
     name: 'LinkedIn',
-    ulClass: 'mt-6'
+    ulClass: 'mt-6',
+    target: '_blank'
   },
   'mailto:willisjemily@gmail.com': {
     name: 'Email',
-    ulClass: ''
+    ulClass: '',
+    target: ''
   }
 }
 
@@ -30,11 +34,12 @@ export function Navbar() {
           id="nav"
         >
           <ul className="flex flex-col space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name, ulClass }]) => {
+            {Object.entries(navItems).map(([path, { name, ulClass, target }]) => {
               return (
                 <li key={name} className={ulClass}>
                   <Link
                     href={path}
+                    target={target}
                     className="transition-all text-lg hover:text-hover:text-neutral-800 dark:hover:text-neutral-200 hover:underline flex align-middle relative"
                   >
                     {name}
