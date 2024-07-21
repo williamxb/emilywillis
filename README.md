@@ -1,12 +1,15 @@
-# Portfolio
+# Graphic Design Portfolio
 
-This is a portfolio site including:
+This is my recently graduated partner Emily's portfolio. Emily wanted a super simple and sleek design with capacity for lots of images and content, and together we came up with this.
 
+## Features
+
+- Next.js + Vercel
 - Optimized for SEO (sitemap, robots, JSON-LD schema)
-- Tailwind CSS v4
+- Tailwind CSS ([v4 alpha](https://tailwindcss.com/blog/tailwindcss-v4-alpha))
 - Vercel Speed Insights / Analytics
 
-## How to Use
+## Getting Started
 
 ### Clone and Deploy
 
@@ -18,10 +21,12 @@ Clone this repo and install local dependencies.
 pnpm install
 ```
 
-Then, run Next.js in development mode:
+Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-This site is deployed the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+The site will be accessible at `http://localhost:3000`.
+
+This site is deployed to [Vercel](https://vercel.com/templates) - ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
