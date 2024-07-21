@@ -23,7 +23,7 @@ export default function Page() {
           </div>
           <div className="lg:w-1/2 px-2">
             <p className='mb-2'>A skincare brand designed to cater to those with sensory differences.</p>
-            <p><i>Shortlisted for RSA In Your Skin Design Award</i></p>
+            <p><i>Highly Commended for RSA In Your Skin Design Award</i></p>
           </div>
         </Link>
       </div>
