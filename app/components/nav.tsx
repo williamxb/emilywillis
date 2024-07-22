@@ -11,7 +11,7 @@ const navItems = {
     ulClass: '',
     target: ''
   },
-  'https://www.linkedin.com/in/emily-willis-646bb2171/': {
+  'https://www.linkedin.com/in/emwillis/': {
     name: 'LinkedIn',
     ulClass: 'mt-6',
     target: '_blank'
