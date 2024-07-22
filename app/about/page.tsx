@@ -44,7 +44,7 @@ const educationItems = {
         </p>
         <p>
           <span className="font-bold">Diploma in Professional Studies (DPS)</span><br />
-          <span className="text-sm text-zinc-600 dark:text-zinc-400">2023</span>
+          <span className="text-sm text-zinc-600 dark:text-zinc-400">2022 - 2023</span>
         </p>
         <p>
           <span className="font-bold">Activities and societies:</span><br />
