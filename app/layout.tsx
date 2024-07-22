@@ -1,11 +1,9 @@
 import './global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
-// import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-// import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
@@ -24,10 +22,10 @@ export const metadata: Metadata = {
     type: 'website',
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
@@ -49,7 +47,6 @@ export default function RootLayout({
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
-        // GeistMono.variable
       )}
     >
       <body className="subpixel-antialiased m-6 sm:m-8">
@@ -57,7 +54,6 @@ export default function RootLayout({
           <Navbar />
           {children}
         </main>
-        {/* <Footer /> */}
         <Analytics />
         <SpeedInsights />
       </body>
