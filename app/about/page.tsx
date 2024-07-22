@@ -7,27 +7,50 @@ export const metadata: Metadata = {
 };
 
 const skillItems = {
-  '1': {
+  'branding': {
     name: 'Branding',
   },
-  '2': {
+  'illustration': {
     name: 'Illustration',
   },
-  '3': {
+  'photography': {
     name: 'Photography',
   },
-  '4': {
+  'layout': {
     name: 'Layout Design',
   },
-  '5': {
+  'adobe': {
     name: 'Adobe Creative Cloud',
   }
 }
 
 const experienceItems = {
-  '1': {
+  'IW': {
     title: 'Interactive Workshops ',
     position: 'Junior Graphic Designer · Internship'
+  }
+}
+
+const educationItems = {
+  'loughborough': {
+    title: 'Loughborough University',
+    content:
+      [<>
+        <p className="mt-0! text-balance">
+          <span className="text-xl">Loughborough University</span><br />
+          <span className="font-bold">Bachelor of Arts (BA Hons)</span><br />
+          Graphic Communication and Illustration<br />
+          <span className="text-sm text-zinc-600 dark:text-zinc-400">2020 - 2024</span>
+        </p>
+        <p>
+          <span className="font-bold">Diploma in Professional Studies (DPS)</span><br />
+          <span className="text-sm text-zinc-600 dark:text-zinc-400">2023</span>
+        </p>
+        <p>
+          <span className="font-bold">Activities and societies:</span><br />
+          Train and Gain Society · Media Rep
+        </p>
+      </>]
   }
 }
 
@@ -36,7 +59,7 @@ export default function About() {
     <section className="md:grid md:auto-rows-fr grid-cols-2 gap-12">
       <div className="max-h-min">
         <Image
-          className="w-1/2 mx-auto mb-12 md:mb-0 md:w-full"
+          className="w-1/2 mx-auto mb-12 md:mb-0 md:w-full sticky top-8"
           priority={true}
           placeholder="blur"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
@@ -60,13 +83,23 @@ export default function About() {
           })}
         </ul>
         <p className="text-lg font-bold">Experience:</p>
-        <ul className="flex flex-col p-0! list-none!">
+        <ul className="flex flex-col gap-4 p-0! list-none!">
           {Object.entries(experienceItems).map(([key, { title, position }]) => {
             return (
               <li key={key}>
                 <span className="text-xl">{title}</span>
                 <br></br>
                 {position}
+              </li>
+            )
+          })}
+        </ul>
+        <p className="text-lg font-bold">Education:</p>
+        <ul className="flex flex-col gap-4 p-0! list-none!">
+          {Object.entries(educationItems).map(([key, { title, content }]) => {
+            return (
+              <li key={key}>
+                {content}
               </li>
             )
           })}
