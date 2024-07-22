@@ -38,3 +38,4 @@ This site is deployed to [Vercel](https://vercel.com/templates) - ([Documentatio
     - About - lists
 - Improve markup for tag section underneath titles (use ul element and CSS for tag separators)
 - Add class `text-lg` to base style of `<p>` element, then fix any conflicts with smaller text use
+- Investigate other methods of serving images as they are currently included in the repo which isn't ideal, and inflates the repo size and build cache significantly. Few options include Git LFS, Vercel Blob, Amazon S3/competing cloud object storage
