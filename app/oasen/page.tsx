@@ -38,7 +38,6 @@ export default function Page() {
           onClick={() => setIndex(0)}
           className="cursor-pointer"
         />
-        <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accommodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
         <p className="text-lg">My group partner Ju and I decided to focus on sensory issues that neurodiverse people face. Our solution was to create a brand, Oasen, which shows skin diversity, has sensory-safe products, creates community through a pop-up store and or line, uses positive language and is accessible.</p>
         <Image
           placeholder="blur"
@@ -58,7 +57,7 @@ export default function Page() {
           onClick={() => setIndex(2)}
           className="cursor-pointer w-full"
         />
-        <p className="text-lg">The blob illustrations were inspired by lava lamps, which are a sensory light, and can be used as a stim toy.</p>
+        <p className="text-lg">The blob illustrations were inspired by lava lamps, which are a sensory light, and can be used as a visual stim.</p>
         <div className="flex-auto flex flex-row mb-6 gap-6">
           <div className="grow">
             <Image
