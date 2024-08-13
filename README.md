@@ -45,3 +45,4 @@ This site is deployed to [Vercel](https://vercel.com/) - ([Documentation](https:
     - using the `next/image` component which _should_ be grabbing the correct width/height attributes automatically, but sometimes doesn't end up with the correct ones.
     - This only affects the blurred placeholder, and it assumes the correct aspect ratio once loaded. Slight CLS impact on a remotely fast connection and not particularly noticeable/detrimental - poor experience on a slow connection though.
 - Image optimisation - optimisation has mostly been left to `next/image` which does well, but it'd be good to feed it more optimised images for even better results on smaller viewports.
+- Logic behind `sitemap.xml` to generate the list automatically, and grab lastUpdated dates from a variable on page? (in lieu of a CMS)
