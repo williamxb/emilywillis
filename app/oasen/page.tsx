@@ -26,7 +26,7 @@ export default function Page() {
         <h1 className="text-balance mb-2! text-3xl font-normal! tracking-tighter">
           Oasen · <i className="font-italic">RSA In Your Skin Competition Brief</i>
         </h1>
-        <p>Group Project / Naming / Branding / Experimental Design / Research</p>
+        <p>Group Project / Naming / Branding / Experiential Design / Research</p>
         <p className="font-bold"><Link target="_blank" href="https://www.thersa.org/student-design-awards/winners/2023-24/In-your-skin">Highly Commended for RSA In Your Skin Design Award</Link></p>
         <p className="text-lg">Oasen is a skincare brand for young neurodiverse individuals, offering a sensory-safe product range and an accommodating pop-up store experience that creates an environment to foster confidence and skin health.</p>
         <Image
