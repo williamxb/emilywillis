@@ -13,7 +13,8 @@ export default function Page() {
           <Image
             priority={true}
             placeholder="blur"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+            sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+quality={100}
             src={oasen}
             alt=""
           />

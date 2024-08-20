@@ -36,7 +36,8 @@ export default function Page() {
                     className="w-full cursor-pointer"
                     priority={true}
                     placeholder="blur"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                    sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                    quality={100}
                     src={zophos01}
                     alt=""
                     onClick={() => setIndex(0)}
@@ -45,7 +46,8 @@ export default function Page() {
                 <Image
                     className="w-full cursor-pointer"
                     placeholder="blur"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                    sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                    quality={100}
                     src={zophos02}
                     alt=""
                     onClick={() => setIndex(1)} />
@@ -55,7 +57,8 @@ export default function Page() {
                         <Image
                             className="w-full h-full cursor-pointer"
                             placeholder="blur"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                            sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                            quality={100}
                             src={zophos03}
                             alt=""
                             onClick={() => setIndex(2)} />
@@ -64,7 +67,8 @@ export default function Page() {
                         <Image
                             className="cursor-pointer"
                             placeholder="blur"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                            sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                            quality={100}
                             src={zophos04}
                             alt=""
                             onClick={() => setIndex(3)} />
@@ -73,7 +77,8 @@ export default function Page() {
                         <Image
                             className="cursor-pointer"
                             placeholder="blur"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                            sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                            quality={100}
                             src={zophos05}
                             alt=""
                             onClick={() => setIndex(4)} />
@@ -82,7 +87,8 @@ export default function Page() {
                         <Image
                             className="cursor-pointer"
                             placeholder="blur"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                            sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                            quality={100}
                             src={zophos06}
                             alt=""
                             onClick={() => setIndex(5)} />
@@ -92,7 +98,8 @@ export default function Page() {
                             <Image
                                 className="cursor-pointer"
                                 placeholder="blur"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                                sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                                quality={100}
                                 src={zophos07}
                                 alt=""
                                 onClick={() => setIndex(6)} />
@@ -101,7 +108,8 @@ export default function Page() {
                             <Image
                                 className="cursor-pointer"
                                 placeholder="blur"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                                sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                                quality={100}
                                 src={zophos08}
                                 alt=""
                                 onClick={() => setIndex(7)} />
@@ -110,7 +118,8 @@ export default function Page() {
                             <Image
                                 className="h-full object-cover object-right-top cursor-pointer"
                                 placeholder="blur"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+                                sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+                                quality={100}
                                 src={zophos09}
                                 alt=""
                                 onClick={() => setIndex(8)} />

@@ -62,7 +62,8 @@ export default function About() {
           className="w-1/2 mx-auto mb-12 md:mb-0 md:w-full sticky top-8"
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={emily}
           alt=""
         />

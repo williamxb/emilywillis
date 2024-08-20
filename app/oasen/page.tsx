@@ -32,7 +32,8 @@ export default function Page() {
         <Image
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={oasen01}
           alt=""
           onClick={() => setIndex(0)}
@@ -41,7 +42,8 @@ export default function Page() {
         <p className="text-lg">My group partner Ju and I decided to focus on sensory issues that neurodiverse people face. Our solution was to create a brand, Oasen, which shows skin diversity, has sensory-safe products, creates community through a pop-up store and or line, uses positive language and is accessible.</p>
         <Image
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 85vw, 85vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={oasen08}
           alt=""
           onClick={() => setIndex(1)}
@@ -51,7 +53,8 @@ export default function Page() {
         <p className="text-lg">We decided to name the brand Oasen as a spin on the word 'Oasis' meaning a safe space, a sanctuary.</p>
         <Image
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={oasen07}
           alt=""
           onClick={() => setIndex(2)}
@@ -62,7 +65,8 @@ export default function Page() {
           <div className="grow">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+              sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+              quality={100}
               src={oasen02}
               alt=""
               className="w-full h-full object-cover cursor-pointer"
@@ -72,7 +76,8 @@ export default function Page() {
           <div className="grow">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+              sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+              quality={100}
               src={oasen04}
               alt=""
               className="w-full object-cover cursor-pointer"
@@ -84,7 +89,8 @@ export default function Page() {
           <div className="grow">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+              sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+              quality={100}
               src={oasen03}
               alt=""
               className="w-full h-full object-cover cursor-pointer"
@@ -94,7 +100,8 @@ export default function Page() {
           <div className="grow ">
             <Image
               placeholder="blur"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+              sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+              quality={100}
               src={oasen05}
               alt=""
               className="w-full h-full object-cover cursor-pointer"

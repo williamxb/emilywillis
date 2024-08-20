@@ -30,7 +30,8 @@ export default function Page() {
           className="cursor-pointer"
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={keepdancing01}
           alt=""
           onClick={() => setIndex(0)}
@@ -41,7 +42,8 @@ export default function Page() {
           className="cursor-pointer"
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={keepdancing02}
           alt=""
           onClick={() => setIndex(1)}
@@ -50,7 +52,8 @@ export default function Page() {
         <Image
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={keepdancing03}
           className="mb-6 cursor-pointer"
           alt=""
@@ -60,7 +63,8 @@ export default function Page() {
           className="cursor-pointer"
           priority={true}
           placeholder="blur"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 70vw, 70vw"
+          sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
+          quality={100}
           src={keepdancing04}
           alt=""
           onClick={() => setIndex(3)}
