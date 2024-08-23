@@ -34,7 +34,7 @@ This site is deployed to [Vercel](https://vercel.com/) - ([Documentation](https:
 ## Todo/Issues
 
 - Build out components for repeated content
-    - Homepage - link sections
+    - ~~Homepage - link sections~~
     - About - lists
     - Page header sections
 - Improve markup for tag section underneath titles (use ul element and CSS for tag separators)
