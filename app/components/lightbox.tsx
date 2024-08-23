@@ -54,6 +54,7 @@ export default function NextJsImage({ slide, offset, rect }: RenderSlideProps) {
                     cursor: click ? "pointer" : undefined,
                 }}
                 sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
+                quality={100}
                 onClick={
                     offset === 0 ? () => click?.({ index: currentIndex }) : undefined
                 }
