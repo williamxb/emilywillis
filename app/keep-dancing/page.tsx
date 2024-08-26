@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from 'next/image';
 import ImageWithLightbox from "../components/lightboxImage";
 
 import keepdancing01 from '../images/keepdancing01.png'
