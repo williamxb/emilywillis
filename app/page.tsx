@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import HomeLink from './components/homeLink'
 
 import oasen from './images/oasen07.png'
 import zophos from './images/zophos01.png'
 import keepdancing from './images/keepdancing01.png'
+import cautionarytales01 from './images/cautionarytales01.png'
 
 export default function Page() {
   return (
@@ -25,6 +24,14 @@ export default function Page() {
         title="Zophos · The&nbsp;Drosoulites"
         subtitle="Competition Brief"
         content="Visual identity for a rare natural ghost experience; The&nbsp;Drosoulites&nbsp;of&nbsp;Crete."
+      />
+
+      <HomeLink
+        href="/cautionary-tales-for-children"
+        image={cautionarytales01}
+        title="Cautionary Tales for Children"
+        subtitle="Personal Project"
+        content="An interpretation of Hillaire Belloc's Cautionary Tales for Children, suitable for an adult audience."
       />
 
       <HomeLink
