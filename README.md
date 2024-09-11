@@ -5,10 +5,11 @@ This is my recently graduated partner's portfolio. She wanted a super simple and
 ## Features
 
 - Contentful CMS Integration
-- Next.js App Router + Vercel
+- (Next.js)[https://nextjs.org/] App Router
+- Continuously deployed to [Vercel](https://vercel.com/)
 - Optimized for SEO (sitemap, robots, JSON-LD schema)
 - Tailwind CSS ([v4 alpha](https://tailwindcss.com/blog/tailwindcss-v4-alpha))
-- Vercel Speed Insights / Analytics
+- Vercel Speed Insights & Analytics
 
 ## Getting Started
 
