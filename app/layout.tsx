@@ -1,6 +1,5 @@
 import './global.css'
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
+import Metadata from 'next'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -45,13 +44,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
-        GeistSans.variable,
+        'text-brand-black bg-brand-off-white', //dark mode: dark:text-white dark:bg-black
       )}
     >
-      <body className="subpixel-antialiased m-6 sm:m-8">
-        <main className="flex-auto flex flex-col lg:flex-row gap-12 justify-center">
-          <Navbar />
+      <body className="subpixel-antialiased">
+        <Navbar />
+        <main className="max-w-container mx-auto">
           {children}
         </main>
         <Analytics />

@@ -13,34 +13,31 @@ importers:
         version: 4.0.0-alpha.20(postcss@8.4.41)
       '@types/node':
         specifier: ts5.5
-        version: 22.5.0
+        version: 22.7.5
       '@types/react':
         specifier: ts5.5
-        version: 18.3.4
+        version: 18.3.11
       '@types/react-dom':
         specifier: ts5.5
         version: 18.3.0
       '@vercel/analytics':
         specifier: 1.3.1
-        version: 1.3.1(next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
+        version: 1.3.1(next@15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)
       '@vercel/speed-insights':
         specifier: 1.0.12
-        version: 1.0.12(next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
-      geist:
-        specifier: 1.3.1
-        version: 1.3.1(next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816))
+        version: 1.0.12(next@15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)
       next:
         specifier: 15.0.0-canary.130
-        version: 15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
+        version: 15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)
       postcss:
         specifier: 8.4.41
         version: 8.4.41
       react:
-        specifier: 19.0.0-rc-1eaccd82-20240816
-        version: 19.0.0-rc-1eaccd82-20240816
+        specifier: 19.0.0-rc-eb3ad065-20240822
+        version: 19.0.0-rc-eb3ad065-20240822
       react-dom:
-        specifier: 19.0.0-rc-1eaccd82-20240816
-        version: 19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816)
+        specifier: 19.0.0-rc-eb3ad065-20240822
+        version: 19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822)
       tailwindcss:
         specifier: 4.0.0-alpha.20
         version: 4.0.0-alpha.20
@@ -49,7 +46,7 @@ importers:
         version: 5.5.4
       yet-another-react-lightbox:
         specifier: 3.21.4
-        version: 3.21.4(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
+        version: 3.21.4(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)
     devDependencies:
       sharp:
         specifier: ^0.33.5
@@ -57,8 +54,8 @@ importers:
 
 packages:
 
-  '@emnapi/runtime@1.2.0':
-    resolution: {integrity: sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==}
+  '@emnapi/runtime@1.3.0':
+    resolution: {integrity: sha512-XMBySMuNZs3DM96xcJmLW4EfGnf+uGmFNjzpehMjuX5PLB5j87ar2Zc4e3PVeZ3I5g3tYtAqskB28manlF69Zw==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -295,17 +292,17 @@ packages:
   '@tailwindcss/postcss@4.0.0-alpha.20':
     resolution: {integrity: sha512-RhpojSeAudRH1rmh9QRtO/1bJGmQ0Bo4mHPOLt90v7FMuASIqS4a3Z17+t7G/1rE7bEbjZJbQm4BW5vqPLT3+g==}
 
-  '@types/node@22.5.0':
-    resolution: {integrity: sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==}
+  '@types/node@22.7.5':
+    resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
 
-  '@types/prop-types@15.7.12':
-    resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
+  '@types/prop-types@15.7.13':
+    resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
-  '@types/react@18.3.4':
-    resolution: {integrity: sha512-J7W30FTdfCxDDjmfRM+/JqLHBIyl7xUIp9kwK637FGmY7+mkSFSe6L4jpZzhj5QMfLssSDP4/i75AKkrdC7/Jw==}
+  '@types/react@18.3.11':
+    resolution: {integrity: sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==}
 
   '@vercel/analytics@1.3.1':
     resolution: {integrity: sha512-xhSlYgAuJ6Q4WQGkzYTLmXwhYl39sWjoMA3nHxfkvG+WdBT25c563a7QhwwKivEOZtPJXifYHR1m2ihoisbWyA==}
@@ -345,8 +342,8 @@ packages:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
     engines: {node: '>=10.16.0'}
 
-  caniuse-lite@1.0.30001653:
-    resolution: {integrity: sha512-XGWQVB8wFQ2+9NZwZ10GxTYC5hk0Fa+q8cSkr0tgvMhYhMHP/QC+WTgrePMDBWiWc/pV+1ik82Al20XOK25Gcw==}
+  caniuse-lite@1.0.30001667:
+    resolution: {integrity: sha512-7LTwJjcRkzKFmtqGsibMeuXmvFDfZq/nzIjnmgCGzKKRVzjD72selLDK1oPF/Oxzmt4fNcPvTDvGqSDG4tCALw==}
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -380,11 +377,6 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  geist@1.3.1:
-    resolution: {integrity: sha512-Q4gC1pBVPN+D579pBaz0TRRnGA4p9UK6elDY/xizXdFk/g4EKR5g0I+4p/Kj6gM0SajDBZ/0FvDV9ey9ud7BWw==}
-    peerDependencies:
-      next: '>=13.2.0'
-
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -399,68 +391,68 @@ packages:
     resolution: {integrity: sha512-z0vtXSwucUJtANQWldhbtbt7BnL0vxiFjIdDLAatwhDYty2bad6s+rijD6Ri4YuYJubLzIJLUidCh09e1djEVQ==}
     engines: {node: '>= 0.4'}
 
-  lightningcss-darwin-arm64@1.26.0:
-    resolution: {integrity: sha512-n4TIvHO1NY1ondKFYpL2ZX0bcC2y6yjXMD6JfyizgR8BCFNEeArINDzEaeqlfX9bXz73Bpz/Ow0nu+1qiDrBKg==}
+  lightningcss-darwin-arm64@1.27.0:
+    resolution: {integrity: sha512-Gl/lqIXY+d+ySmMbgDf0pgaWSqrWYxVHoc88q+Vhf2YNzZ8DwoRzGt5NZDVqqIW5ScpSnmmjcgXP87Dn2ylSSQ==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [darwin]
 
-  lightningcss-darwin-x64@1.26.0:
-    resolution: {integrity: sha512-Rf9HuHIDi1R6/zgBkJh25SiJHF+dm9axUZW/0UoYCW1/8HV0gMI0blARhH4z+REmWiU1yYT/KyNF3h7tHyRXUg==}
+  lightningcss-darwin-x64@1.27.0:
+    resolution: {integrity: sha512-0+mZa54IlcNAoQS9E0+niovhyjjQWEMrwW0p2sSdLRhLDc8LMQ/b67z7+B5q4VmjYCMSfnFi3djAAQFIDuj/Tg==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [darwin]
 
-  lightningcss-freebsd-x64@1.26.0:
-    resolution: {integrity: sha512-C/io7POAxp6sZxFSVGezjajMlCKQ8KSwISLLGRq8xLQpQMokYrUoqYEwmIX8mLmF6C/CZPk0gFmRSzd8biWM0g==}
+  lightningcss-freebsd-x64@1.27.0:
+    resolution: {integrity: sha512-n1sEf85fePoU2aDN2PzYjoI8gbBqnmLGEhKq7q0DKLj0UTVmOTwDC7PtLcy/zFxzASTSBlVQYJUhwIStQMIpRA==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [freebsd]
 
-  lightningcss-linux-arm-gnueabihf@1.26.0:
-    resolution: {integrity: sha512-Aag9kqXqkyPSW+dXMgyWk66C984Nay2pY8Nws+67gHlDzV3cWh7TvFlzuaTaVFMVqdDTzN484LSK3u39zFBnzg==}
+  lightningcss-linux-arm-gnueabihf@1.27.0:
+    resolution: {integrity: sha512-MUMRmtdRkOkd5z3h986HOuNBD1c2lq2BSQA1Jg88d9I7bmPGx08bwGcnB75dvr17CwxjxD6XPi3Qh8ArmKFqCA==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm]
     os: [linux]
 
-  lightningcss-linux-arm64-gnu@1.26.0:
-    resolution: {integrity: sha512-iJmZM7fUyVjH+POtdiCtExG+67TtPUTer7K/5A8DIfmPfrmeGvzfRyBltGhQz13Wi15K1lf2cPYoRaRh6vcwNA==}
+  lightningcss-linux-arm64-gnu@1.27.0:
+    resolution: {integrity: sha512-cPsxo1QEWq2sfKkSq2Bq5feQDHdUEwgtA9KaB27J5AX22+l4l0ptgjMZZtYtUnteBofjee+0oW1wQ1guv04a7A==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
 
-  lightningcss-linux-arm64-musl@1.26.0:
-    resolution: {integrity: sha512-XxoEL++tTkyuvu+wq/QS8bwyTXZv2y5XYCMcWL45b8XwkiS8eEEEej9BkMGSRwxa5J4K+LDeIhLrS23CpQyfig==}
+  lightningcss-linux-arm64-musl@1.27.0:
+    resolution: {integrity: sha512-rCGBm2ax7kQ9pBSeITfCW9XSVF69VX+fm5DIpvDZQl4NnQoMQyRwhZQm9pd59m8leZ1IesRqWk2v/DntMo26lg==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
 
-  lightningcss-linux-x64-gnu@1.26.0:
-    resolution: {integrity: sha512-1dkTfZQAYLj8MUSkd6L/+TWTG8V6Kfrzfa0T1fSlXCXQHrt1HC1/UepXHtKHDt/9yFwyoeayivxXAsApVxn6zA==}
+  lightningcss-linux-x64-gnu@1.27.0:
+    resolution: {integrity: sha512-Dk/jovSI7qqhJDiUibvaikNKI2x6kWPN79AQiD/E/KeQWMjdGe9kw51RAgoWFDi0coP4jinaH14Nrt/J8z3U4A==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
 
-  lightningcss-linux-x64-musl@1.26.0:
-    resolution: {integrity: sha512-yX3Rk9m00JGCUzuUhFEojY+jf/6zHs3XU8S8Vk+FRbnr4St7cjyMXdNjuA2LjiT8e7j8xHRCH8hyZ4H/btRE4A==}
+  lightningcss-linux-x64-musl@1.27.0:
+    resolution: {integrity: sha512-QKjTxXm8A9s6v9Tg3Fk0gscCQA1t/HMoF7Woy1u68wCk5kS4fR+q3vXa1p3++REW784cRAtkYKrPy6JKibrEZA==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
 
-  lightningcss-win32-arm64-msvc@1.26.0:
-    resolution: {integrity: sha512-X/597/cFnCogy9VItj/+7Tgu5VLbAtDF7KZDPdSw0MaL6FL940th1y3HiOzFIlziVvAtbo0RB3NAae1Oofr+Tw==}
+  lightningcss-win32-arm64-msvc@1.27.0:
+    resolution: {integrity: sha512-/wXegPS1hnhkeG4OXQKEMQeJd48RDC3qdh+OA8pCuOPCyvnm/yEayrJdJVqzBsqpy1aJklRCVxscpFur80o6iQ==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [win32]
 
-  lightningcss-win32-x64-msvc@1.26.0:
-    resolution: {integrity: sha512-pYS3EyGP3JRhfqEFYmfFDiZ9/pVNfy8jVIYtrx9TVNusVyDK3gpW1w/rbvroQ4bDJi7grdUtyrYU6V2xkY/bBw==}
+  lightningcss-win32-x64-msvc@1.27.0:
+    resolution: {integrity: sha512-/OJLj94Zm/waZShL8nB5jsNj3CfNATLCTyFxZyouilfTmSoLDX7VlVAmhPHoZWVFp4vdmoiEbPEYC8HID3m6yw==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [win32]
 
-  lightningcss@1.26.0:
-    resolution: {integrity: sha512-a/XZ5hdgifrofQJUArr5AiJjx26SwMam3SJUSMjgebZbESZ96i+6Qsl8tLi0kaUsdMzBWXh9sN1Oe6hp2/dkQw==}
+  lightningcss@1.27.0:
+    resolution: {integrity: sha512-8f7aNmS1+etYSLHht0fQApPc2kNO8qGRutifN5rVIc6Xo6ABsEbqOr758UwI7ALVbTt4x1fllKt0PYgzD9S3yQ==}
     engines: {node: '>= 12.0.0'}
 
   nanoid@3.3.7:
@@ -492,8 +484,8 @@ packages:
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
-  picocolors@1.0.1:
-    resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
+  picocolors@1.1.0:
+    resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
 
   pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
@@ -516,13 +508,13 @@ packages:
     resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  react-dom@19.0.0-rc-1eaccd82-20240816:
-    resolution: {integrity: sha512-8HXIHjY9tQUU4Hf5e/QNwVbNLXO+QJkjyCentxKNNc2vn/UjWc5lL782ZTkqII7xBzA/DhC6UdJi83Vr24cDIQ==}
+  react-dom@19.0.0-rc-eb3ad065-20240822:
+    resolution: {integrity: sha512-PkEZhqpGHRKgX6+pbh/TA/P00evzbekvVgHYdZATzq5Alt0pO+v9VQeoJiVJUCmx6hfX3/7J9Q6d3X11Dv9X0w==}
     peerDependencies:
-      react: 19.0.0-rc-1eaccd82-20240816
+      react: 19.0.0-rc-eb3ad065-20240822
 
-  react@19.0.0-rc-1eaccd82-20240816:
-    resolution: {integrity: sha512-jQ/NAywTe/dTHMYcNTR9FvPShpX2e8QrRb2xWBrE/dNqMzbmFynghdMNFlekbBx4PNKdWByVgR7MEakhAfV5rQ==}
+  react@19.0.0-rc-eb3ad065-20240822:
+    resolution: {integrity: sha512-513yEft7EGkntyU77wVBDXtUaEBVCaegbqBuNP4YfsDjvIgNrbVpJVW3JoSdfEpXPWaqlS89ALb3mRmJpDYbUQ==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -532,8 +524,8 @@ packages:
     resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
     hasBin: true
 
-  scheduler@0.25.0-rc-1eaccd82-20240816:
-    resolution: {integrity: sha512-R2SIZf9OVNrl+X31RejZK+25c9dFBS5GqCLOkID1MCMI2WQbaLsrbQKcO6Dz6+7+NEUx8rXT6FjmjuXplTWamg==}
+  scheduler@0.25.0-rc-eb3ad065-20240822:
+    resolution: {integrity: sha512-9hA+IyqsTvVrALciz4PEG5z4PecftOsp+JEMLqkywELxVD+7H73pO/Ig9BI0pDCcq+d6uyaYWo5Kbnv3J37nXg==}
 
   semver@7.6.3:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
@@ -550,8 +542,8 @@ packages:
   simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
 
-  source-map-js@1.2.0:
-    resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
+  source-map-js@1.2.1:
+    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
   streamsearch@1.1.0:
@@ -598,7 +590,7 @@ packages:
 
 snapshots:
 
-  '@emnapi/runtime@1.2.0':
+  '@emnapi/runtime@1.3.0':
     dependencies:
       tslib: 2.7.0
     optional: true
@@ -669,7 +661,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.33.5':
     dependencies:
-      '@emnapi/runtime': 1.2.0
+      '@emnapi/runtime': 1.3.0
     optional: true
 
   '@img/sharp-win32-ia32@0.33.5':
@@ -759,44 +751,44 @@ snapshots:
   '@tailwindcss/postcss@4.0.0-alpha.20(postcss@8.4.41)':
     dependencies:
       '@tailwindcss/oxide': 4.0.0-alpha.20
-      lightningcss: 1.26.0
+      lightningcss: 1.27.0
       postcss-import: 16.1.0(postcss@8.4.41)
       tailwindcss: 4.0.0-alpha.20
     transitivePeerDependencies:
       - postcss
 
-  '@types/node@22.5.0':
+  '@types/node@22.7.5':
     dependencies:
       undici-types: 6.19.8
 
-  '@types/prop-types@15.7.12': {}
+  '@types/prop-types@15.7.13': {}
 
   '@types/react-dom@18.3.0':
     dependencies:
-      '@types/react': 18.3.4
+      '@types/react': 18.3.11
 
-  '@types/react@18.3.4':
+  '@types/react@18.3.11':
     dependencies:
-      '@types/prop-types': 15.7.12
+      '@types/prop-types': 15.7.13
       csstype: 3.1.3
 
-  '@vercel/analytics@1.3.1(next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)':
+  '@vercel/analytics@1.3.1(next@15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)':
     dependencies:
       server-only: 0.0.1
     optionalDependencies:
-      next: 15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
-      react: 19.0.0-rc-1eaccd82-20240816
+      next: 15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)
+      react: 19.0.0-rc-eb3ad065-20240822
 
-  '@vercel/speed-insights@1.0.12(next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)':
+  '@vercel/speed-insights@1.0.12(next@15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)':
     optionalDependencies:
-      next: 15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
-      react: 19.0.0-rc-1eaccd82-20240816
+      next: 15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822)
+      react: 19.0.0-rc-eb3ad065-20240822
 
   busboy@1.6.0:
     dependencies:
       streamsearch: 1.1.0
 
-  caniuse-lite@1.0.30001653: {}
+  caniuse-lite@1.0.30001667: {}
 
   client-only@0.0.1: {}
 
@@ -824,10 +816,6 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  geist@1.3.1(next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)):
-    dependencies:
-      next: 15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816)
-
   graceful-fs@4.2.11: {}
 
   hasown@2.0.2:
@@ -840,65 +828,65 @@ snapshots:
     dependencies:
       hasown: 2.0.2
 
-  lightningcss-darwin-arm64@1.26.0:
+  lightningcss-darwin-arm64@1.27.0:
     optional: true
 
-  lightningcss-darwin-x64@1.26.0:
+  lightningcss-darwin-x64@1.27.0:
     optional: true
 
-  lightningcss-freebsd-x64@1.26.0:
+  lightningcss-freebsd-x64@1.27.0:
     optional: true
 
-  lightningcss-linux-arm-gnueabihf@1.26.0:
+  lightningcss-linux-arm-gnueabihf@1.27.0:
     optional: true
 
-  lightningcss-linux-arm64-gnu@1.26.0:
+  lightningcss-linux-arm64-gnu@1.27.0:
     optional: true
 
-  lightningcss-linux-arm64-musl@1.26.0:
+  lightningcss-linux-arm64-musl@1.27.0:
     optional: true
 
-  lightningcss-linux-x64-gnu@1.26.0:
+  lightningcss-linux-x64-gnu@1.27.0:
     optional: true
 
-  lightningcss-linux-x64-musl@1.26.0:
+  lightningcss-linux-x64-musl@1.27.0:
     optional: true
 
-  lightningcss-win32-arm64-msvc@1.26.0:
+  lightningcss-win32-arm64-msvc@1.27.0:
     optional: true
 
-  lightningcss-win32-x64-msvc@1.26.0:
+  lightningcss-win32-x64-msvc@1.27.0:
     optional: true
 
-  lightningcss@1.26.0:
+  lightningcss@1.27.0:
     dependencies:
       detect-libc: 1.0.3
     optionalDependencies:
-      lightningcss-darwin-arm64: 1.26.0
-      lightningcss-darwin-x64: 1.26.0
-      lightningcss-freebsd-x64: 1.26.0
-      lightningcss-linux-arm-gnueabihf: 1.26.0
-      lightningcss-linux-arm64-gnu: 1.26.0
-      lightningcss-linux-arm64-musl: 1.26.0
-      lightningcss-linux-x64-gnu: 1.26.0
-      lightningcss-linux-x64-musl: 1.26.0
-      lightningcss-win32-arm64-msvc: 1.26.0
-      lightningcss-win32-x64-msvc: 1.26.0
+      lightningcss-darwin-arm64: 1.27.0
+      lightningcss-darwin-x64: 1.27.0
+      lightningcss-freebsd-x64: 1.27.0
+      lightningcss-linux-arm-gnueabihf: 1.27.0
+      lightningcss-linux-arm64-gnu: 1.27.0
+      lightningcss-linux-arm64-musl: 1.27.0
+      lightningcss-linux-x64-gnu: 1.27.0
+      lightningcss-linux-x64-musl: 1.27.0
+      lightningcss-win32-arm64-msvc: 1.27.0
+      lightningcss-win32-x64-msvc: 1.27.0
 
   nanoid@3.3.7: {}
 
-  next@15.0.0-canary.130(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816):
+  next@15.0.0-canary.130(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822):
     dependencies:
       '@next/env': 15.0.0-canary.130
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.12
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001653
+      caniuse-lite: 1.0.30001667
       graceful-fs: 4.2.11
       postcss: 8.4.31
-      react: 19.0.0-rc-1eaccd82-20240816
-      react-dom: 19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816)
-      styled-jsx: 5.1.6(react@19.0.0-rc-1eaccd82-20240816)
+      react: 19.0.0-rc-eb3ad065-20240822
+      react-dom: 19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822)
+      styled-jsx: 5.1.6(react@19.0.0-rc-eb3ad065-20240822)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.0.0-canary.130
       '@next/swc-darwin-x64': 15.0.0-canary.130
@@ -916,7 +904,7 @@ snapshots:
 
   path-parse@1.0.7: {}
 
-  picocolors@1.0.1: {}
+  picocolors@1.1.0: {}
 
   pify@2.3.0: {}
 
@@ -932,21 +920,21 @@ snapshots:
   postcss@8.4.31:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
+      picocolors: 1.1.0
+      source-map-js: 1.2.1
 
   postcss@8.4.41:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
+      picocolors: 1.1.0
+      source-map-js: 1.2.1
 
-  react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816):
+  react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822):
     dependencies:
-      react: 19.0.0-rc-1eaccd82-20240816
-      scheduler: 0.25.0-rc-1eaccd82-20240816
+      react: 19.0.0-rc-eb3ad065-20240822
+      scheduler: 0.25.0-rc-eb3ad065-20240822
 
-  react@19.0.0-rc-1eaccd82-20240816: {}
+  react@19.0.0-rc-eb3ad065-20240822: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -958,7 +946,7 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  scheduler@0.25.0-rc-1eaccd82-20240816: {}
+  scheduler@0.25.0-rc-eb3ad065-20240822: {}
 
   semver@7.6.3: {}
 
@@ -994,14 +982,14 @@ snapshots:
     dependencies:
       is-arrayish: 0.3.2
 
-  source-map-js@1.2.0: {}
+  source-map-js@1.2.1: {}
 
   streamsearch@1.1.0: {}
 
-  styled-jsx@5.1.6(react@19.0.0-rc-1eaccd82-20240816):
+  styled-jsx@5.1.6(react@19.0.0-rc-eb3ad065-20240822):
     dependencies:
       client-only: 0.0.1
-      react: 19.0.0-rc-1eaccd82-20240816
+      react: 19.0.0-rc-eb3ad065-20240822
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
@@ -1013,7 +1001,7 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  yet-another-react-lightbox@3.21.4(react-dom@19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816))(react@19.0.0-rc-1eaccd82-20240816):
+  yet-another-react-lightbox@3.21.4(react-dom@19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822))(react@19.0.0-rc-eb3ad065-20240822):
     dependencies:
-      react: 19.0.0-rc-1eaccd82-20240816
-      react-dom: 19.0.0-rc-1eaccd82-20240816(react@19.0.0-rc-1eaccd82-20240816)
+      react: 19.0.0-rc-eb3ad065-20240822
+      react-dom: 19.0.0-rc-eb3ad065-20240822(react@19.0.0-rc-eb3ad065-20240822)

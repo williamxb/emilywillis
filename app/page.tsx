@@ -1,45 +1,44 @@
 import HomeLink from './components/homeLink'
 
-import oasen from './images/oasen07.png'
-import zophos from './images/zophos01.png'
-import keepdancing from './images/keepdancing01.png'
-import cautionarytales01 from './images/cautionarytales01.png'
+import oasen from './images/oasen-home.png'
+import zophos from './images/zophos-home.png'
+import keepdancing from './images/keepdancing-home.png'
+import cautionarytales01 from './images/cautionarytales-home.png'
 
 export default function Page() {
   return (
-    <section className="max-w-7xl">
+    <section className="p-4 sm:px-6 md:px-8 grid grid-cols-2 gap-10 md:gap-12 lg:gap-16 xl:gap-30 2xl:gap-40">
       <HomeLink
         href="/oasen"
         image={oasen}
         priority={true}
         title="Oasen"
-        subtitle="Competition Brief"
-        content="A skincare brand designed to cater to those with sensory differences."
-        callout="Highly Commended for RSA In Your Skin Design Award"
+        subtitle="A skincare brand designed to cater for those with sensory differences."
+        tags="Branding · Experiential Design · Research"
       />
 
       <HomeLink
         href="/zophos"
         image={zophos}
-        title="Zophos · The&nbsp;Drosoulites"
-        subtitle="Competition Brief"
-        content="Visual identity for a rare natural ghost experience; The&nbsp;Drosoulites&nbsp;of&nbsp;Crete."
+        title="Zophos"
+        subtitle="Visual identity for a rare natural ghost experience; the Drosoulites of Crete."
+        tags="Branding · Website Design · Illustration"
       />
 
       <HomeLink
         href="/cautionary-tales-for-children"
         image={cautionarytales01}
         title="Cautionary Tales for Children"
-        subtitle="Personal Project"
-        content="An interpretation of Hillaire Belloc's Cautionary Tales for Children, suitable for an adult audience."
+        subtitle="An interpretation of Hilaire Belloc's book for an adult audience."
+        tags="Publication Design · Cover Design · Art Direction"
       />
 
       <HomeLink
         href="/keep-dancing"
         image={keepdancing}
         title="Keep Dancing"
-        subtitle="Personal Project"
-        content="A campaign to encourage elderly women to dance."
+        subtitle="A campaign encouraging elderly women to dance."
+        tags="Publication Design · Branding · Illustration"
       />
     </section>
   )
