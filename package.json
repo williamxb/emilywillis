@@ -14,8 +14,8 @@
     "@vercel/speed-insights": "1.0.12",
     "next": "15.0.0-canary.130",
     "postcss": "8.4.41",
-    "react": "19.0.0-rc-eb3ad065-20240822",
-    "react-dom": "19.0.0-rc-eb3ad065-20240822",
+    "react": "19.0.0-rc-1eaccd82-20240816",
+    "react-dom": "19.0.0-rc-1eaccd82-20240816",
     "tailwindcss": "4.0.0-alpha.20",
     "typescript": "5.5.4",
     "yet-another-react-lightbox": "3.21.4"

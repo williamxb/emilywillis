@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import StaticImageData from "next/image"
+import { StaticImageData } from "next/image"
 interface homeLinkProps {
   href: string,
   image: StaticImageData,
