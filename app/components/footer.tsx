@@ -1,3 +1,24 @@
+const navItems = {
+  '/': {
+    name: 'Home',
+    newTab: false
+  },
+  '/about': {
+    name: 'About',
+    newTab: false
+  },
+  'https://www.linkedin.com/in/emwillis/': {
+    name: 'LinkedIn',
+    newTab: true
+  },
+  'mailto:willisjemily@gmail.com': {
+    name: 'Email',
+    newTab: false
+  }
+}
+
+import Link from "next/link";
+
 function ArrowIcon() {
   return (
     <svg
@@ -15,25 +36,26 @@ function ArrowIcon() {
   )
 }
 
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/emily-willis-646bb2171/"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">LinkedIn</p>
-          </a>
-        </li>
-      </ul>
-      {/* <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p> */}
+    <footer className="mt-96 mb-24 flex">
+      <div className="w-container m-auto mb-0 flex flex-row">
+        <h1 className="text-6xl w-auto pr-6">Emily<br></br>Willis</h1>
+        <nav className="w-full p-4 sm:px-6 md:px-16 flex flex-row gap-16 border-b-2 " id="nav">
+          {Object.entries(navItems).map(([path, { name, newTab }]) => {
+            let target = newTab ? "_blank" : "";
+            return (
+              <Link
+                href={path}
+                target={target}
+                className="self-end transition-all text-lg hover:text-brand-blue uppercase"
+              >
+                {name}
+              </Link>
+            )
+          })}
+        </nav>
+      </div>
     </footer>
   )
 }

@@ -1,6 +1,7 @@
 import './global.css'
 import { Metadata } from 'next'
 import { Navbar } from './components/nav'
+import { Footer } from './components/footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { baseUrl } from './sitemap'
@@ -52,6 +53,7 @@ export default function RootLayout({
         <main className="max-w-container mx-auto">
           {children}
         </main>
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
