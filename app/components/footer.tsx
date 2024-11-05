@@ -48,7 +48,7 @@ export function Footer() {
               <Link
                 href={path}
                 target={target}
-                className="self-end transition-all text-lg hover:text-brand-blue uppercase"
+                className="uppercase text-lg self-end transition-colors hover:text-brand-blue"
               >
                 {name}
               </Link>

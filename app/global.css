@@ -45,7 +45,7 @@ html {
 }
 
 img {
-  @apply rounded
+  @apply rounded-xl
 }
 
 .glow {
