@@ -50,20 +50,30 @@ img {
 
 .glow {
   position: relative;
-  color: #fff;
 }
 
 .glow::after {
   content: "";
   position: absolute;
   z-index: -1;
+  background: radial-gradient(#276fe0, var(--color-brand-off-white) 60%);
+  filter: blur(1rem)
+}
+
+.glow-title::after {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+}
+
+.glow-xl::after {
   top: -30rem;
   left: 50%;
   transform: translate(-50%, 0);
   width: 60rem;
   height: 70rem;
-  background: radial-gradient(#276fe0, var(--color-brand-off-white) 60%);
-  filter: blur(1rem)
 }
 
 .prose .anchor {

@@ -1,23 +1,5 @@
-const navItems = {
-  '/': {
-    name: 'Home',
-    newTab: false
-  },
-  '/about': {
-    name: 'About',
-    newTab: false
-  },
-  'https://www.linkedin.com/in/emwillis/': {
-    name: 'LinkedIn',
-    newTab: true
-  },
-  'mailto:willisjemily@gmail.com': {
-    name: 'Email',
-    newTab: false
-  }
-}
-
 import Link from "next/link";
+import { navItems } from './navItems';
 
 function ArrowIcon() {
   return (
@@ -41,7 +23,7 @@ export function Footer() {
     <footer className="mt-96 mb-24 flex">
       <div className="w-container m-auto mb-0 flex flex-row">
         <h1 className="text-6xl w-auto pr-6">Emily<br></br>Willis</h1>
-        <nav className="w-full p-4 sm:px-6 md:px-16 flex flex-row gap-16 border-b-2 " id="nav">
+        <nav className="w-full p-4 sm:px-6 md:px-16 flex flex-row gap-4 border-b-2 " id="nav">
           {Object.entries(navItems).map(([path, { name, newTab }]) => {
             let target = newTab ? "_blank" : "";
             return (

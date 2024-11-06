@@ -17,7 +17,7 @@ export default function Page() {
         <h2 className='text-4xl font-semibold tracking-widest uppercase'>Designing for positive change</h2>
       </section>
       <section className="pb-32">
-        <h2 className="glow text-center lowercase font-serif text-7xl">Projects</h2>
+        <h2 className="glow glow-xl text-brand-off-white text-center lowercase font-serif text-7xl">Projects</h2>
       </section>
       <section className="p-4 sm:px-6 md:px-8 grid grid-cols-2 gap-10 md:gap-12 lg:gap-16 xl:gap-30 2xl:gap-40">
         <HomeLink

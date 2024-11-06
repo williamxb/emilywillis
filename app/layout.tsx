@@ -45,12 +45,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-brand-black bg-brand-off-white', //dark mode: dark:text-white dark:bg-black
+        'text-brand-raisin bg-brand-off-white', //dark mode: dark:text-white dark:bg-black
       )}
     >
       <body className="subpixel-antialiased">
         <Navbar />
-        <main className="max-w-container mx-auto">
+        <main className="max-w-7xl px-4 mx-auto">
           {children}
         </main>
         <Footer />
