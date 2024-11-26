@@ -20,7 +20,7 @@ function ArrowIcon() {
 
 export function Footer() {
   return (
-    <footer className="mt-96 mb-24 flex">
+    <footer className="mt-48 mb-24 flex">
       <div className="w-container m-auto mb-0 flex flex-row">
         <h1 className="text-6xl w-auto pr-6">Emily<br></br>Willis</h1>
         <nav className="w-full p-4 sm:px-6 md:px-16 flex flex-row gap-4 border-b-2 " id="nav">

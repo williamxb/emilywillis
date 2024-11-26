@@ -9,13 +9,11 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Emily Willis | Graphic Communication and Illustration',
+    default: 'Emily Willis | Designing for Positive Change',
     template: '%s | Emily Willis',
   },
-  description: 'Hi! I’m Emily, I study Graphic Communication and Illustration at Loughborough University. I am skilled at Adobe Photoshop, Illustrator and InDesign.',
   openGraph: {
-    title: 'Emily Willis | Portfolio',
-    description: 'Hi! I’m Emily, I study Graphic Communication and Illustration at Loughborough University. I am skilled at Adobe Photoshop, Illustrator and InDesign.',
+    title: 'Emily Willis | Designing for Positive Change',
     url: baseUrl,
     siteName: 'Emily Willis',
     locale: 'en_GB',
@@ -34,20 +32,10 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout(
+  { children, }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={cx(
-        'text-brand-raisin bg-brand-off-white', //dark mode: dark:text-white dark:bg-black
-      )}
-    >
+    <html lang="en" className={'text-brand-raisin bg-brand-off-white'}>
       <body className="subpixel-antialiased">
         <Navbar />
         <main className="max-w-7xl px-4 mx-auto">

@@ -12,9 +12,10 @@ interface homeLinkProps {
 
 export default function HomeLink({ href, image, priority = false, title, subtitle, tags }: homeLinkProps) {
   return (
+    <article>
       <Link className="group" href={href}>
         <Image
-          className="mb-6 transition-opacity group-hover:opacity-85"
+          className="mb-4 transition-opacity group-hover:opacity-80 bg-brand-off-white"
           priority={priority}
           placeholder="blur"
           sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
@@ -22,9 +23,10 @@ export default function HomeLink({ href, image, priority = false, title, subtitl
           src={image}
           alt=""
         />
-        <p className="mb-4 text-xl lg:text-3xl font-semibold tracking-wider uppercase">{title}</p>
-        <p className="mb-2 tracking-wider text-xl">{subtitle}</p>
-        <p className="text-lg font-light">{tags}</p>
+        <h1 className="text-xl tracking-wider font-semibold uppercase">{title}</h1>
+        <h2 className="mb-2 text-balance">{subtitle}</h2>
+        <p className="text-sm sm:text-md font-light">{tags}</p>
     </Link>
+    </article>
   )
 }
