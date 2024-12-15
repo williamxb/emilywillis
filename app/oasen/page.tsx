@@ -30,8 +30,8 @@ export default function Page() {
           <h1 className="glow glow-title mb-6 uppercase text-5xl font-semibold tracking-wide">Oasen</h1>
           <p className="mb-3 text-xl">A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health. This project was a response to the RSA In Your Skin Brief 2023-24 in partnership with Bond&nbsp;&&nbsp;Coyne and The Skin Health Alliance.</p>
           <p className="font-light text-brand-raisin/75 mb-9">Branding - Experiential Design - Research</p>
-          <h2 className="font-light text-xl uppercase mb-1.5">Awarded:</h2>
-          <li className="ml-5" nk href="/rsa" className="group">
+          <h2 className="font-light text-xl uppercase mb-4">Awarded:</h2>
+          <Link className="block max-w-80 group" href="/rsa">
             <Image
               src={rsaAward}
               alt=""
@@ -80,14 +80,15 @@ export default function Page() {
       <section>
         <h2 className="mb-6 lowercase text-4xl font-serif">Visual Strategy</h2>
         <div className="grid grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-12">
-          <div>
-            <h3 className="uppercase font-semibold mb-1.5">Logo and Type:</h3>
-            <p>Oasen is a spin on the word 'Oasis', as we wanted our brand to be a sanctuary. Bringing this insight through the visual identity of the brand, the logo is in the shape of an oasis. I hand-lettered 'Oasen' as we wanted it to have a soft and hand-made look. I chose a simple secondary typeface - Lato - to compliment the lettering and create a clean look.</p>
+          <div className="prose">
+            <h3 className="uppercase">Logo and Type:</h3>
+            <p>Oasen is a spin on the word 'Oasis', as we wanted our brand to be a sanctuary. Bringing this insight through the visual identity of the brand, the logo is in the shape of an oasis.</p>
+            <p>I hand-lettered 'Oasen' as we wanted it to have a soft and hand-made look, and chose a simple secondary typeface - Lato - to compliment the lettering and create a clean look.</p>
           </div>
-          <div>
-            <h3 className="uppercase font-semibold mb-1.5">Colour:</h3>
-            <p className="mb-6">Our research into neurodiversity and colour informed our colour palette choices, avoiding bright and overstimulating colours, opting for a soft sunset-inspired colour palette.</p>
-            <h3 className="uppercase font-semibold mb-1.5">Illustration:</h3>
+          <div className="prose">
+            <h3 className="uppercase">Colour:</h3>
+            <p>Our research into neurodiversity and colour informed our colour palette choices, avoiding bright and overstimulating colours, opting for a soft sunset-inspired colour palette.</p>
+            <h3 className="uppercase">Illustration:</h3>
             <p>The blob illustrations were inspired by lava lamps - a visual stim tool for neurodiverse individuals - to create a soft and soothing, yet visually exciting design.</p>
           </div>
         </div>
@@ -108,27 +109,27 @@ export default function Page() {
       <section>
         <h2 className="mb-6 lowercase text-4xl font-serif">Brand Strategy</h2>
         <div className="grid grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-12">
-          <div>
-            <h3 className="uppercase font-semibold mb-1.5">Products:</h3>
-            <ul className="list-disc">
-              <li className="ml-5">Sensory-safe with non-greasy textures and fragrance-free.</li>
-              <li className="ml-5">Have fidget aspects built into the packaging, like the fidget ring on the neck of the cleanser bottle.</li>
-              <li className="ml-5">Use fully recycled packaging and reef-safe filters in our sunscreen to reduce environmental impact.</li>
+          <div className="prose">
+            <h3 className="uppercase">Products:</h3>
+            <ul>
+              <li>Sensory-safe with non-greasy textures and fragrance-free.</li>
+              <li>Have fidget aspects built into the packaging, like the fidget ring on the neck of the cleanser bottle.</li>
+              <li>Use fully recycled packaging and reef-safe filters in our sunscreen to reduce environmental impact.</li>
             </ul>
-            <h3 className="uppercase font-semibold mb-1.5">Imagery and Tone:</h3>
-            <p className="mb-6">Using non-retouched imagery throughout every brand touchpoint is essential to our brand, sa we want to celebrate a variety of skin types and textures to help young people feel affirmed.</p>
-            <p className="mb-6">Additionally we wanted to have a positive brand tone, avoiding language like 'anti-blemish', and including positive affirmations on our packaging to encourage positive self talk.</p>
+            <h3 className="uppercase">Imagery and Tone:</h3>
+            <p>Using non-retouched imagery throughout every brand touchpoint is essential to our brand, as we want to celebrate a variety of skin types and textures to help young people feel affirmed.</p>
+            <p>Additionally we wanted to have a positive brand tone, avoiding language like 'anti-blemish', and including positive affirmations on our packaging to encourage positive self talk.</p>
           </div>
-          <div>
-            <h3 className="uppercase font-semibold mb-1.5">Pop-up and Experience:</h3>
-            <p className="mb-6">We decided that a pop-up store was a trendy way to offer a safe space to nurture a neurodiverse community, and fully accommodate to sensory differences.</p>
-            <p className="mb-3">The pop-up store experience would:</p>
-            <ul className="list-disc">
-              <li className="ml-5">Be low-sensory by using natural or warm lighting (no harsh lights), limited in-store capacity, fragrance-free environment, no music, and offer disposable earplugs, and having a seating area with stim toys.</li>
-              <li className="ml-5">Offer testers for customers to trial the products.</li>
-              <li className="ml-5">Have a conversation area to nurture community.</li>
-              <li className="ml-5">Opportunity to purchase full-size products.</li>
-              <li className="ml-5">Positive affirmation stickers with a QR code to the Oasen Discord community.</li>
+          <div className="prose">
+            <h3 className="uppercase">Pop-up and Experience:</h3>
+            <p>We decided that a pop-up store was a trendy way to offer a safe space to nurture a neurodiverse community, and fully accommodate to sensory differences.</p>
+            <p>The pop-up store experience would:</p>
+            <ul>
+              <li>Be low-sensory by using natural or warm lighting (no harsh lights), limited in-store capacity, fragrance-free environment, no music, and offer disposable earplugs, and having a seating area with stim toys.</li>
+              <li>Offer testers for customers to trial the products.</li>
+              <li>Have a conversation area to nurture community.</li>
+              <li>Opportunity to purchase full-size products.</li>
+              <li>Positive affirmation stickers with a QR code to the Oasen Discord community.</li>
             </ul>
           </div>
         </div>

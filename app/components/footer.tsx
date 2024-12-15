@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navItems } from './navItems';
+import { footerItems } from './footerItems';
 
 function ArrowIcon() {
   return (
@@ -24,7 +24,7 @@ export function Footer() {
       <div className="w-container m-auto mb-0 flex flex-row">
         <h1 className="text-6xl w-auto pr-6">Emily<br></br>Willis</h1>
         <nav className="w-full p-4 sm:px-6 md:px-16 flex flex-row gap-4 border-b-2 " id="nav">
-          {Object.entries(navItems).map(([path, { name, newTab }]) => {
+          {Object.entries(footerItems).map(([path, { name, newTab }]) => {
             let target = newTab ? "_blank" : "";
             return (
               <Link

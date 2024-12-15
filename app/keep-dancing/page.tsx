@@ -1,35 +1,60 @@
 import * as React from "react";
+import Link from 'next/link'
 import ImageWithLightbox from "../components/lightboxImage";
-
-import keepdancing01 from '../images/keepdancing01.png'
-import keepdancing02 from '../images/keepdancing02.png'
-import keepdancing03 from '../images/keepdancing03.png'
-import keepdancing04 from '../images/keepdancing04.png'
 
 export default function Page() {
 
   return (
-    <section className="prose max-w-7xl">
-      <h1 className="text-balance mb-2! text-3xl tracking-tighter font-normal!">
-        Keep Dancing · <i className="font-italic">Personal Brief</i>
-      </h1>
-      <p>Branding / Illustration / Layout Design / Campaign</p>
-      <p className="text-lg">Inspired by '<i className="font-italic">Live to 100: Secrets of the Blue Zone</i>' I decided to do a project focusing on helping elderly women become more active. Dance was one of the activities that increased longevity in the blue zones.</p>
-      <p className="text-lg">'Keep Dancing' is a campaign launched by the 'NHS' in collaboration with 'Strictly Come Dancing', sending information packs to elderly women, teaching them basic dance moves and offering a range of fun, sociable dance classes in their local area. This will help women aged 75 and over have easy access to resources for dance and an easier way of finding classes in their local area.</p>
+    <>
+      <div className="grid grid-cols-2 gap-12 lg:gap-36 my-16">
+        <div className="">
+          <div className="bg-brand-raisin aspect-video w-full mb-3">
+            <p className="text-3xl text-brand-off-white p-4">video</p>
+          </div>
+          <p>
+            <span className="font-semibold">Tools: </span>
+            <span className="font-light">InDesign, Illustrator</span>
+          </p>
+        </div>
+        <div className="">
+          <h1 className="glow glow-title mb-6 uppercase text-5xl font-semibold tracking-wide">Keep Dancing</h1>
+          <p className="mb-3 text-xl">An ‘NHS’ campaign encouraging elderly women to get involved in dance, in collaboration with ‘Strictly Come Dancing.' Inspired by Live to 100: Secrets of the Blue Zone docuseries and 70s design.</p>
+          <p className="font-light text-brand-raisin/75 mb-9">Publication Design - Branding - Illustration</p>
+        </div>
+      </div>
 
-      <ImageWithLightbox src={keepdancing01} alt="" priority={true} />
+      <div className="grid grid-cols-3 gap-6 w-full my-16">
+        <div className="">
+          <h2 className="mb-6 lowercase text-4xl font-serif">Problem</h2>
+          <div className="prose">
+            <p>Only 43% of people over the age of 74 are physically active in the UK, with women being less physically active than men.</p>
+            <p>Catering towards this group is vital to ensure their healthy years of life can be increased.
+            </p>
+          </div>
+        </div>
+        <div className="">
+          <h2 className="mb-6 lowercase text-4xl font-serif">Insight</h2>
+          <div className="prose">
+            <p>People aged 75+ watch 5 hours 48 minutes of TV a day on average, with Strictly Come Dancing being one of the most popular reality shows among elderly women.</p>
+            <p>Harnessing the glitz, glamour and fun of Strictly Come Dancing to make dance accessible and appealing to elderly women could aid combatting inactivity.</p>
+          </div>
+        </div>
+        <div className="">
+          <h2 className="mb-6 lowercase text-4xl font-serif">Solution</h2>
+          <div className="prose">
+            <p>'Keep Dancing' is a campaign launched by the NHS in collaboration with Strictly Come Dancing, sending information packs to elderly women, teaching them basic dance moves and offering a range of fun, sociable dance classes in their local area. This will help women aged 75 and over to have easy access to resources for dance.</p>
+          </div>
+        </div>
+      </div>
 
-      <p className="text-lg">Only 43% of people over the age of 74 are physically active in the UK, with women being less physically active than men, Only 29.9% of females believe they have the opportunity to be physically active in the UK (Sport England, 2024).</p>
-      <p className="text-lg">With Strictly Come Dancing being one of the most popular reality shows among elderly women, I decided to use it as a way to design a campaign, making dance fun and accessible for elderly women.</p>
-
-      <ImageWithLightbox src={keepdancing02} alt="" />
-
-      <p className="text-lg">I brought together the Strictly Come Dancing colour palette and 1960s design to create a fun, fresh, yet nostalgic campaign design.</p>
-
-      <ImageWithLightbox src={keepdancing03} alt="" className="w-full cursor-pointer mb-6" />
-
-      <ImageWithLightbox src={keepdancing04} alt="" />
-
-    </section>
+      <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
+        <div className="grid-cols-subgrid col-span-2">
+          <div className="bg-brand-raisin aspect-video w-full mb-3">
+            <p className="text-3xl text-brand-off-white p-4">hero image</p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
+

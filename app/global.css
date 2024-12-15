@@ -106,8 +106,7 @@ img {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800;
-  /* @apply my-4 text-neutral-800 dark:text-neutral-200; */
+  @apply my-3 text-neutral-800;
 }
 
 .prose h1 {
@@ -119,7 +118,7 @@ img {
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply font-semibold mt-8 mb-1;
 }
 
 .prose h4 {
@@ -130,12 +129,20 @@ img {
   @apply font-medium;
 }
 
+.prose ul, ol {
+  @apply pl-6 my-4;
+}
+
 .prose ul {
-  @apply list-disc pl-6;
+  @apply list-disc;
+}
+
+.prose ul > li, .prose ol > li {
+  @apply mb-1;
 }
 
 .prose ol {
-  @apply list-decimal pl-6;
+  @apply list-decimal;
 }
 
 .prose > :first-child {
