@@ -31,7 +31,7 @@ export default function Page() {
           <p className="mb-3 text-xl">A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health. This project was a response to the RSA In Your Skin Brief 2023-24 in partnership with Bond&nbsp;&&nbsp;Coyne and The Skin Health Alliance.</p>
           <p className="font-light text-brand-raisin/75 mb-8">Branding - Experiential Design - Research</p>
           <h2 className="font-light text-xl uppercase mb-4">Awarded:</h2>
-          <Link className="block max-w-80 group" href="/rsa">
+          <Link className="block max-w-80 group" target="_blank" href="https://www.thersa.org/student-design-awards/winners/2023-24/in-your-skin">
             <Image
               src={rsaAward}
               alt=""

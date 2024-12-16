@@ -35,12 +35,13 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex flex-row justify-between max-w-5xl">
-        <p>
-            <span className="font-semibold">Highly Commended</span> - RSA Student Design Awards <span className="text-sm">2020 - 2024</span><br />
+        <div className="flex flex-col md:flex-row justify-between gap-6 max-w-5xl">
+          <p>
+            <span className="font-semibold">RSA Student Design Awards</span> <span className="text-sm">2020 - 2024</span> <br />
+            <span className="font-semibold">Highly Commended</span> <br />
             <i>In Your Skin Brief</i>
           </p>
-          <Link className="block max-w-80 group" href="/rsa">
+          <Link className="block max-w-80 group" target="_blank" href="https://www.thersa.org/student-design-awards/winners/2023-24/in-your-skin">
             <Image
               src={rsaAward}
               alt=""
@@ -92,7 +93,7 @@ export default function Page() {
           Typography <br />
           Publication Design <br />
           Illustration <br />
-          Photography 
+          Photography
         </p>
       </section>
     </>
