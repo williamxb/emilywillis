@@ -13,12 +13,13 @@ export default function Page() {
   return (
     <>
       <section className="lg:py-16 text-center">
+        {/* @TODO redo font size here in a less dumb way - scaling huge font size is causing issues on mobile*/}
         <h1 className="scale-75 sm:scale-100">
           <span className="block text-[103px] font-serif lowercase -mb-[4.5rem]">Emily</span>
           <span className="block text-[111px] font-bold uppercase">Willis</span>
         </h1>
-        <p className='mb-16 text-2xl font-extralight lowercase'>Branding - Digital - Illustration - More</p>
-        <h2 className='text-4xl font-semibold tracking-widest uppercase'>Designing for positive change</h2>
+        <p className="mb-16 text-2xl font-extralight lowercase">Branding - Digital - Illustration - More</p>
+        <h2 className="text-4xl font-semibold tracking-widest uppercase">Designing for positive change</h2>
       </section>
 
       <section className="py-16 lg:py-0">

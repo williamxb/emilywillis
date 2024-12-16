@@ -16,8 +16,8 @@ import zophos09 from '../images/zophos09.png';
 export default function Page() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-12 lg:gap-36 my-16">
-        <div className="">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
+        <div>
           <div className="bg-brand-raisin aspect-video w-full mb-3">
             <p className="text-3xl text-brand-off-white p-4">video</p>
           </div>
@@ -26,30 +26,30 @@ export default function Page() {
             <span className="font-light">Photoshop, Illustrator, Figma</span>
           </p>
         </div>
-        <div className="">
+        <div className="order-first md:order-last">
           <h1 className="glow glow-title mb-6 uppercase text-5xl font-semibold tracking-wide">Zophos</h1>
           <p className="mb-3 text-xl italic">‘How can we unlock rarity as a journey into the extraordinary?’</p>
           <p className="mb-3 text-xl">This project was a response to the Pearlfisher 2024 Fresh Pearls Brief. A visual identity for a rare natural ghost experience; The Drosoulites of Crete.</p>
-          <p className="font-light text-brand-raisin/75 mb-9">Branding - Website Design - Illustration</p>
+          <p className="font-light text-brand-raisin/75 mb-8">Branding - Website Design - Illustration</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6 w-full my-16">
-        <div className="">
-          <h2 className="mb-6 lowercase text-4xl font-serif">Insight</h2>
+      <div className="prose-grid-3">
+        <div>
+          <h2 className="prose-header">Insight</h2>
           <div className="prose">
             <p>Millenials are the generation that travels the most, seeking out unique experiences and spending ore on immersive activities.</p>
             <p>Dark tourism is a rising sector of the industry, providing an entertaining way to learn history and experience the paranormal.</p>
             <p>The drosoulites - ‘dew shadows’ - are a naturally occurring ghost army in Sfakia, Crete. During the Greek War of Independence, on 17th May 1828, a battle between Greeks and Turks at Frangokastello Castle occurred. 335 Greek soldiers were killed.</p>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="prose mt-16">
             <p>These fallen rebels are said to haunt the area. Around the anniversary of the battle each year from mid May until early June, a procession of soldiers shrouded in shadow march towards the castle at dawn. They appear with the first morning dew on a moist, calm morning.</p>
           </div>
         </div>
-        <div className="">
-          <h2 className="mb-6 lowercase text-4xl font-serif">Solution</h2>
+        <div>
+          <h2 className="prose-header">Solution</h2>
           <div className="prose">
             <p>Zophos seamlessly blends modernity with the cultural history of Crete, catering to young travellers seeking authenticity. Zophos invites travellers on a transformative expedition to the haunted coastline of Sfakia, blurring the lines between reality and legend.</p>
             <p>From exploring forgotten ruins, to an innovative augmented reality experience, Zophos offers an unforgettable fusion of culture, excitement, and the supernatural, setting a new standard for travellers.</p>
@@ -63,7 +63,7 @@ export default function Page() {
             <p className="text-3xl text-brand-off-white p-4">hero image</p>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="bg-brand-raisin aspect-video w-full mb-3">
             <p className="text-3xl text-brand-off-white p-4">logo animation</p>
           </div>
@@ -74,8 +74,8 @@ export default function Page() {
       </div>
 
       <section>
-        <h2 className="mb-6 lowercase text-4xl font-serif">Visual Strategy</h2>
-        <div className="grid grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-12">
+        <h2 className="prose-header">Visual Strategy</h2>
+        <div className="prose-grid-2">
           <div className="prose">
             <h3 className="uppercase">Logo and type:</h3>
             <p>Zophos means ‘darkness’ in Greek. The logo design shows the castle, sunrise, and sea. These elements encompass the environment of the experience.</p>
@@ -109,8 +109,8 @@ export default function Page() {
       </div>
 
       <section>
-        <h2 className="mb-6 lowercase text-4xl font-serif">Website design</h2>
-        <div className="grid grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-12">
+        <h2 className="prose-header">Website design</h2>
+        <div className="prose-grid-2">
           <div className="prose">
             <h3 className="uppercase">Stuff:</h3>
             <p>things</p>

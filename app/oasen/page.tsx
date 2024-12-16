@@ -16,8 +16,8 @@ import storefront from '../images/oasen/storefront.png'
 export default function Page() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
-        <div className="">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
+        <div>
           <div className="bg-brand-raisin aspect-video w-full mb-3">
             <p className="text-3xl text-brand-off-white p-4">video</p>
           </div>
@@ -26,10 +26,10 @@ export default function Page() {
             <span className="font-light">Photoshop, Illustrator, After Effects</span>
           </p>
         </div>
-        <div className="">
+        <div className="order-first md:order-last">
           <h1 className="glow glow-title mb-6 uppercase text-5xl font-semibold tracking-wide">Oasen</h1>
           <p className="mb-3 text-xl">A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health. This project was a response to the RSA In Your Skin Brief 2023-24 in partnership with Bond&nbsp;&&nbsp;Coyne and The Skin Health Alliance.</p>
-          <p className="font-light text-brand-raisin/75 mb-9">Branding - Experiential Design - Research</p>
+          <p className="font-light text-brand-raisin/75 mb-8">Branding - Experiential Design - Research</p>
           <h2 className="font-light text-xl uppercase mb-4">Awarded:</h2>
           <Link className="block max-w-80 group" href="/rsa">
             <Image
@@ -41,29 +41,29 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6 w-full">
-        <div className="">
-          <h2 className="mb-6 lowercase text-4xl font-serif">Problem</h2>
+      <div className="prose-grid-3">
+        <div>
+          <h2 className="prose-header">Problem</h2>
           <div className="prose">
             <p>Positive self-esteem is a challenge for many young neurodivergent individuals. Perceptions of neurodivergence are largely negative. The sensory sensitivities and differences those with autism and ADHD face impact their skin and comfort. From textural aversions towards certain skincare products, to sensory overwhelm during in-store experiences, neurodivergent sensory differences are overlooked.</p>
           </div>
         </div>
-        <div className="">
-          <h2 className="mb-6 lowercase text-4xl font-serif">Insight</h2>
+        <div>
+          <h2 className="prose-header">Insight</h2>
           <div className="prose">
             <p>Investigating further through research and questionnaires we discovered 84.2% of respondents also struggled with discomfort from certain textures against skin, with 73.7% experiencing low skin confidence. Our research showed perceptions of neurodiverse individuals are largely negative; respondents worrying that they appear weird, difficult or annoying to neurotypicals. Respondents expressed a strong desire for community, and acommodations.</p>
           </div>
         </div>
-        <div className="">
-          <h2 className="mb-6 lowercase text-4xl font-serif">Solution</h2>
+        <div>
+          <h2 className="prose-header">Solution</h2>
           <div className="prose">
             <p>To empower people with sensory differences, we decided to create a sensory-safe skincare brand: Oasen. Launching a series of low-sensory pop-up stores in major cities, providing refuge from the hustle and bustle -- giving neurodivergents a safe space and a chance to connect with others that share the same issues.</p>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-12 lg:gap-36 pt-16">
-        <div className="">
+      <div className="grid sm:grid-cols-2 gap-12 lg:gap-36 pt-16">
+        <div>
           <div className="bg-brand-raisin aspect-video w-full mb-3">
             <p className="text-3xl text-brand-off-white p-4">logo animation</p>
           </div>
@@ -78,8 +78,8 @@ export default function Page() {
       </div>
 
       <section>
-        <h2 className="mb-6 lowercase text-4xl font-serif">Visual Strategy</h2>
-        <div className="grid grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-12">
+        <h2 className="prose-header">Visual Strategy</h2>
+        <div className="prose-grid-2">
           <div className="prose">
             <h3 className="uppercase">Logo and Type:</h3>
             <p>Oasen is a spin on the word 'Oasis', as we wanted our brand to be a sanctuary. Bringing this insight through the visual identity of the brand, the logo is in the shape of an oasis.</p>
@@ -99,7 +99,7 @@ export default function Page() {
       </div>
 
       <div className="grid grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
-        <div className="">
+        <div>
           <div className="bg-brand-raisin aspect-video w-full mb-3">
             <p className="text-3xl text-brand-off-white p-4">image grid</p>
           </div>
@@ -107,8 +107,8 @@ export default function Page() {
       </div>
 
       <section>
-        <h2 className="mb-6 lowercase text-4xl font-serif">Brand Strategy</h2>
-        <div className="grid grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-12">
+        <h2 className="prose-header">Brand Strategy</h2>
+        <div className="prose-grid-2">
           <div className="prose">
             <h3 className="uppercase">Products:</h3>
             <ul>
@@ -134,8 +134,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-
     </>
   );
 }

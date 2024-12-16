@@ -15,17 +15,15 @@
   src: url(./assets/font/apple-chancery-webfont.woff) format('woff');
 }
 
+
+
 @theme {
-  --color-brand-off-white: #fff8f0;
-  --color-brand-blue: #226ce0;
-  --color-brand-raisin: #32292f;
-  --color-brand-black: #1a1a1a;
-  --default-font-family: "Montserrat";
-
-  --width-8xl: 90rem;
-  --width-container: 120rem;
-
-  --font-family-serif: Chancery, serif;
+  --color-brand-off-white: oklch(0.98 0.01 71.17);
+  --color-brand-blue: oklch(0.55 0.19 259.65);
+  --color-brand-raisin: oklch(0.29 0.02 338.42);
+  --color-brand-black: oklch(0.22 0 0);
+  --font-sans: "Montserrat";
+  --font-serif: Chancery, serif;
 }
 
 ::selection {
@@ -69,11 +67,18 @@ img {
 }
 
 .glow-xl::after {
-  top: -30rem;
   left: 50%;
-  transform: translate(-50%, 0);
-  width: 60rem;
-  height: 70rem;
+  transform: translate(-50%, -42.5%);
+  width: 95vw;
+  height: 95vw;
+  max-width: 1024px;
+  max-height: 1024px;
+}
+
+@media (max-width: 640px) {
+  .glow-xl::after {
+    background: radial-gradient(#276fe0, var(--color-brand-off-white) 85%);
+  }
 }
 
 .prose .anchor {
@@ -106,7 +111,7 @@ img {
 }
 
 .prose p {
-  @apply my-3 text-neutral-800;
+  @apply my-3 text-neutral-800 text-pretty;
 }
 
 .prose h1 {
@@ -148,6 +153,19 @@ img {
 .prose > :first-child {
   /* Force remove top margin on first child */
   margin-top: 0 !important;
+}
+
+.prose-header {
+  @apply mb-6 lowercase text-4xl font-serif;
+}
+
+/* testing */
+.prose-grid-3 {
+  @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full
+}
+
+.prose-grid-2 {
+  @apply grid sm:grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-5 sm:gap-y-12;
 }
 
 /* Remove Safari input shadow on mobile */

@@ -1,30 +1,23 @@
-import { Metadata } from "next";
 import Image from 'next/image';
 import Link from "next/link";
 import emily from "../images/emily.jpeg";
 import rsaAward from '../images/oasen/rsaAward.png'
 
-
-export const metadata: Metadata = {
-  title: 'About Me',
-};
-
-export default function About() {
+export default function Page() {
   return (
     <>
-      <section className="grid grid-cols-5 mb-8 mt-16">
-        <div className="col-span-2">
+      <section className="grid sm:grid-cols-2 mb-8 mt-16 gap-16">
+        <div className="">
           <h1 className="glow glow-title text-5xl font-serif mb-4 lowercase">Hello!</h1>
-          <h2 className="text-3xl font-semibold uppercase tracking-wide leading-snug mb-6">I'm Emily, bringing over a decade of design passion to every project</h2>
+          <h2 className="text-3xl font-semibold uppercase tracking-wide leading-snug text-balance mb-6">I'm Emily, bringing over a decade of design passion to every project</h2>
           <div className="prose">
             <p>Recently graduated from Loughborough University with a BA in Graphic Communication and Illustration. I excel at distilling complex ideas into compelling visual stories, with a passion for designing to create positive impact.</p>
             <p>I love challenging myself at the gym, anime, reading fantasy and cooking.</p>
           </div>
         </div>
-        <span></span>
-        <div>
-          <div className="relative mb-[33px]">
-            <Image src={emily} alt="" className="max-h-[32rem] overflow-hidden object-cover object-top"></Image>
+        <div className="">
+          <div className="max-w-96 relative mb-8 mx-10">
+            <Image src={emily} alt="" className=" overflow-hidden object-cover object-top" priority={true}></Image>
             <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3">
               <Link className="lowercase bg-brand-blue p-14 rounded-full inline-block relative" href="/">
                 <span className="text-brand-off-white w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">download<br></br>CV</span>

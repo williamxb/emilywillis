@@ -12,8 +12,8 @@ export default function Page() {
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-12 lg:gap-36 my-16">
-        <div className="">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
+        <div>
           <div className="bg-brand-raisin aspect-video w-full mb-3">
             <p className="text-3xl text-brand-off-white p-4">video</p>
           </div>
@@ -22,10 +22,10 @@ export default function Page() {
             <span className="font-light">InDesign, Photoshop</span>
           </p>
         </div>
-        <div className="">
+        <div className="order-first md:order-last">
           <h1 className="glow glow-title mb-6 uppercase text-5xl font-semibold tracking-wide">Cautionary Tales for Children</h1>
           <p className="mb-3 text-xl">An interpretation of Hilaire Belloc’s <span className="italic">Cautionary Tales for Children</span>, suitable for an adult audience. Inspired by the popularity of true crime, it’s laid out and illustrated as if it were the diary of a criminal.</p>
-          <p className="font-light text-brand-raisin/75 mb-9">Publication Design - Cover Design - Art Direction</p>
+          <p className="font-light text-brand-raisin/75 mb-8">Publication Design - Cover Design - Art Direction</p>
         </div>
       </div>
 
