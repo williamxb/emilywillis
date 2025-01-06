@@ -13,6 +13,7 @@
 @font-face {
   font-family: "Chancery";
   src: url(./assets/font/apple-chancery-webfont.woff) format("woff");
+  font-display: swap;
 }
 
 @theme {
@@ -28,12 +29,6 @@
   background-color: var(--color-brand-blue);
   color: #fefefe;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
 
 html {
   z-index: 1;
@@ -95,12 +90,10 @@ img, video {
 
 .prose a {
   @apply underline transition-all decoration-neutral-400 underline-offset-2 decoration-[0.1em];
-  /* @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em]; */
 }
 
 .prose .anchor:after {
   @apply text-neutral-300 dark:text-neutral-700;
-  /* @apply text-neutral-300 dark:text-neutral-700; */
   content: "#";
 }
 
@@ -159,7 +152,6 @@ ol {
   @apply mb-6 lowercase text-4xl font-serif;
 }
 
-/* testing */
 .prose-grid-3 {
   @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full;
 }
