@@ -1,22 +1,18 @@
 import * as React from "react";
 import Link from 'next/link'
 import Image from "next/image";
-import ImageWithLightbox from "../components/lightboxImage";
+// import ImageWithLightbox from "../components/lightboxImage";
 
 import rsaAward from '../assets/oasen/rsaAward.png'
-import billboard from '../assets/oasen/billboard.png'
-import moisturiser from '../assets/oasen/moisturiser.png'
-import moisturiserRefill from '../assets/oasen/moisturiserRefill.png'
-import productAd from '../assets/oasen/productAd.png'
-import productHero from '../assets/oasen/productHero.png'
-import sachets from '../assets/oasen/sachets.png'
-import sunscreen from '../assets/oasen/sunscreen.png'
-import storefront from '../assets/oasen/storefront.png'
-
-const videoLogoLoop = '../assets/oasen/logo.mp4';
-const videoColourPalette = '../assets/oasen/colourPalette.mp4';
-const videoFullGraphic = '../assets/oasen/';
-const test = '../assets/oasen/logo.mp4';
+import billboard from '../assets/oasen/billboard.jpg'
+import doypack from '../assets/oasen/doypack.jpg'
+import moisturiser from '../assets/oasen/moisturiser.jpg'
+import moisturiserRefill from '../assets/oasen/moisturiserRefill.jpg'
+import productAd from '../assets/oasen/productAd.jpg'
+import productHero from '../assets/oasen/productHero.jpg'
+import sachets from '../assets/oasen/sachets.jpg'
+import sunscreen from '../assets/oasen/sunscreen.jpg'
+import storefront from '../assets/oasen/storefront.jpg'
 
 export default function Page() {
   return (
@@ -39,8 +35,9 @@ export default function Page() {
           <Link className="block max-w-80 group" target="_blank" href="https://www.thersa.org/student-design-awards/winners/2023-24/in-your-skin">
             <Image
               src={rsaAward}
-              alt=""
+              alt="RSA Student Design Awards 2024 - Shortlisted, achieved Highly Commended"
               className="group-hover:opacity-70 bg-brand-off-white"
+              priority
             />
           </Link>
         </div>
@@ -102,7 +99,7 @@ export default function Page() {
       </section>
 
       <div className="pt-16 mb-16">
-        <Image src={storefront} alt=""></Image>
+        <Image alt="" src={storefront}></Image>
       </div>
 
       <div className="grid sm:grid-cols-3 gap-12 pt-16 mb-16">
@@ -145,7 +142,7 @@ export default function Page() {
 
       <div className="grid sm:grid-cols-3 gap-12 pt-16">
         <div>
-          <Image alt="" src={moisturiserRefill}></Image>
+          <Image alt="" src={doypack}></Image>
         </div>
         <div>
           <Image alt="" src={moisturiserRefill}></Image>

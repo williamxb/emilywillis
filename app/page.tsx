@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import HomeLink from './components/homeLink'
-import oasen from './assets/images/oasen-home.png'
-import zophos from './assets/images/zophos-home.png'
+import oasen from './assets/oasen/storefront.jpg'
+import zophos from './assets/zophos/home.png'
 import keepdancing from './assets/images/keepdancing-home.png'
 import cautionarytales01 from './assets/images/cautionarytales-home.png'
 
