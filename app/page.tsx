@@ -1,9 +1,9 @@
 import { Metadata } from 'next'
 import HomeLink from './components/homeLink'
-import oasen from './assets/oasen/storefront.jpg'
-import zophos from './assets/zophos/home.png'
-import keepdancing from './assets/images/keepdancing-home.png'
-import cautionarytales01 from './assets/images/cautionarytales-home.png'
+import oasen from './assets/home/homeOasen.jpg'
+import zophos from './assets/home/homeZophos.jpg'
+import keepdancing from './assets/home/homeKeepDancing.jpg'
+import cautionarytales01 from './assets/home/homeTales.jpg'
 
 export const metadata: Metadata = {
   description: "Emily Willis | Branding - Digital - Illustration - More | Designing for Positive Change",
