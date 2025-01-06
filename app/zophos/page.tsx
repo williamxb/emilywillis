@@ -1,17 +1,16 @@
 import * as React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import ImageWithLightbox from "../components/lightboxImage";
 import Image from "next/image";
 
-import zophos01 from '../images/zophos01.png';
-import zophos02 from '../images/zophos02.png';
-import zophos03 from '../images/zophos03.png';
-import zophos04 from '../images/zophos04.png';
-import zophos05 from '../images/zophos05.png';
-import zophos06 from '../images/zophos06.png';
-import zophos07 from '../images/zophos07.png';
-import zophos08 from '../images/zophos08.png';
-import zophos09 from '../images/zophos09.png';
+import book from '../assets/zophos/book.png'
+import dawn from '../assets/zophos/dawn.png'
+import discover from '../assets/zophos/discover.png'
+import dusk from '../assets/zophos/dusk.png'
+import experiences from '../assets/zophos/experiences.png'
+import hero from '../assets/zophos/hero.png'
+import home from '../assets/zophos/home.png'
+import productAd from '../assets/zophos/productAd.png'
 
 export default function Page() {
   return (
@@ -112,12 +111,13 @@ export default function Page() {
         <h2 className="prose-header">Website design</h2>
         <div className="prose-grid-2">
           <div className="prose">
-            <h3 className="uppercase">Stuff:</h3>
-            <p>things</p>
+            <h3 className="uppercase">Navigation:</h3>
+            <p>I wanted to make the website easy to navigate by simplifying information provided - often I find travel websites very text-heavy, so I wanted to simplify this as much as I could.</p>
+            <p>Adding a ‘Book Now’ button at the bottom of all the information pages makes it easy to purchase tickets and access the booking page at any time.</p>
           </div>
           <div className="prose">
-            <h3 className="uppercase">Things:</h3>
-            <p>stuff</p>
+            <h3 className="uppercase">Photos and Illustration:</h3>
+            <p>Having a ‘discover’ page offered the opportunity to include photos in the website to ground the brand in realism and sell the location. Keeping an illustrative approach on the other pages helps to keep the mystery and intrigue about the ‘ghost army', rather than trying to depict them realistically.</p>
           </div>
         </div>
       </section>

@@ -3,24 +3,29 @@ import Link from 'next/link'
 import Image from "next/image";
 import ImageWithLightbox from "../components/lightboxImage";
 
-import rsaAward from '../images/oasen/rsaAward.png'
-import billboard from '../images/oasen/billboard.png'
-import moisturiser from '../images/oasen/moisturiser.png'
-import moisturiserRefill from '../images/oasen/moisturiserRefill.png'
-import productAd from '../images/oasen/productAd.png'
-import productHero from '../images/oasen/productHero.png'
-import sachets from '../images/oasen/sachets.png'
-import sunscreen from '../images/oasen/sunscreen.png'
-import storefront from '../images/oasen/storefront.png'
+import rsaAward from '../assets/oasen/rsaAward.png'
+import billboard from '../assets/oasen/billboard.png'
+import moisturiser from '../assets/oasen/moisturiser.png'
+import moisturiserRefill from '../assets/oasen/moisturiserRefill.png'
+import productAd from '../assets/oasen/productAd.png'
+import productHero from '../assets/oasen/productHero.png'
+import sachets from '../assets/oasen/sachets.png'
+import sunscreen from '../assets/oasen/sunscreen.png'
+import storefront from '../assets/oasen/storefront.png'
+
+const videoLogoLoop = '../assets/oasen/logo.mp4';
+const videoColourPalette = '../assets/oasen/colourPalette.mp4';
+const videoFullGraphic = '../assets/oasen/';
+const test = '../assets/oasen/logo.mp4';
 
 export default function Page() {
   return (
     <>
       <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">video</p>
-          </div>
+          <video autoPlay playsInline muted loop>
+            <source src={require('../assets/oasen/fullGraphic.mp4')} type="video/mp4" />
+          </video>
           <p>
             <span className="font-semibold">Tools: </span>
             <span className="font-light">Photoshop, Illustrator, After Effects</span>
@@ -64,12 +69,14 @@ export default function Page() {
 
       <div className="grid sm:grid-cols-2 gap-12 lg:gap-36 pt-16">
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">logo animation</p>
-          </div>
+          <video autoPlay playsInline muted loop>
+            <source src={require('../assets/oasen/logo.mp4')} type="video/mp4" />
+          </video>
         </div>
-        <div className="bg-brand-raisin aspect-video w-full mb-3">
-          <p className="text-3xl text-brand-off-white p-4">colour palette animation</p>
+        <div>
+          <video autoPlay playsInline muted loop>
+            <source src={require('../assets/oasen/colourPalette.mp4')} type="video/mp4" />
+          </video>
         </div>
       </div>
 
@@ -98,11 +105,12 @@ export default function Page() {
         <Image src={storefront} alt=""></Image>
       </div>
 
-      <div className="grid grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
+      <div className="grid sm:grid-cols-3 gap-12 pt-16 mb-16">
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">image grid</p>
-          </div>
+          <Image alt="" src={productAd}></Image>
+        </div>
+        <div className="col-span-2">
+          <Image alt="" src={billboard}></Image>
         </div>
       </div>
 
@@ -134,6 +142,33 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <div className="grid sm:grid-cols-3 gap-12 pt-16">
+        <div>
+          <Image alt="" src={moisturiserRefill}></Image>
+        </div>
+        <div>
+          <Image alt="" src={moisturiserRefill}></Image>
+        </div>
+        <div>
+          <Image alt="" src={moisturiser}></Image>
+        </div>
+      </div>
+
+      <div className="grid sm:grid-cols-2 gap-12 pt-16 mb-16">
+        <div>
+          <Image alt="" src={sunscreen}></Image>
+        </div>
+        <div>
+          <Image alt="" src={sachets}></Image>
+        </div>
+      </div>
+
+      <p className="pt-16 mb-16 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between">
+        <span>Concept, Visual Identity, Research: Emily Willis and Julia Barbagallo. </span>
+        <span>Packaging: Julia Barbagallo. </span>
+        <span>Motion Design: Emily Willis.</span>
+      </p>
     </>
   );
 }

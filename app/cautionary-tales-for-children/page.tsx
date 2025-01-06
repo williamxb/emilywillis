@@ -2,11 +2,11 @@ import * as React from "react";
 import Link from 'next/link'
 import ImageWithLightbox from "../components/lightboxImage";
 
-import cautionarytales01 from '../images/cautionarytales01.png'
-import cautionarytales02 from '../images/cautionarytales02.png'
-import cautionarytales03 from '../images/cautionarytales03.png'
-import cautionarytales04 from '../images/cautionarytales04.png'
-import cautionarytales05 from '../images/cautionarytales05.png'
+import cautionarytales01 from '../assets/images/cautionarytales01.png'
+import cautionarytales02 from '../assets/images/cautionarytales02.png'
+import cautionarytales03 from '../assets/images/cautionarytales03.png'
+import cautionarytales04 from '../assets/images/cautionarytales04.png'
+import cautionarytales05 from '../assets/images/cautionarytales05.png'
 
 export default function Page() {
 
