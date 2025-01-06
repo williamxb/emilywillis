@@ -1,7 +1,15 @@
+"use client";
 import * as React from "react";
 // import Link from "next/link";
 import ImageWithLightbox from "../components/lightboxImage";
 import Image from "next/image";
+import Video from 'next-video';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import zophosWebsite from '../videos/zophos-website.mov'
 
 import book from '../assets/zophos/book.png'
 import dawn from '../assets/zophos/dawn.png'
@@ -10,6 +18,7 @@ import dusk from '../assets/zophos/dusk.png'
 import experiences from '../assets/zophos/experiences.png'
 import hero from '../assets/zophos/hero.png'
 import home from '../assets/zophos/home.png'
+import palette from '../assets/zophos/palette.png'
 import productAd from '../assets/zophos/productAd.png'
 
 export default function Page() {
@@ -17,8 +26,11 @@ export default function Page() {
     <>
       <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">video</p>
+          <div className="rounded-xl">
+            <Video
+              className="rounded-xl"
+              src={zophosWebsite}
+            />
           </div>
           <p>
             <span className="font-semibold">Tools: </span>
@@ -58,17 +70,22 @@ export default function Page() {
 
       <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
         <div className="grid-cols-subgrid col-span-2">
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">hero image</p>
-          </div>
+          <Image
+            src={hero}
+            alt=""
+          />
         </div>
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">logo animation</p>
-          </div>
+          <Image
+            src={productAd}
+            alt=""
+          />
         </div>
-        <div className="bg-brand-raisin aspect-video w-full mb-3">
-          <p className="text-3xl text-brand-off-white p-4">colour palette animation</p>
+        <div>
+          <Image
+            src={palette}
+            alt=""
+          />
         </div>
       </div>
 
@@ -92,9 +109,35 @@ export default function Page() {
       <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
 
         <div className="grid-cols-subgrid col-span-2">
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">Illustration carousel</p>
-          </div>
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ dynamicBullets: true }}
+          >
+            <SwiperSlide>
+              <Image
+                src={home}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={home}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={home}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={home}
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
 
         <div className="bg-brand-raisin aspect-video w-full mb-3">

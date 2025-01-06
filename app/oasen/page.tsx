@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from 'next/link'
 import Image from "next/image";
-// import ImageWithLightbox from "../components/lightboxImage";
+import BackgroundVideo from 'next-video/background-video';
 
 import rsaAward from '../assets/oasen/rsaAward.png'
 import billboard from '../assets/oasen/billboard.jpg'
@@ -14,14 +14,19 @@ import sachets from '../assets/oasen/sachets.jpg'
 import sunscreen from '../assets/oasen/sunscreen.jpg'
 import storefront from '../assets/oasen/storefront.jpg'
 
+import fullGraphic from '../videos/fullGraphic.mp4'
+import logo from '../videos/logo.mp4'
+import colourPalette from '../videos/colourPalette.mp4'
+
 export default function Page() {
   return (
     <>
       <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
         <div>
-          <video autoPlay playsInline muted loop>
-            <source src={require('../assets/oasen/fullGraphic.mp4')} type="video/mp4" />
-          </video>
+          <BackgroundVideo
+            src={fullGraphic}
+            className="rounded-xl"
+          />
           <p>
             <span className="font-semibold">Tools: </span>
             <span className="font-light">Photoshop, Illustrator, After Effects</span>
@@ -66,14 +71,16 @@ export default function Page() {
 
       <div className="grid sm:grid-cols-2 gap-12 lg:gap-36 pt-16">
         <div>
-          <video autoPlay playsInline muted loop>
-            <source src={require('../assets/oasen/logo.mp4')} type="video/mp4" />
-          </video>
+          <BackgroundVideo
+            src={logo}
+            className="rounded-xl"
+          />
         </div>
         <div>
-          <video autoPlay playsInline muted loop>
-            <source src={require('../assets/oasen/colourPalette.mp4')} type="video/mp4" />
-          </video>
+          <BackgroundVideo
+            src={colourPalette}
+            className="rounded-xl"
+          />
         </div>
       </div>
 
