@@ -1,12 +1,19 @@
+"use client";
 import * as React from "react";
 import Link from 'next/link'
-import ImageWithLightbox from "../components/lightboxImage";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Scrollbar } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
 
-import cautionarytales01 from '../assets/images/cautionarytales01.png'
-import cautionarytales02 from '../assets/images/cautionarytales02.png'
-import cautionarytales03 from '../assets/images/cautionarytales03.png'
-import cautionarytales04 from '../assets/images/cautionarytales04.png'
-import cautionarytales05 from '../assets/images/cautionarytales05.png'
+import talesCover from '../assets/cautionary-tales-for-children/talesCover.jpg'
+import talesPage13 from '../assets/cautionary-tales-for-children/talesPage13.jpg'
+import talesPage19 from '../assets/cautionary-tales-for-children/talesPage19.jpg'
+import talesPage20 from '../assets/cautionary-tales-for-children/talesPage20.jpg'
+import talesPage27 from '../assets/cautionary-tales-for-children/talesPage27.jpg'
+import talesPage29 from '../assets/cautionary-tales-for-children/talesPage29.jpg'
+import talesPage37 from '../assets/cautionary-tales-for-children/talesPage37.jpg'
 
 export default function Page() {
 
@@ -14,9 +21,11 @@ export default function Page() {
     <>
       <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">video</p>
-          </div>
+          <Image
+            src={talesCover}
+            alt=""
+            className="w-full mb-3"
+          />
           <p>
             <span className="font-semibold">Tools: </span>
             <span className="font-light">InDesign, Photoshop</span>
@@ -29,12 +38,50 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
-        <div className="grid-cols-subgrid col-span-2">
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">hero image</p>
-          </div>
-        </div>
+      <div className="my-16">
+        <Swiper
+          spaceBetween={48}
+          scrollbar={{ hide: true, }}
+          modules={[Scrollbar]}
+          className="pb-4!"
+        >
+          <SwiperSlide>
+            <Image
+              src={talesPage13}
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={talesPage19}
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={talesPage20}
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={talesPage27}
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={talesPage29}
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={talesPage37}
+              alt=""
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <section>

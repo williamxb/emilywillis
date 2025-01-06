@@ -25,7 +25,7 @@ export default function Page() {
         <div>
           <BackgroundVideo
             src={fullGraphic}
-            className="rounded-xl"
+            className="rounded-xl mb-3"
           />
           <p>
             <span className="font-semibold">Tools: </span>

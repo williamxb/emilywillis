@@ -5,21 +5,26 @@ import ImageWithLightbox from "../components/lightboxImage";
 import Image from "next/image";
 import Video from 'next-video';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-import zophosWebsite from '../videos/zophos-website.mov'
+import zophosWebsite from '../videos/zophos-website.mov' 
 
-import book from '../assets/zophos/book.png'
-import dawn from '../assets/zophos/dawn.png'
-import discover from '../assets/zophos/discover.png'
-import dusk from '../assets/zophos/dusk.png'
-import experiences from '../assets/zophos/experiences.png'
-import hero from '../assets/zophos/hero.png'
-import home from '../assets/zophos/home.png'
+import book from '../assets/zophos/book.jpg'
+import dawn from '../assets/zophos/dawn.jpg'
+import discover from '../assets/zophos/discover.jpg'
+import dusk from '../assets/zophos/dusk.jpg'
+
+import brand from '../assets/zophos/brand.png'
+import experiences from '../assets/zophos/experiences.jpg'
+import home from '../assets/zophos/home.jpg'
+import illustrationCastle from '../assets/zophos/illustrationCastle.jpg'
+import illustrationDawn from '../assets/zophos/illustrationDawn.jpg'
+import illustrationDawnCastle from '../assets/zophos/illustrationDawnCastle.jpg'
+import illustrationTent from '../assets/zophos/illustrationTent.jpg'
 import palette from '../assets/zophos/palette.png'
-import productAd from '../assets/zophos/productAd.png'
+import poster from '../assets/zophos/poster.jpg'
 
 export default function Page() {
   return (
@@ -28,7 +33,7 @@ export default function Page() {
         <div>
           <div className="rounded-xl">
             <Video
-              className="rounded-xl"
+              className="rounded-xl mb-3"
               src={zophosWebsite}
             />
           </div>
@@ -71,13 +76,13 @@ export default function Page() {
       <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
         <div className="grid-cols-subgrid col-span-2">
           <Image
-            src={hero}
+            src={brand}
             alt=""
           />
         </div>
         <div>
           <Image
-            src={productAd}
+            src={poster}
             alt=""
           />
         </div>
@@ -110,44 +115,51 @@ export default function Page() {
 
         <div className="grid-cols-subgrid col-span-2">
           <Swiper
-            modules={[Pagination]}
-            pagination={{ dynamicBullets: true }}
+            spaceBetween={48}
+            scrollbar={{ hide: true, }}
+            modules={[Scrollbar]}
+            className="pb-4!"
           >
             <SwiperSlide>
               <Image
-                src={home}
+                src={illustrationDawn}
                 alt=""
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src={home}
+                src={illustrationDawnCastle}
                 alt=""
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src={home}
+                src={illustrationCastle}
                 alt=""
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src={home}
+                src={illustrationTent}
                 alt=""
               />
             </SwiperSlide>
           </Swiper>
         </div>
 
-        <div className="bg-brand-raisin aspect-video w-full mb-3">
-          <p className="text-3xl text-brand-off-white p-4">website 1</p>
+        <div>
+          <Image
+            src={home}
+            alt=""
+          />
         </div>
 
-        <div className="bg-brand-raisin aspect-video w-full mb-3">
-          <p className="text-3xl text-brand-off-white p-4">website 2</p>
+        <div>
+          <Image
+            src={experiences}
+            alt=""
+          />
         </div>
-
       </div>
 
       <section>
