@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import emily from '../assets/images/emily.jpeg';
+import emily from '../assets/about/emily.jpeg';
 import rsaAward from '../assets/oasen/rsaAward.png'
 
 export default function Page() {
