@@ -15,8 +15,8 @@ export const footerItems = {
         name: 'Email',
         newTab: false
     },
-    '#': {
-        name: 'Download CV',
-        newTab: true
-    }
+    // '#': {
+    //     name: 'Download CV',
+    //     newTab: true
+    // }
 }

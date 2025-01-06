@@ -1,15 +1,19 @@
 import * as React from "react";
-import Link from 'next/link'
-import ImageWithLightbox from "../components/lightboxImage";
+import Image from "next/image";
+
+import waltzLeafletMockup from '../assets/keep-dancing/waltzLeafletMockup.jpg';
+import waltzLeaflet1 from '../assets/keep-dancing/waltzLeaflet1.jpg';
+import waltzLeaflet2 from '../assets/keep-dancing/waltzLeaflet2.jpg';
 
 export default function Page() {
   return (
     <>
       <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
         <div>
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">video</p>
-          </div>
+          <Image
+            src={waltzLeafletMockup}
+            alt=""
+          />
           <p>
             <span className="font-semibold">Tools: </span>
             <span className="font-light">InDesign, Illustrator</span>
@@ -22,7 +26,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="prose-grid-3">
+      <div className="prose-grid-3 my-16">
         <div>
           <h2 className="prose-header">Problem</h2>
           <div className="prose">
@@ -46,13 +50,15 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
-        <div className="grid-cols-subgrid col-span-2">
-          <div className="bg-brand-raisin aspect-video w-full mb-3">
-            <p className="text-3xl text-brand-off-white p-4">hero image</p>
-          </div>
-        </div>
-      </div>
+      <Image
+        src={waltzLeaflet1}
+        alt=""
+      />
+
+      <Image
+        src={waltzLeaflet2}
+        alt=""
+      />
     </>
   );
 }

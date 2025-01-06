@@ -7,8 +7,8 @@ export const navItems = {
         name: 'About',
         newTab: false
     },
-    '#': {
-        name: 'Download CV',
-        newTab: true
-    }
+    // '#': {
+    //     name: 'Download CV',
+    //     newTab: true
+    // }
 }
