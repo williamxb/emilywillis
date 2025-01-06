@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from "next/link";
-import emily from "../assets/images/emily.jpeg";
-import rsaAward from '../assets/images/oasen/rsaAward.png'
+import Link from 'next/link';
+import emily from '../assets/images/emily.jpeg';
+import rsaAward from '../assets/oasen/rsaAward.png'
 
 export default function Page() {
   return (
