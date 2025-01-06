@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"left_content": {
+				"__TYPE__": "FieldContent",
+				"value": "Video - With Controls",
+				"type": "Select"
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "ear",
+				"type": "Text"
+			},
+			"introduction": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sit veniam sunt non sunt dolore sint tempor velit veniam fugiat nisi. Veniam anim dolor veniam."
+						}
+					}
+				]
+			},
+			"tools": {
+				"__TYPE__": "FieldContent",
+				"value": "origin",
+				"type": "Text"
+			},
+			"tags": {
+				"__TYPE__": "FieldContent",
+				"value": "rubber",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

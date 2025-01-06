@@ -3,9 +3,13 @@
   "scripts": {
     "dev": "next dev & npx next-video sync -w",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@prismicio/client": "^7.13.1",
+    "@prismicio/next": "^1.7.1",
+    "@prismicio/react": "^2.9.1",
     "@tailwindcss/postcss": "next",
     "@types/node": "ts5.7",
     "@types/react": "ts5.7",
@@ -24,6 +28,8 @@
     "yet-another-react-lightbox": "3.21.7"
   },
   "devDependencies": {
-    "sharp": "^0.33.5"
+    "@slicemachine/adapter-next": "^0.3.61",
+    "sharp": "^0.33.5",
+    "slice-machine-ui": "^2.11.1"
   }
 }

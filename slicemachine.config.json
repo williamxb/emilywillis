@@ -1,0 +1,6 @@
+{
+  "repositoryName": "emilywillis",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"],
+  "localSliceSimulatorURL": "http://localhost:3002/slice-simulator"
+}
