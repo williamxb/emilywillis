@@ -1,39 +1,33 @@
-function ArrowIcon() {
-  return (
-    <svg
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
-}
+import Link from "next/link";
+import { footerItems } from './footerItems';
+let i = 0;
 
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/emily-willis-646bb2171/"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">LinkedIn</p>
-          </a>
-        </li>
-      </ul>
-      {/* <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p> */}
+    <footer className="max-w-7xl px-4 py-16 mx-auto bg-brand-raisin text-brand-off-white md:bg-inherit md:text-brand-raisin">
+      <div className="flex flex-col md:flex-row gap-12">
+        <h2 className="mx-auto md:mx-0">
+          <span className="block font-serif lowercase text-4xl">Emily </span>
+          <span className="block font-bold uppercase text-4xl ml-6">Willis</span>
+        </h2>
+        <nav className="flex flex-wrap w-full border-t-2 md:border-t-0 md:border-b-2 pt-12 justify-center md:justify-start gap-x-6 gap-y-4" id="nav">
+
+          {Object.entries(footerItems).map(([path, { name, newTab }]) => {
+            let target = newTab ? "_blank" : "";
+            i++;
+            return (
+              <Link
+                key={"footer" + i}
+                href={path}
+                target={target}
+                className="md:self-end uppercase text-lg transition-colors hover:text-brand-blue"
+              >
+                {name}
+              </Link>
+            )
+          })}
+        </nav>
+      </div>
     </footer>
   )
 }

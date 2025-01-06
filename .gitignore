@@ -1,12 +1,7 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
-
-# using pnpm
-package-lock.json
 
 # testing
 /coverage
@@ -31,6 +26,7 @@ yarn-error.log*
 
 # env files
 .env
+.env.development.local
 
 # vercel
 .vercel
@@ -38,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next-video
+app/videos/*
+!app/videos/*.json
+!app/videos/*.js
+!app/videos/*.ts
+public/_next-video

@@ -1,46 +1,66 @@
+import { Metadata } from 'next'
 import HomeLink from './components/homeLink'
+import oasen from './assets/home/homeOasen.jpg'
+import zophos from './assets/home/homeZophos.jpg'
+import keepdancing from './assets/home/homeKeepDancing.jpg'
+import cautionarytales01 from './assets/home/homeTales.jpg'
 
-import oasen from './images/oasen07.png'
-import zophos from './images/zophos01.png'
-import keepdancing from './images/keepdancing01.png'
-import cautionarytales01 from './images/cautionarytales01.png'
+export const metadata: Metadata = {
+  description: "Emily Willis | Branding - Digital - Illustration - More | Designing for Positive Change",
+};
 
 export default function Page() {
   return (
-    <section className="max-w-7xl">
-      <HomeLink
-        href="/oasen"
-        image={oasen}
-        priority={true}
-        title="Oasen"
-        subtitle="Competition Brief"
-        content="A skincare brand designed to cater to those with sensory differences."
-        callout="Highly Commended for RSA In Your Skin Design Award"
-      />
+    <>
+      <section className="lg:py-16 text-center">
+        {/* @TODO redo font size here in a less dumb way - scaling huge font size is causing issues on mobile*/}
+        <h1 className="scale-75 sm:scale-100">
+          <span className="block text-[103px] font-serif lowercase -mb-[4.5rem]">Emily</span>
+          <span className="block text-[111px] font-bold uppercase">Willis</span>
+        </h1>
+        <p className="mb-16 text-2xl font-extralight lowercase">Branding - Digital - Illustration - More</p>
+        <h2 className="text-4xl font-semibold tracking-widest uppercase">Designing for positive change</h2>
+      </section>
 
-      <HomeLink
-        href="/zophos"
-        image={zophos}
-        title="Zophos · The&nbsp;Drosoulites"
-        subtitle="Competition Brief"
-        content="Visual identity for a rare natural ghost experience; The&nbsp;Drosoulites&nbsp;of&nbsp;Crete."
-      />
+      <section className="py-16 lg:py-0">
+        <h2 className="glow glow-xl pb-16 text-brand-off-white text-center lowercase font-serif text-7xl">Projects</h2>
 
-      <HomeLink
-        href="/cautionary-tales-for-children"
-        image={cautionarytales01}
-        title="Cautionary Tales for Children"
-        subtitle="Personal Project"
-        content="An interpretation of Hillaire Belloc's Cautionary Tales for Children, suitable for an adult audience."
-      />
+        <div className="sm:p-4 sm:px-6 md:px-8 grid sm:grid-cols-2 gap-12 lg:gap-16 xl:gap-30 2xl:gap-40">
+          <HomeLink
+            href="/oasen"
+            image={oasen}
+            priority={true}
+            title="Oasen"
+            subtitle="A skincare brand designed to cater for those with sensory differences."
+            tags="Branding · Experiential Design · Research"
+          />
 
-      <HomeLink
-        href="/keep-dancing"
-        image={keepdancing}
-        title="Keep Dancing"
-        subtitle="Personal Project"
-        content="A campaign to encourage elderly women to dance."
-      />
-    </section>
+          <HomeLink
+            href="/zophos"
+            image={zophos}
+            priority={true}
+            title="Zophos"
+            subtitle="Visual identity for a rare natural ghost experience; the Drosoulites of Crete."
+            tags="Branding · Website Design · Illustration"
+          />
+
+          <HomeLink
+            href="/cautionary-tales-for-children"
+            image={cautionarytales01}
+            title="Cautionary Tales for Children"
+            subtitle="An interpretation of Hilaire Belloc's book for an adult audience."
+            tags="Publication Design · Cover Design · Art Direction"
+          />
+
+          <HomeLink
+            href="/keep-dancing"
+            image={keepdancing}
+            title="Keep Dancing"
+            subtitle="A campaign encouraging elderly women to dance."
+            tags="Publication Design · Branding · Illustration"
+          />
+        </div>
+      </section>
+    </>
   )
 }

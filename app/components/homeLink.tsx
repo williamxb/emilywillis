@@ -1,21 +1,21 @@
 import Link from "next/link"
-import Image, { StaticImageData } from "next/image"
-
+import Image from "next/image"
+import { StaticImageData } from "next/image"
 interface homeLinkProps {
   href: string,
   image: StaticImageData,
   priority?: boolean,
   title: string,
   subtitle: string,
-  content: string,
-  callout?: string,
+  tags: string,
 }
 
-export default function HomeLink({ href, image, priority = false, title, subtitle, content, callout }: homeLinkProps) {
+export default function HomeLink({ href, image, priority = false, title, subtitle, tags }: homeLinkProps) {
   return (
-    <div className="mb-10">
-      <Link href={href}>
+    <article>
+      <Link className="group" href={href}>
         <Image
+          className="mb-4 transition-opacity group-hover:opacity-80 bg-brand-off-white"
           priority={priority}
           placeholder="blur"
           sizes="(max-width: 1023px) 100vw, (max-width: 1800px) 80vw, 80vw"
@@ -23,15 +23,10 @@ export default function HomeLink({ href, image, priority = false, title, subtitl
           src={image}
           alt=""
         />
-        <div className="flex flex-col md:flex-row justify-between tracking-tight border-b p-2 mb-1">
-          <p className="w-fit text-2xl">{title}</p>
-          <p className="w-fit text-right text-lg lg:text-2xl font-semilight lg:font-normal">{subtitle}</p>
-        </div>
-        <div className="lg:w-1/2 px-2">
-          <p className='mb-2'>{content}</p>
-          <p><i>{callout}</i></p>
-        </div>
-      </Link>
-    </div>
+        <h1 className="text-xl tracking-wider font-semibold uppercase">{title}</h1>
+        <h2 className="mb-2 text-balance">{subtitle}</h2>
+        <p className="text-sm sm:text-md font-light">{tags}</p>
+    </Link>
+    </article>
   )
 }

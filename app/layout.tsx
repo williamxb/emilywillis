@@ -1,7 +1,7 @@
 import './global.css'
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
+import { Metadata } from 'next'
 import { Navbar } from './components/nav'
+import { Footer } from './components/footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { baseUrl } from './sitemap'
@@ -9,13 +9,11 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Emily Willis | Graphic Communication and Illustration',
+    default: 'Emily Willis | Designing for Positive Change',
     template: '%s | Emily Willis',
   },
-  description: 'Hi! I’m Emily, I study Graphic Communication and Illustration at Loughborough University. I am skilled at Adobe Photoshop, Illustrator and InDesign.',
   openGraph: {
-    title: 'Emily Willis | Portfolio',
-    description: 'Hi! I’m Emily, I study Graphic Communication and Illustration at Loughborough University. I am skilled at Adobe Photoshop, Illustrator and InDesign.',
+    title: 'Emily Willis | Designing for Positive Change',
     url: baseUrl,
     siteName: 'Emily Willis',
     locale: 'en_GB',
@@ -34,26 +32,16 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout(
+  { children, }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
-        GeistSans.variable,
-      )}
-    >
-      <body className="subpixel-antialiased m-6 sm:m-8">
-        <main className="flex-auto flex flex-col lg:flex-row gap-12 justify-center">
-          <Navbar />
+    <html lang="en" className={'text-brand-raisin bg-brand-off-white'}>
+      <body className="subpixel-antialiased">
+        <Navbar />
+        <main className="max-w-7xl px-4 mx-auto">
           {children}
         </main>
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
