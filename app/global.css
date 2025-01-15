@@ -23,6 +23,7 @@
   --color-brand-black: oklch(0.22 0 0);
   --font-sans: "Montserrat";
   --font-serif: Chancery, serif;
+  --tracking-widest: 0.25em;
 }
 
 ::selection {

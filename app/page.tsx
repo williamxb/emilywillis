@@ -1,5 +1,8 @@
 import { Metadata } from 'next'
 import HomeLink from './components/homeLink'
+import Image from 'next/image'
+
+import arrow from './assets/home/arrow.svg'
 import oasen from './assets/home/homeOasen.jpg'
 import zophos from './assets/home/homeZophos.jpg'
 import keepdancing from './assets/home/homeKeepDancing.jpg'
@@ -19,11 +22,12 @@ export default function Page() {
           <span className="block text-[111px] font-bold uppercase">Willis</span>
         </h1>
         <p className="mb-16 text-2xl font-extralight lowercase">Branding - Digital - Illustration - More</p>
-        <h2 className="text-4xl font-semibold tracking-widest uppercase">Designing for positive change</h2>
+        <h2 className="text-3xl font-semibold tracking-widest uppercase">Designing for positive change</h2>
       </section>
 
-      <section className="py-16 lg:py-0">
-        <h2 className="glow glow-xl pb-16 text-brand-off-white text-center lowercase font-serif text-7xl">Projects</h2>
+      <section className="py-16 lg:pt-12">
+        <h2 className="glow glow-xl pb-8 text-brand-off-white text-center lowercase font-serif text-6xl">Projects</h2>
+        <Image src={arrow} alt="Arrow" className="mx-auto pb-16" />
 
         <div className="sm:p-4 sm:px-6 md:px-8 grid sm:grid-cols-2 gap-12 lg:gap-16 xl:gap-30 2xl:gap-40">
           <HomeLink

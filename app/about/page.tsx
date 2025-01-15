@@ -6,11 +6,11 @@ import rsaAward from '../assets/oasen/rsaAward.png'
 export default function Page() {
   return (
     <>
-      <section className="grid sm:grid-cols-2 mb-8 mt-16 gap-16">
+      <section className="grid sm:grid-cols-2 mb-8 mt-16 gap-16 lg:gap-56">
         <div className="">
-          <h1 className="glow glow-title text-5xl font-serif mb-4 lowercase">Hello!</h1>
-          <h2 className="text-3xl font-semibold uppercase tracking-wide leading-snug text-balance mb-6">I'm Emily, bringing over a decade of design passion to every project</h2>
-          <div className="prose">
+          <h1 className="glow glow-title text-6xl font-serif mb-4 lowercase">Hello!</h1>
+          <h2 className="text-4xl font-semibold uppercase tracking-wide leading-snug text-balance mb-6">I'm Emily, bringing over a decade of design passion to every project</h2>
+          <div className="prose text-xl">
             <p>Recently graduated from Loughborough University with a BA in Graphic Communication and Illustration. I excel at distilling complex ideas into compelling visual stories, with a passion for designing to create positive impact.</p>
             <p>I love challenging myself at the gym, anime, reading fantasy and cooking.</p>
           </div>
@@ -19,8 +19,8 @@ export default function Page() {
           <div className="max-w-96 relative mb-8 mx-10">
             <Image src={emily} alt="" className=" overflow-hidden object-cover object-top" priority={true}></Image>
             <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3">
-              <Link className="lowercase bg-brand-blue p-14 rounded-full inline-block relative" href="/">
-                <span className="text-brand-off-white w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">download<br></br>CV</span>
+              <Link className="bg-brand-blue p-14 rounded-full inline-block relative font-light" href="https://fnrngkfiwd3vkhpk.public.blob.vercel-storage.com/Emily%20Willis%20CV-vxueVtWmm3WREQFRc5S2sMaFwJ6sKN.pdf" target='_blank'>
+                <span className="text-brand-off-white w-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center leading-4.5">download<br></br>CV</span>
               </Link>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function Page() {
 
         <div className="flex flex-col md:flex-row justify-between gap-6 max-w-5xl">
           <p>
-            <span className="font-semibold">RSA Student Design Awards</span> <span className="text-sm">2020 - 2024</span> <br />
+            <span className="font-semibold">RSA Student Design Awards</span> <span className="text-sm">2023 - 2024</span> <br />
             <span className="font-semibold">Highly Commended</span> <br />
             <i>In Your Skin Brief</i>
           </p>

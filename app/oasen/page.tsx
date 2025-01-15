@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from 'next/link'
 import Image from "next/image";
 import BackgroundVideo from 'next-video/background-video';
+import Video from 'next-video';
 
 import rsaAward from '../assets/oasen/rsaAward.png'
 import billboard from '../assets/oasen/billboard.jpg'
@@ -23,9 +24,12 @@ export default function Page() {
     <>
       <div className="grid md:grid-cols-2 gap-12 lg:gap-36 pt-16 mb-16">
         <div>
-          <BackgroundVideo
+          <Video
             src={fullGraphic}
-            className="rounded-xl mb-3"
+            className=" mb-3"
+            muted={true}
+            autoPlay={true}
+            loop={true}
           />
           <p>
             <span className="font-semibold">Tools: </span>
@@ -85,7 +89,7 @@ export default function Page() {
       </div>
 
       <div className="pt-16 mb-16">
-        <Image src={productHero} alt=""></Image>
+        <Image src={storefront} alt=""></Image>
       </div>
 
       <section>
@@ -106,7 +110,7 @@ export default function Page() {
       </section>
 
       <div className="pt-16 mb-16">
-        <Image alt="" src={storefront}></Image>
+        <Image alt="" src={productHero}></Image>
       </div>
 
       <div className="grid sm:grid-cols-3 gap-12 pt-16 mb-16">
@@ -168,10 +172,10 @@ export default function Page() {
         </div>
       </div>
 
-      <p className="pt-16 mb-16 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between">
-        <span>Concept, Visual Identity, Research: Emily Willis and Julia Barbagallo. </span>
-        <span>Packaging: Julia Barbagallo. </span>
-        <span>Motion Design: Emily Willis.</span>
+      <p className="pt-16 mb-16">
+        <span className='font-semibold'>Concept, Visual Identity, Research:</span> Emily Willis and Julia Barbagallo. <br />
+        <span className='font-semibold'>Packaging:</span> Julia Barbagallo. <br />
+        <span className='font-semibold'>Motion Design:</span> Emily Willis.
       </p>
     </>
   );

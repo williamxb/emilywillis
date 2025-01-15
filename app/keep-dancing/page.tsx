@@ -13,7 +13,8 @@ export default function Page() {
           <Image
             src={waltzLeafletMockup}
             alt=""
-          />
+            className="w-full mb-3"
+          /> 
           <p>
             <span className="font-semibold">Tools: </span>
             <span className="font-light">InDesign, Illustrator</span>
@@ -53,6 +54,7 @@ export default function Page() {
       <Image
         src={waltzLeaflet1}
         alt=""
+        className="mb-12"
       />
 
       <Image

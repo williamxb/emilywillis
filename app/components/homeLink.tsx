@@ -23,7 +23,7 @@ export default function HomeLink({ href, image, priority = false, title, subtitl
           src={image}
           alt=""
         />
-        <h1 className="text-xl tracking-wider font-semibold uppercase">{title}</h1>
+        <h1 className="text-2xl tracking-wider font-semibold uppercase">{title}</h1>
         <h2 className="mb-2 text-balance">{subtitle}</h2>
         <p className="text-sm sm:text-md font-light">{tags}</p>
     </Link>
