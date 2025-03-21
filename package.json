@@ -14,7 +14,7 @@
     "@vercel/speed-insights": "^1.1.0",
     "next": "^15.2.3",
     "next-video": "^2.0.0",
-    "postcss": "^8.5.1",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "swiper": "^11.2.1",
