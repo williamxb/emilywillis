@@ -51,8 +51,8 @@ importers:
         specifier: ^5.8.2
         version: 5.8.2
       yet-another-react-lightbox:
-        specifier: ^3.21.7
-        version: 3.21.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^3.21.8
+        version: 3.21.8(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
     devDependencies:
       sharp:
         specifier: ^0.33.5
@@ -1480,12 +1480,19 @@ packages:
     resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
     engines: {node: '>=12'}
 
-  yet-another-react-lightbox@3.21.7:
-    resolution: {integrity: sha512-dcdokNuCIl92f0Vl+uzeKULnQhztIGpoZFUMvtVNUPmtwsQWpqWufeieDPeg9JtFyVCcbj4vYw3V00DS0QNoWA==}
+  yet-another-react-lightbox@3.21.8:
+    resolution: {integrity: sha512-8DnjpSmWF+WjGXX+NIJx0V/naUhUYxLt6RIBJZoQ4y1GJVKwiUO2RuRvUBvYQTwAwFqwhJSvxfIhCU3VyCj9WQ==}
     engines: {node: '>=14'}
     peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
+      '@types/react': ^16 || ^17 || ^18 || ^19
+      '@types/react-dom': ^16 || ^17 || ^18 || ^19
+      react: ^16.8.0 || ^17 || ^18 || ^19
+      react-dom: ^16.8.0 || ^17 || ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
 
   yoctocolors-cjs@2.1.2:
     resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
@@ -3285,9 +3292,12 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  yet-another-react-lightbox@3.21.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  yet-another-react-lightbox@3.21.8(@types/react-dom@19.0.4(@types/react@19.0.12))(@types/react@19.0.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
+    optionalDependencies:
+      '@types/react': 19.0.12
+      '@types/react-dom': 19.0.4(@types/react@19.0.12)
 
   yoctocolors-cjs@2.1.2: {}
