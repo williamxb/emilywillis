@@ -23,6 +23,6 @@
     "yet-another-react-lightbox": "^3.21.8"
   },
   "devDependencies": {
-    "sharp": "^0.33.5"
+    "sharp": "^0.34.1"
   }
 }
