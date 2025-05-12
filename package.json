@@ -20,7 +20,7 @@
     "swiper": "^11.2.6",
     "tailwindcss": "next",
     "typescript": "^5.8.2",
-    "yet-another-react-lightbox": "^3.21.8"
+    "yet-another-react-lightbox": "^3.23.1"
   },
   "devDependencies": {
     "sharp": "^0.33.5"
