@@ -6,7 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "next",
+    "@tailwindcss/postcss": "^4.1.8",
     "@types/node": "ts5.7",
     "@types/react": "ts5.7",
     "@types/react-dom": "ts5.7",
@@ -14,15 +14,15 @@
     "@vercel/speed-insights": "^1.2.0",
     "next": "^15.2.3",
     "next-video": "^2.2.0",
-    "postcss": "^8.5.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "swiper": "^11.2.6",
-    "tailwindcss": "next",
-    "typescript": "^5.8.2",
-    "yet-another-react-lightbox": "^3.21.8"
+    "postcss": "^8.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "swiper": "^11.2.8",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3",
+    "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {
-    "sharp": "^0.33.5"
+    "sharp": "^0.34.2"
   }
 }
