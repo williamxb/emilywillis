@@ -15,9 +15,9 @@ import sachets from '../assets/oasen/sachets.jpg'
 import sunscreen from '../assets/oasen/sunscreen.jpg'
 import storefront from '../assets/oasen/storefront.jpg'
 
-import fullGraphic from '../videos/fullGraphic.mp4'
-import logo from '../videos/logo.mp4'
-import colourPalette from '../videos/colourPalette.mp4'
+import fullGraphic from '../../videos/fullGraphic.mp4'
+import logo from '../../videos/logo.mp4'
+import colourPalette from '../../videos/colourPalette.mp4'
 
 export default function Page() {
   return (

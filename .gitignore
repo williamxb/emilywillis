@@ -36,8 +36,8 @@ yarn-error.log*
 next-env.d.ts
 
 # next-video
-app/videos/*
-!app/videos/*.json
-!app/videos/*.js
-!app/videos/*.ts
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
 public/_next-video

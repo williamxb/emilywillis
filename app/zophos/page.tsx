@@ -9,7 +9,7 @@ import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 
-import zophosWebsite from '../videos/zophos-website.mov' 
+import zophosWebsite from '../../videos/zophos-website.mov' 
 
 import book from '../assets/zophos/book.jpg'
 import dawn from '../assets/zophos/dawn.jpg'
