@@ -53,10 +53,6 @@ importers:
       yet-another-react-lightbox:
         specifier: ^3
         version: 3.25.0(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-    devDependencies:
-      sharp:
-        specifier: ^0.3
-        version: 0.3.0
 
 packages:
 
@@ -1327,9 +1323,6 @@ packages:
   mux-embed@5.9.0:
     resolution: {integrity: sha512-wmunL3uoPhma/tWy8PrDPZkvJpXvSFBwbD3KkC4PG8Ztjfb1X3hRJwGUAQyRz7z99b/ovLm2UTTitrkvStjH4w==}
 
-  nan@0.8.0:
-    resolution: {integrity: sha512-M+vkONtYYOj3IH4em2DsC4PxXtihcZSxHfoQnEIDJqQt7PrWMvWW5YCoAYvHHChffVW5BazqzZrTsa/+Y5cBLw==}
-
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1452,10 +1445,6 @@ packages:
     resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
     engines: {node: '>=10'}
     hasBin: true
-
-  sharp@0.3.0:
-    resolution: {integrity: sha512-1Bxjpsaihx+1aheGY8MdEvpsPoD6cQ2+P/vPgepAqq5tg90ZOWinAdid94c6q91wuHiO0YJw2CXFwuGhKXvv5g==}
-    engines: {node: '>=0.10'}
 
   sharp@0.34.4:
     resolution: {integrity: sha512-FUH39xp3SBPnxWvd5iib1X8XY7J0K0X7d93sie9CJg2PO8/7gmg89Nve6OjItK53/MlAushNNxteBYfM6DEuoA==}
@@ -3248,8 +3237,6 @@ snapshots:
 
   mux-embed@5.9.0: {}
 
-  nan@0.8.0: {}
-
   nanoid@3.3.11: {}
 
   next-video@2.5.0(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(next@16.0.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
@@ -3371,10 +3358,6 @@ snapshots:
 
   semver@7.7.2:
     optional: true
-
-  sharp@0.3.0:
-    dependencies:
-      nan: 0.8.0
 
   sharp@0.34.4:
     dependencies:

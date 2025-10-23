@@ -23,7 +23,5 @@
     "typescript": "^5.9",
     "yet-another-react-lightbox": "^3"
   },
-  "devDependencies": {
-    "sharp": "^0.3"
-  }
+  "devDependencies": {}
 }
