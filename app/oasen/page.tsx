@@ -19,19 +19,9 @@ import sachets from '../assets/oasen/sachets.jpg'
 import sunscreen from '../assets/oasen/sunscreen.jpg'
 import storefront from '../assets/oasen/storefront.jpg'
 
-import fullGraphic from '../../videos/fullGraphic.mp4'
-import logo from '../../videos/logo.mp4'
-import colourPalette from '../../videos/colourPalette.mp4'
-
-// @TODO: Test if this actually helps with CLS
-const fallback = (
-  <div className="aspect-video w-full"></div>
-)
-
-export const metadata: Metadata = {
-  title: 'Oasen',
-  description: "A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health.",
-};
+import fullGraphic from '../videos/fullGraphic.mp4'
+import logo from '../videos/logo.mp4'
+import colourPalette from '../videos/colourPalette.mp4'
 
 export default function Page() {
   return (

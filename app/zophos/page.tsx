@@ -1,8 +1,18 @@
 import * as React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
-import { Container } from "../components/container";
-import { ProjectCarousel } from "../components/projectCarousel";
+import Video from 'next-video';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Scrollbar } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+import zophosWebsite from '../../videos/zophos-website.mov' 
+
+import book from '../assets/zophos/book.jpg'
+import dawn from '../assets/zophos/dawn.jpg'
+import discover from '../assets/zophos/discover.jpg'
+import dusk from '../assets/zophos/dusk.jpg'
 
 import websiteBooking from '../assets/zophos/book.jpg'
 import websiteDiscover from '../assets/zophos/discover.jpg'
