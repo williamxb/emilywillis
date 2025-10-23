@@ -1,28 +1,12 @@
+@import url("https://use.typekit.net/tep2ywt.css");
 @import "tailwindcss";
 
-/* montserrat-latin-wght-normal */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 100 900;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat:vf@latest/latin-wght-normal.woff2) format("woff2-variations");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: "Chancery";
-  src: url(./assets/font/apple-chancery-webfont.woff) format("woff");
-  font-display: swap;
-}
-
 @theme {
-  --color-brand-off-white: oklch(0.98 0.01 71.17);
-  --color-brand-blue: oklch(0.55 0.19 259.65);
-  --color-brand-raisin: oklch(0.29 0.02 338.42);
+  --color-brand-off-white: oklch(0.946 0.0256 63.74);
+  --color-brand-blue: oklch(0.6217 0.15 243.26);
+  --color-brand-raisin: oklch(0.2933 0.0168 338.38);
   --color-brand-black: oklch(0.22 0 0);
-  --font-sans: "Montserrat";
-  --font-serif: Chancery, serif;
+  --font-sans: "Poppins";
   --tracking-widest: 0.25em;
 }
 
@@ -36,8 +20,9 @@ html {
   min-width: 360px;
 }
 
-img, video {
-  @apply rounded-xl;
+img,
+video {
+  @apply rounded;
 }
 
 .glow {
