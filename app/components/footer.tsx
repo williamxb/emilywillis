@@ -1,23 +1,24 @@
-import Link from "next/link";
+import Link from 'next/link';
+import Image from 'next/image';
 import { footerItems } from './footerItems';
-let i = 0;
+
+import logo from '../assets/logo.svg'
 
 export function Footer() {
   return (
     <footer className="px-4 py-16 mx-auto bg-brand-raisin text-brand-off-white md:bg-inherit md:text-brand-raisin">
       <div className="flex flex-col md:flex-row gap-12">
-        <h2 className="mx-auto md:mx-0">
-          <span className="block font-serif lowercase text-4xl">Emily </span>
-          <span className="block font-bold uppercase text-4xl ml-6">Willis</span>
-        </h2>
-        <nav className="flex flex-wrap w-full border-t-2 md:border-t-0 md:border-b-2 pt-12 pl-2 justify-center md:justify-start gap-x-10 gap-y-4" id="nav">
+        <Link href={'/'}>
+          {/* @TODO: brand blue on hover (req: custom css, change to <svg>?) */}
+          <Image alt="Emily Willis" src={logo} className='w-30' />
+        </Link>
 
+        <nav className="flex flex-wrap w-full border-t-2 md:border-t-0 md:border-b-2 pt-12 pl-2 justify-center md:justify-start gap-x-10 gap-y-4" id="nav">
           {Object.entries(footerItems).map(([path, { name, newTab }]) => {
             let target = newTab ? "_blank" : "";
-            i++;
             return (
               <Link
-                key={"footer" + i}
+                key={`footer-${name}`}
                 href={path}
                 target={target}
                 className="md:self-end uppercase text-lg transition-colors hover:text-brand-blue"

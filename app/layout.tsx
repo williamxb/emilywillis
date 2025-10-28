@@ -38,7 +38,7 @@ export default function RootLayout(
     <html lang="en" className={'text-brand-raisin bg-brand-off-white'}>
       <body className="subpixel-antialiased">
         <Navbar />
-        <main className="max-w-7xl px-4 mx-auto">
+        <main>
           {children}
         </main>
         <Footer />
