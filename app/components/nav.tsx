@@ -6,12 +6,12 @@ import logo from '../assets/logo.svg'
 
 export function Navbar() {
   return (
-    <div className="px-8 py-8 mx-auto flex flex-row gap-8 justify-normal">
+    <div className="p-2 md:p-6 mx-auto flex flex-row gap-8 justify-normal">
       <Link href={'/'}>
         {/* @TODO: brand blue on hover (req: custom css, change to <svg>?) */}
-        <Image alt="Emily Willis" src={logo} className='w-30'></Image>
+        <Image alt="Emily Willis" src={logo} className='w-20'></Image>
       </Link>
-      <nav className="flex flex-row gap-10" id="nav">
+      <nav className="flex flex-row gap-8" id="nav">
         {
           Object.entries(navItems).map(([path, { name, newTab }]) => {
           let target = newTab ? "_blank" : "";
@@ -20,7 +20,7 @@ export function Navbar() {
               key={name}
               href={path}
               target={target}
-              className="pt-6 uppercase text-xl transition-colors hover:text-brand-blue"
+              className="pt-4 uppercase transition-colors hover:text-brand-blue"
             >
               {name}
             </Link>

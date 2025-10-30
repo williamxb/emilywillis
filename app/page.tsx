@@ -17,14 +17,13 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      {/* Keep current spacing when nav image is added */}
-      <section className="py-10 lg:py-16 text-center">
-        <h1 className="uppercase text-3xl sm:text-5xl lg:text-6xl xl:text-[5.5rem]/25 font-extrabold sm:font-black">Designing for <br />Positive Im<span className="tracking-[-0.075em]">pa</span>ct</h1>
-        <p className="sm:text-xl  lowercase">Branding - Digital - Illustration - More</p>
+      <section className="pt-10 pb-32 3xl: text-center">
+        <h1 className="uppercase text-3xl sm:text-5xl md:text-6xl 3xl:text-[5rem]/25 font-extrabold sm:font-black">Designing for <br />Positive Im<span className="tracking-[-0.075em]">pa</span>ct</h1>
+        <p className="sm:text-xl lowercase">Branding - Digital - Illustration - More</p>
       </section>
 
-      <section className="py-16 lg:pt-12">
-        <div className="sm:p-4 sm:px-6 md:px-8 grid sm:grid-cols-2 gap-12 lg:gap-16 xl:gap-30 2xl:gap-40">
+      <section className="block w-11/12 mx-auto 3xl:w-[1760px]">
+        <div className="grid sm:grid-cols-2 gap-12">
           <HomeLink
             href="/oasen"
             image1={oasen1}
@@ -32,7 +31,7 @@ export default function Page() {
             priority={true}
             title="Oasen"
             subtitle="A skincare brand designed to cater to those with sensory differences."
-            tags="Branding - Motion Graphics - Research"
+            tags="Branding - Motion&nbsp;Graphics - Advertising"
           />
 
           <HomeLink
@@ -42,7 +41,7 @@ export default function Page() {
             priority={true}
             title="Zophos"
             subtitle="Visual identity for a rare natural ghost experience; the Drosoulites of Crete."
-            tags="Branding - Website Design - Illustration"
+            tags="Branding - Website&nbsp;Design - Illustration"
           />
 
           <HomeLink
@@ -51,7 +50,7 @@ export default function Page() {
             image2={egg2}
             title="Gooville"
             subtitle="A theoretical Creme Egg animated ad exploring the chocolatey world of Gooville."
-            tags="Motion Design - Advertising - Illustration"
+            tags="Motion&nbsp;Design - Advertising - Illustration"
           />
 
           <HomeLink
@@ -60,7 +59,7 @@ export default function Page() {
             image2={tales2}
             title="Cautionary Tales for Children"
             subtitle="An interpretation of Hilaire Belloc's book for an adult audience."
-            tags="Publication Design - Cover Design - Art Direction"
+            tags="Publication&nbsp;Design - Cover Design - Art&nbsp;Direction"
           />
         </div>
       </section>

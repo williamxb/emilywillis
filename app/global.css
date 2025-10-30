@@ -11,13 +11,6 @@
   --breakpoint-3xl: 120rem;
 }
 
-@layer utilities {
-  .container {
-    all: unset;
-    @apply block w-11/12 px-6 md:px-12 mx-auto 3xl:w-[1746px]
-  }
-}
-
 ::selection {
   background-color: var(--color-brand-blue);
   color: #fefefe;
@@ -95,7 +88,7 @@ html {
 }
 
 .prose h1 {
-  @apply text-4xl font-bold mt-6 mb-2;
+  @apply text-2xl md:text-4xl font-bold mt-6 mb-2;
 }
 
 .prose h2 {
@@ -103,7 +96,7 @@ html {
 }
 
 .prose h3 {
-  @apply font-semibold mt-8 mb-1;
+  @apply text-xl font-semibold mt-6 mb-2;
 }
 
 .prose h4 {
@@ -111,7 +104,7 @@ html {
 }
 
 .prose strong {
-  @apply font-medium;
+  @apply font-semibold;
 }
 
 .prose ul,
@@ -132,11 +125,6 @@ ol {
   @apply list-decimal;
 }
 
-.prose > :first-child {
-  /* Force remove top margin on first child */
-  margin-top: 0 !important;
-}
-
 .prose-header {
   @apply mb-6 lowercase text-4xl font-serif;
 }
@@ -147,6 +135,11 @@ ol {
 
 .prose-grid-2 {
   @apply grid sm:grid-cols-2 gap-x-12 lg:gap-x-36 gap-y-5 sm:gap-y-12;
+}
+
+.prose > :first-child {
+  /* Force remove top margin on first child */
+  margin-top: 0;
 }
 
 /* Remove Safari input shadow on mobile */

@@ -5,7 +5,7 @@
     "build": "next build",
     "start": "next start"
   },
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.20.0",
   "dependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "ts5.9",
