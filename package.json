@@ -7,7 +7,7 @@
   },
   "packageManager": "pnpm@10.18.1",
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "ts5.7",
     "@types/react": "ts5.7",
     "@types/react-dom": "ts5.7",
