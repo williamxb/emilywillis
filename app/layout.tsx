@@ -5,6 +5,7 @@ import { Footer } from './components/footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { baseUrl } from './sitemap'
+import ScrollToTop from './components/scrollToTop'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -32,10 +33,10 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout(
-  { children, }: { children: React.ReactNode }) {
+export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={'text-brand-raisin bg-brand-off-white'}>
+      <ScrollToTop />
       <body className="subpixel-antialiased">
         <Navbar />
         <main>

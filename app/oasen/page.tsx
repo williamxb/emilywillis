@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 
-import * as React from "react";
+
 import Link from 'next/link'
 import Image from "next/image";
 import Video from 'next-video';
@@ -46,9 +46,11 @@ export default function Page() {
       </div>
 
       <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+        <div className="prose">
+          <h1 className="uppercase">Oasen</h1>
+        </div>
         <div className="md:flex flex-row gap-24">
           <div className="prose md:w-1/2 my-3 md:my-0">
-            <h1 className="uppercase">Oasen</h1>
             <p>A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health.</p>
             <p className="italic">Branding - Advertising - Motion Graphics</p>
             <h2 className="uppercase">Awarded</h2>
