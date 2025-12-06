@@ -8,6 +8,7 @@ import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 
+import animation from '../../videos/goovilleAnimation.mp4'
 import mindmap from '../assets/gooville/mindmap.png'
 import storyboard from '../assets/gooville/storyboard.png'
 
@@ -17,10 +18,10 @@ export default function Page() {
     <>
       <div className="block mx-auto 3xl:rounded-3xl 3xl:w-[1760px] mb-8 md:mb-12">
         video
-        {/* <Video
-          src={book}
+        <Video
+          src={animation}
           className="w-full h-auto"
-        /> */}
+        />
       </div>
 
       <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
