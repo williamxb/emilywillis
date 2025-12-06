@@ -1,10 +1,10 @@
 "use client";
 import * as React from "react";
-// import Link from "next/link";
 import ImageWithLightbox from "../components/lightboxImage";
 import Image from "next/image";
 import Link from "next/link";
 import Video from 'next-video';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
@@ -16,6 +16,10 @@ import book from '../assets/zophos/book.jpg'
 import dawn from '../assets/zophos/dawn.jpg'
 import discover from '../assets/zophos/discover.jpg'
 import dusk from '../assets/zophos/dusk.jpg'
+
+import dawnExperience from '../assets/zophos/dawnExperience.png'
+import duskExperience from '../assets/zophos/duskExperience.png'
+import websiteMockup from '../assets/zophos/websiteMockup.png'
 
 import brand from '../assets/zophos/brand.png'
 import experiences from '../assets/zophos/experiences.jpg'
@@ -74,14 +78,14 @@ export default function Page() {
           <div className="grid sm:grid-cols-2 gap-12">
             <div>
               <Image
-                src={dawn}
+                src={dawnExperience}
                 alt=""
                 className="rounded-3xl"
               />
             </div>
             <div>
               <Image
-                src={dusk}
+                src={duskExperience}
                 alt=""
                 className="rounded-3xl"
               />
@@ -131,6 +135,77 @@ export default function Page() {
             alt=""
               className="bg-white rounded-3xl"
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+
+        <div className="grid-cols-subgrid col-span-2">
+          <Swiper
+            spaceBetween={48}
+            scrollbar={{ hide: true, }}
+            modules={[Scrollbar]}
+            className="pb-4!"
+          >
+            <SwiperSlide>
+              <Image
+                src={illustrationDawn}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={illustrationDawnCastle}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={illustrationCastle}
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={illustrationTent}
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+
+      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+        <Image
+          src={poster}
+          alt=""
+          className="rounded-3xl"
+        />
+      </div>
+
+      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+        <div className="prose">
+          <h2 className="uppercase me-8!">Website</h2>
+          <div className="grid sm:grid-cols-2 gap-12">
+            <Image
+              src={home}
+              alt=""
+              className="bg-white rounded-3xl"
+            />
+            <Image
+              src={experiences}
+              alt=""
+              className="bg-white rounded-3xl"
+            />
+            <Image
+              src={websiteMockup}
+              alt=""
+              className="bg-white rounded-3xl"
+            />
+            <div className="prose">
+              <h2 className="uppercase">website video scroll-through</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -219,56 +294,56 @@ export default function Page() {
     //     </div>
     //   </section>
 
-    //   <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
+    // <div className="grid grid-cols-2 gap-12 lg:gap-16 my-16">
 
-    //     <div className="grid-cols-subgrid col-span-2">
-    //       <Swiper
-    //         spaceBetween={48}
-    //         scrollbar={{ hide: true, }}
-    //         modules={[Scrollbar]}
-    //         className="pb-4!"
-    //       >
-    //         <SwiperSlide>
-    //           <Image
-    //             src={illustrationDawn}
-    //             alt=""
-    //           />
-    //         </SwiperSlide>
-    //         <SwiperSlide>
-    //           <Image
-    //             src={illustrationDawnCastle}
-    //             alt=""
-    //           />
-    //         </SwiperSlide>
-    //         <SwiperSlide>
-    //           <Image
-    //             src={illustrationCastle}
-    //             alt=""
-    //           />
-    //         </SwiperSlide>
-    //         <SwiperSlide>
-    //           <Image
-    //             src={illustrationTent}
-    //             alt=""
-    //           />
-    //         </SwiperSlide>
-    //       </Swiper>
-    //     </div>
-
-    //     <div>
-    //       <Image
-    //         src={home}
-    //         alt=""
-    //       />
-    //     </div>
-
-    //     <div>
-    //       <Image
-    //         src={experiences}
-    //         alt=""
-    //       />
-    //     </div>
+    //   <div className="grid-cols-subgrid col-span-2">
+    //     <Swiper
+    //       spaceBetween={48}
+    //       scrollbar={{ hide: true, }}
+    //       modules={[Scrollbar]}
+    //       className="pb-4!"
+    //     >
+    //       <SwiperSlide>
+    //         <Image
+    //           src={illustrationDawn}
+    //           alt=""
+    //         />
+    //       </SwiperSlide>
+    //       <SwiperSlide>
+    //         <Image
+    //           src={illustrationDawnCastle}
+    //           alt=""
+    //         />
+    //       </SwiperSlide>
+    //       <SwiperSlide>
+    //         <Image
+    //           src={illustrationCastle}
+    //           alt=""
+    //         />
+    //       </SwiperSlide>
+    //       <SwiperSlide>
+    //         <Image
+    //           src={illustrationTent}
+    //           alt=""
+    //         />
+    //       </SwiperSlide>
+    //     </Swiper>
     //   </div>
+
+    //   <div>
+    //     <Image
+    //       src={home}
+    //       alt=""
+    //     />
+    //   </div>
+
+    //   <div>
+    //     <Image
+    //       src={experiences}
+    //       alt=""
+    //     />
+    //   </div>
+    // </div>
 
     //   <section>
     //     <h2 className="prose-header">Website design</h2>
