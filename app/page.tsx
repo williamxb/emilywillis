@@ -18,11 +18,11 @@ export default function Page() {
   return (
     <>
       <section className="pt-10 pb-32 3xl: text-center">
-        <h1 className="uppercase text-3xl sm:text-5xl md:text-6xl 3xl:text-[5rem]/25 font-extrabold sm:font-black">Designing for <br />Positive Im<span className="tracking-[-0.075em]">pa</span>ct</h1>
+        <h1 className="uppercase text-3xl sm:text-5xl md:text-6xl 3xl:text-[5rem]/25 font-extrabold">Designing for <br />Positive Im<span className="tracking-[-0.075em]">pa</span>ct</h1>
         <p className="sm:text-xl lowercase">Branding - Digital - Illustration - More</p>
       </section>
 
-      <section className="block w-11/12 mx-auto 3xl:w-440">
+      <section className="block w-11/12 mx-auto 3xl:w-[1760px]">
         <div className="grid sm:grid-cols-2 gap-12">
           <HomeLink
             href="/oasen"
