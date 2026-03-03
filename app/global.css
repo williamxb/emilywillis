@@ -6,64 +6,34 @@
   --color-brand-blue: oklch(0.6217 0.15 243.26);
   --color-brand-raisin: oklch(0.2933 0.0168 338.38);
   --color-brand-black: oklch(0.22 0 0);
-  --font-sans: "Poppins";
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --tracking-widest: 0.25em;
   --breakpoint-3xl: 120rem;
+  --swiper-theme-color: #f8e8da;
+}
+
+@layer base {
+  b, strong {
+    @apply font-semibold;
+  }
+
+  :root {
+    --swiper-theme-color: var(--color-brand-off-white);
+    --swiper-navigation-color: var(--color-brand-off-white);
+    --swiper-pagination-color: var(--color-brand-off-white);
+  }
 }
 
 ::selection {
-  background-color: var(--color-brand-blue);
-  color: #fefefe;
+  @apply bg-brand-blue text-brand-off-white
 }
 
 html {
-  z-index: 1;
-  min-width: 360px;
+  @apply z-1 min-w-90
 }
-
-/* .glow {
-  position: relative;
-}
-
-.glow::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: radial-gradient(#276fe0, var(--color-brand-off-white) 60%);
-  filter: blur(1rem);
-}
-
-.glow-title::after {
-  left: 0;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 10rem;
-  height: 10rem;
-}
-
-.glow-xl::after {
-  left: 50%;
-  transform: translate(-50%, -42.5%);
-  width: 95vw;
-  height: 95vw;
-  max-width: 1024px;
-  max-height: 1024px;
-}
-
-@media (max-width: 640px) {
-  .glow-xl::after {
-    background: radial-gradient(#276fe0, var(--color-brand-off-white) 85%);
-  }
-} */
 
 .prose .anchor {
-  @apply absolute invisible no-underline;
-
-  margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
-  cursor: pointer;
+  @apply absolute invisible no-underline -ml-4 pr-2 w-4/5 max-w-175 cursor-pointer;
 }
 
 .anchor:hover {
@@ -75,8 +45,7 @@ html {
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
-  content: "#";
+  @apply text-neutral-300 dark:text-neutral-700 content-["#"];
 }
 
 .prose *:hover > .anchor {
@@ -88,11 +57,11 @@ html {
 }
 
 .prose h1 {
-  @apply text-2xl md:text-4xl font-bold mt-6 mb-2;
+  @apply text-2xl md:text-4xl font-semibold mt-6 mb-2;
 }
 
 .prose h2 {
-  @apply text-xl font-bold mt-6 mb-2;
+  @apply text-xl font-semibold mt-6 mb-2;
 }
 
 .prose h3 {
@@ -107,8 +76,7 @@ html {
   @apply font-semibold;
 }
 
-.prose ul,
-ol {
+.prose ul, ol {
   @apply pl-6 my-4;
 }
 
@@ -116,8 +84,7 @@ ol {
   @apply list-disc;
 }
 
-.prose ul > li,
-.prose ol > li {
+.prose ul > li, .prose ol > li {
   @apply mb-1;
 }
 
@@ -138,21 +105,14 @@ ol {
 }
 
 .prose > :first-child {
-  /* Force remove top margin on first child */
-  margin-top: 0;
+  @apply mt-0
 }
 
 /* Remove Safari input shadow on mobile */
-input[type="text"],
-input[type="email"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+input[type="text"], input[type="email"] {
+  @apply appearance-none
 }
 
 table {
-  display: block;
-  max-width: fit-content;
-  overflow-x: auto;
-  white-space: nowrap;
+  @apply block max-w-fit overflow-x-auto whitespace-nowrap
 }
