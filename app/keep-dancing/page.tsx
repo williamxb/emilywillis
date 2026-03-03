@@ -15,10 +15,7 @@ export default function Page() {
             alt=""
             className="w-full mb-3"
           /> 
-          <p>
-            <span className="font-semibold">Tools: </span>
-            <span className="font-light">InDesign, Illustrator</span>
-          </p>
+          <p><b>Tools:</b> InDesign, Illustrator</p>
         </div>
         <div className="order-first md:order-last">
           <h1 className="glow glow-title mb-6 uppercase text-5xl font-semibold tracking-wide">Keep Dancing</h1>

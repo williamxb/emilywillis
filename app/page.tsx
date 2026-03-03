@@ -22,7 +22,7 @@ export default function Page() {
         <p className="sm:text-xl lowercase">Branding - Digital - Illustration - More</p>
       </section>
 
-      <section className="block w-11/12 mx-auto 3xl:w-[1760px]">
+      <section className="block w-11/12 mx-auto 3xl:w-440">
         <div className="grid sm:grid-cols-2 gap-12">
           <HomeLink
             href="/oasen"
@@ -40,7 +40,7 @@ export default function Page() {
             image2={zophos2}
             priority={true}
             title="Zophos"
-            subtitle="Visual identity for a rare natural ghost experience; the Drosoulites of Crete."
+            subtitle="Visual identity for a rare natural ghost experience; The Drosoulites of Crete."
             tags="Branding - Website&nbsp;Design - Illustration"
           />
 

@@ -16,15 +16,14 @@ export default function Page() {
 
   return (
     <>
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-[1760px] mb-8 md:mb-12">
-        video
+      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
         <Video
           src={animation}
           className="w-full h-auto"
         />
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h1 className="uppercase">Gooville</h1>
         </div>
@@ -35,16 +34,16 @@ export default function Page() {
           </div>
 
           <div className="prose md:w-1/2">
-            <h2 className="uppercase">Brief:</h2>
+            <h3 className="uppercase">Brief:</h3>
             <p>Produce an animated advert for Cadbury Creme Egg that is 1s or under for social media.</p>
-            <p><b>Tools:</b> Photoshop, After Effects</p>
+            <p><b>TOOLS:</b> Photoshop, After Effects</p>
           </div>
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
-          <h2 className="uppercase me-8!">Visual Identity</h2>
+          <h2 className="uppercase me-8!">Process</h2>
           <div className="grid sm:grid-cols-2 gap-12">
             <Image
               src={storyboard}

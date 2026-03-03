@@ -31,7 +31,7 @@ const fallback = (
 export default function Page() {
   return (
     <>
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-[1760px] mb-8 md:mb-12">
+      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
         <Suspense fallback={fallback}>
           <Video
             className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl"
@@ -45,7 +45,7 @@ export default function Page() {
         </Suspense>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h1 className="uppercase">Oasen</h1>
         </div>
@@ -77,7 +77,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <Image
           aria-describedby="pitch"
           src={pitch}
@@ -95,7 +95,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h2 className="uppercase me-8!">Visual Identity</h2>
           <div className="grid sm:grid-cols-2 gap-12">
@@ -129,7 +129,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="md:flex flex-row gap-24">
           <div className="prose md:w-1/2 my-3 md:my-0">
             <h3 className="uppercase">Logo and Type</h3>
@@ -137,15 +137,15 @@ export default function Page() {
             <p>I hand-lettered 'Oasen' and chose a simple secondary typeface to compliment the lettering.</p>
           </div>
           <div className="prose md:w-1/2 my-3 md:my-0">
-            <h2 className="uppercase">Colour</h2>
+            <h3 className="uppercase">Colour</h3>
             <p>We opted for a soft sunset-inspired palette, avoiding bright and overstimulating colours.</p>
-            <h2 className="uppercase">Illustration</h2>
+            <h3 className="uppercase">Illustration</h3>
             <p>The blob illustrations were inspired by lava lamps - a visual stim tool for neurodiverse individuals.</p>
           </div>
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h2 className="uppercase mb-8!">Pop-up Store and Product Advertising</h2>
           <Image
@@ -156,7 +156,7 @@ export default function Page() {
         </div>
 
       </div>
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="flex flex-row gap-12">
           <div className="w-1/3">
             <Image alt="" src={productAd} className="rounded-3xl h-full"></Image>
@@ -167,7 +167,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="grid sm:grid-cols-3 gap-12">
           <div>
             <Image alt="" src={doypack} className="rounded-3xl"></Image>

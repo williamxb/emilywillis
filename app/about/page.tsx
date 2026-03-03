@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <>
       <section className="grid sm:grid-cols-2 mb-8 mt-16 gap-16 lg:gap-56">
-        <div className="">
+        <div>
           <h1 className="glow glow-title text-6xl font-serif mb-4 lowercase">Hello!</h1>
           <h2 className="text-4xl font-semibold uppercase tracking-wide leading-snug text-balance mb-6">I'm Emily, bringing over a decade of design passion to every project</h2>
           <div className="prose text-xl">
@@ -15,7 +15,7 @@ export default function Page() {
             <p>I love challenging myself at the gym, anime, reading fantasy and cooking.</p>
           </div>
         </div>
-        <div className="">
+        <>
           <div className="max-w-96 relative mb-8 mx-10">
             <Image src={emily} alt="" className=" overflow-hidden object-cover object-top" priority={true}></Image>
             <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3">
@@ -24,7 +24,7 @@ export default function Page() {
               </Link>
             </div>
           </div>
-        </div>
+        </>
       </section>
 
       <section className="mb-8" id="awards">

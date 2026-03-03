@@ -23,7 +23,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-[1760px] mb-8 md:mb-12">
+      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
         video
         {/* <Video
           src={book}
@@ -31,7 +31,7 @@ export default function Page() {
         /> */}
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h1 className="uppercase">Cautionary Tales for Children</h1>
         </div>
@@ -39,7 +39,7 @@ export default function Page() {
           <div className="prose md:w-1/2 my-3 md:my-0">
             <p>A true crime inspired version of Hilaire Belloc's Cautionary Tales for Children, laid out and illustrated as if it were the diary of a murderer.</p>
             <p className="italic">Publication Design - Cover Design - Art Direction</p>
-            <p>Tools: InDesign, Photoshop</p>
+            <p><b>Tools:</b> InDesign, Photoshop</p>
           </div>
 
           <div className="prose md:w-1/2">
@@ -56,7 +56,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h2 className="uppercase">Book Images</h2>
         </div>
@@ -111,7 +111,7 @@ export default function Page() {
         </Swiper>
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h2 className="uppercase">Cover Design</h2>
         </div>
@@ -123,7 +123,7 @@ export default function Page() {
         />
       </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-[1760px] my-8">
+      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
         <div className="prose">
           <h2 className="uppercase me-8!">Visual Identity</h2>
           <div className="grid sm:grid-cols-2 gap-12">
