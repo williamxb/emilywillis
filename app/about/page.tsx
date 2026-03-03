@@ -10,7 +10,6 @@ export default function Page() {
         <div className="md:flex flex-row gap-24">
           <div className="md:w-3/5 my-3 md:my-0">
             <Image
-              // @TODO: This should be an SVG
               src={hey}
               alt="Hey!"
               className='w-32 mb-6'
