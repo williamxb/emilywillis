@@ -1,6 +1,4 @@
 import { Suspense } from "react";
-
-
 import Link from 'next/link'
 import Image from "next/image";
 import Video from 'next-video';
@@ -73,6 +71,7 @@ export default function Page() {
               3D and Packaging - Julia Barbagallo<br />
               Research and Concept - Julia and Emily
             </p>
+            <p><b>TOOLS:</b> Photoshop, After Effects, Illustrator</p>
           </div>
         </div>
       </div>

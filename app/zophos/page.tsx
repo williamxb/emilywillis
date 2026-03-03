@@ -54,7 +54,7 @@ export default function Page() {
           <div className="prose md:w-1/2">
             <h2 className="uppercase">Brief</h2>
             <p>“How can we unlock rarity as a journey into the extroadinary?” Pearlfisher Fresh Pearls 2024.</p>
-            <p><b>Tools:</b> Photoshop, Illustrator, Figma</p>
+            <p><b>TOOLS:</b> Photoshop, Illustrator, Figma</p>
           </div>
         </div>
       </div>
@@ -201,9 +201,6 @@ export default function Page() {
               alt=""
               className="bg-white rounded-3xl"
             />
-            <div className="prose">
-              <h2 className="uppercase">website video scroll-through</h2>
-            </div>
           </div>
         </div>
       </div>

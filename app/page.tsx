@@ -30,7 +30,7 @@ export default function Page() {
             image2={oasen2}
             priority={true}
             title="Oasen"
-            subtitle="A skincare brand designed to cater to those with sensory differences."
+            subtitle="A skincare brand designed to cater to those with sensory&nbsp;differences."
             tags="Branding - Motion&nbsp;Graphics - Advertising"
           />
 
@@ -40,7 +40,7 @@ export default function Page() {
             image2={zophos2}
             priority={true}
             title="Zophos"
-            subtitle="Visual identity for a rare natural ghost experience; The Drosoulites of Crete."
+            subtitle="Visual identity for a rare natural ghost experience; The Drosoulites of&nbsp;Crete."
             tags="Branding - Website&nbsp;Design - Illustration"
           />
 
@@ -49,7 +49,7 @@ export default function Page() {
             image1={egg1}
             image2={egg2}
             title="Gooville"
-            subtitle="A theoretical Creme Egg animated ad exploring the chocolatey world of Gooville."
+            subtitle="A theoretical Creme Egg animated ad exploring the chocolatey world of&nbsp;Gooville."
             tags="Motion&nbsp;Design - Advertising - Illustration"
           />
 
@@ -58,7 +58,7 @@ export default function Page() {
             image1={tales1}
             image2={tales2}
             title="Cautionary Tales for Children"
-            subtitle="An interpretation of Hilaire Belloc's book for an adult audience."
+            subtitle="An interpretation of Hilaire Belloc's book for an adult&nbsp;audience."
             tags="Publication&nbsp;Design - Cover Design - Art&nbsp;Direction"
           />
         </div>

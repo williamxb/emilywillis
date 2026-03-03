@@ -33,9 +33,9 @@ export default function HomeLink({ href, image1, image2, priority = false, title
           alt=""
         />
 
-        <div className="ms-8">
+        <div className="ms-4">
           <h1 className="text-2xl md:text-4xl tracking-wider font-black uppercase mb-2 ">{title}</h1>
-          <h2 className="font-light mb-2 text-balance tracking-wider">{subtitle}</h2>
+          <h2 className="font-light mb-2 tracking-wider">{subtitle}</h2>
           <p className="text-sm sm:text-md italic font-light tracking-wider">{tags}</p>
         </div>
     </Link>

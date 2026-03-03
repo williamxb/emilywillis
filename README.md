@@ -30,10 +30,3 @@ pnpm dev
 The site will be accessible at `http://localhost:3000`.
 
 This site is deployed to [Vercel](https://vercel.com/) - ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
-
-## Todo/Issues
-
-- More use of components!
-- CMS integration (see branch)
-- Improve markup for tag section underneath titles (use a list and CSS for separators?)
-- Add class `text-lg` to base style of `<p>` element, then fix any conflicts with smaller text use
