@@ -1,18 +1,26 @@
 import Link from "next/link";
+import { Container } from "./components/container";
+import Image from "next/image";
+import logo from "./assets/logo.svg";
 
 export default function NotFound() {
   return (
-    <>
-      <section className="my-32">
-        <div>
-          <h1 className="glow glow-title text-5xl font-serif mb-4 lowercase">Uh oh!</h1>
-          <h2 className="text-3xl font-semibold uppercase tracking-wide leading-snug text-balance mb-6">404 - Page not found</h2>
-          <div className="prose">
-            <p>The page you are looking for does not exist or has moved.</p>
-            <p><Link href="/" className="inline-flex justify-center rounded-lg text-sm font-semibold no-underline! py-3 px-4 bg-brand-blue text-brand-off-white hover:bg-brand-blue/75">Go home?</Link></p>
-          </div>
-        </div>
-      </section>
-    </>
+    <Container className="my-32 flex flex-col items-center text-center">
+      <Link href="/">
+        <Image src={logo} alt="Emily Willis" className="w-32 mb-12 hover:opacity-80 transition-opacity" />
+      </Link>
+      <h1 className="text-7xl mb-4 lowercase">Uh oh!</h1>
+      <h2 className="text-3xl font-semibold uppercase tracking-widest leading-snug text-balance mb-8">
+        404 - Page not found
+      </h2>
+      <div className="prose max-w-md">
+        <p className="text-lg mb-8">The page you are looking for does not exist or has moved.</p>
+        <Link 
+          href="/" 
+          className="inline-flex justify-center rounded-full text-base font-semibold no-underline! py-4 px-10 border border-brand-raisin text-brand-raisin hover:bg-brand-raisin hover:text-brand-off-white transition-colors"
+        >
+          Return Home
+        </Link>      </div>
+    </Container>
   )
 }
