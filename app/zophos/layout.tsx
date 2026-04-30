@@ -3,7 +3,6 @@ import Page from "./page";
 
 export const metadata: Metadata = {
   title: 'Zophos',
-  description:
-    "Naming / Branding / Illustration / Website Design",
+  description: "A visual identity for a rare natural ghost experience; The Drosoulites of Crete.",
 };
 export default Page;

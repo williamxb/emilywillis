@@ -1,16 +1,7 @@
-"use client";
 import * as React from "react";
-import ImageWithLightbox from "../components/lightboxImage";
 import Image from "next/image";
-import Link from "next/link";
-import Video from 'next-video';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/a11y'
+import { Container } from "../components/container";
+import { ProjectCarousel } from "../components/projectCarousel";
 
 import dawnExperience from '../assets/zophos/dawnExperience.png'
 import duskExperience from '../assets/zophos/duskExperience.png'
@@ -30,18 +21,25 @@ import poster from '../assets/zophos/poster.jpg'
 import process from '../assets/zophos/process.png'
 
 export default function Page() {
+  const illustrationImages = [
+    illustrationDawn,
+    illustrationDawnCastle,
+    illustrationCastle,
+    illustrationTent,
+  ];
+
   return (
     <>
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
+      <Container className="mb-8 md:mb-12 !w-full !max-w-full">
         <Image
           src={mainImage}
           alt=""
-          className="w-full h-auto"
+          className="w-full h-auto 3xl:rounded-3xl"
           loading="eager"
         />
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h1 className="uppercase">Zophos</h1>
         </div>
@@ -57,17 +55,17 @@ export default function Page() {
             <p><b>TOOLS:</b> Photoshop, Illustrator, Figma</p>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <Image
           src={insight}
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl w-full h-auto"
         />
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h2 className="uppercase me-8!">The Experiences</h2>
           <div className="grid sm:grid-cols-2 gap-12">
@@ -75,38 +73,38 @@ export default function Page() {
               <Image
                 src={dawnExperience}
                 alt=""
-                className="rounded-3xl"
+                className="rounded-3xl w-full h-auto"
               />
             </div>
             <div>
               <Image
                 src={duskExperience}
                 alt=""
-                className="rounded-3xl"
+                className="rounded-3xl w-full h-auto"
               />
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h2 className="uppercase me-8!">Visual Identity</h2>
           <div className="grid sm:grid-cols-2 gap-12">
             <Image
               src={brand}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
             <Image
               src={moodboard}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
             <Image
               src={process}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
             <div className="prose">
               <h3 className="uppercase">Logo and Type:</h3>
@@ -115,9 +113,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <div className="grid sm:grid-cols-2 gap-12">
             <div className="prose">
@@ -129,81 +127,46 @@ export default function Page() {
             <Image
               src={palette}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8 rounded-3xl overflow-hidden">
-        <Swiper
-          modules={[Navigation, Pagination, A11y]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <Image
-              src={illustrationDawn}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={illustrationDawnCastle}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={illustrationCastle}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={illustrationTent}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+      <Container className="my-8">
+        <ProjectCarousel images={illustrationImages} />
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <Image
           src={poster}
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl w-full h-auto"
         />
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h2 className="uppercase me-8!">Website</h2>
           <div className="grid sm:grid-cols-2 gap-12">
             <Image
               src={home}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
             <Image
               src={experiences}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
             <Image
               src={websiteMockup}
               alt=""
-              className="bg-white rounded-3xl"
+              className="bg-white rounded-3xl w-full h-auto"
             />
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

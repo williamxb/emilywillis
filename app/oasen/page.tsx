@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Link from 'next/link'
 import Image from "next/image";
 import Video from 'next-video';
+import { Container } from "../components/container";
 
 import rsaAward from '../assets/oasen/rsaAward.png'
 import billboard from '../assets/oasen/billboard.jpg'
@@ -29,7 +30,7 @@ const fallback = (
 export default function Page() {
   return (
     <>
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
+      <Container className="mb-8 md:mb-12 w-full max-w-full">
         <Suspense fallback={fallback}>
           <Video
             className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl"
@@ -41,9 +42,9 @@ export default function Page() {
             controls={false}
           />
         </Suspense>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h1 className="uppercase">Oasen</h1>
         </div>
@@ -74,14 +75,14 @@ export default function Page() {
             <p><b>TOOLS:</b> Photoshop, After Effects, Illustrator</p>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <Image
           aria-describedby="pitch"
           src={pitch}
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl w-full h-auto"
         />
         <div className="sr-only" id="pitch">
           <h2>The Solution</h2>
@@ -92,12 +93,17 @@ export default function Page() {
           <h3>Proposal</h3>
           <p>To empower people with sensory differences, we decided to create a sensory-safe skincare brand - Oasen. Launching a series of low-sensory pop-up stores in major cities, providing refuge from the hustle and bustle - giving neurodivergents a safe space and a chance to connect with others that share the same issues.</p>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
-          <h2 className="uppercase me-8!">Visual Identity</h2>
-          <div className="grid sm:grid-cols-2 gap-12">
+          <h2 className="uppercase mb-8!">Visual Identity</h2>
+        </div>
+      </Container>
+
+      <Container className="mt-8 mb-16">
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6 md:col-span-3">
             <Video
               src={logo}
               className="rounded-3xl overflow-hidden"
@@ -107,14 +113,14 @@ export default function Page() {
               playsInline
               controls={false}
             />
-            <Image
-              src={process}
-              alt=""
-            />
-            <Image
-              src={moodboard}
-              alt=""
-            />
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image src={process} alt="" />
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image src={moodboard} alt="" />
+          </div>
+          <div className="col-span-6 md:col-span-3">
             <Video
               src={colourPalette}
               className="rounded-3xl overflow-hidden"
@@ -126,68 +132,60 @@ export default function Page() {
             />
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
-        <div className="md:flex flex-row gap-24">
-          <div className="prose md:w-1/2 my-3 md:my-0">
+      <Container className="mt-8 mb-16">
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6 md:col-span-3 prose">
             <h3 className="uppercase">Logo and Type</h3>
             <p>Oasen (Oasis) - a sanctuary. I brought the name into the logo through the soft oasis shape.</p>
             <p>I hand-lettered 'Oasen' and chose a simple secondary typeface to compliment the lettering.</p>
           </div>
-          <div className="prose md:w-1/2 my-3 md:my-0">
+          <div className="col-span-6 md:col-span-3 prose">
             <h3 className="uppercase">Colour</h3>
             <p>We opted for a soft sunset-inspired palette, avoiding bright and overstimulating colours.</p>
             <h3 className="uppercase">Illustration</h3>
             <p>The blob illustrations were inspired by lava lamps - a visual stim tool for neurodiverse individuals.</p>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h2 className="uppercase mb-8!">Pop-up Store and Product Advertising</h2>
-          <Image
-            src={storefront}
-            alt=""
-            className="w-full h-auto rounded-3xl"
-          />
         </div>
+      </Container>
 
-      </div>
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
-        <div className="flex flex-row gap-12">
-          <div className="w-1/3">
-            <Image alt="" src={productAd} className="rounded-3xl h-full"></Image>
+      <Container className="mt-8 mb-16">
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6">
+            <Image src={storefront} alt="" className="w-full h-full rounded-3xl" />
           </div>
-          <div className="w-2/3">
-            <Image alt="" src={billboard} className="rounded-3xl h-full object-cover object-left"></Image>
+          <div className="col-span-2">
+            <Image alt="" src={productAd} className="rounded-3xl h-full w-full object-cover"></Image>
           </div>
-        </div>
-      </div>
+          <div className="col-span-4">
+            <Image alt="" src={billboard} className="rounded-3xl h-full w-full object-cover object-left"></Image>
+          </div>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
-        <div className="grid sm:grid-cols-3 gap-12">
-          <div>
-            <Image alt="" src={doypack} className="rounded-3xl"></Image>
+          <div className="col-span-3 sm:col-span-2">
+            <Image alt="" src={doypack} className="rounded-3xl w-full h-auto"></Image>
           </div>
-          <div>
-            <Image alt="" src={moisturiserRefill} className="rounded-3xl"></Image>
+          <div className="col-span-3 sm:col-span-2">
+            <Image alt="" src={moisturiserRefill} className="rounded-3xl w-full h-auto"></Image>
           </div>
-          <div>
-            <Image alt="" src={moisturiser} className="rounded-3xl"></Image>
+          <div className="col-span-3 sm:col-span-2">
+            <Image alt="" src={moisturiser} className="rounded-3xl w-full h-auto"></Image>
           </div>
-        </div>
 
-        <div className="grid sm:grid-cols-2 gap-12 pt-16 mb-16">
-          <div>
-            <Image alt="" src={sunscreen} className="rounded-3xl"></Image>
+          <div className="col-span-3 sm:col-span-3">
+            <Image alt="" src={sunscreen} className="rounded-3xl w-full h-auto"></Image>
           </div>
-          <div>
-            <Image alt="" src={sachets} className="rounded-3xl"></Image>
+          <div className="col-span-6 sm:col-span-3">
+            <Image alt="" src={sachets} className="rounded-3xl w-full h-auto"></Image>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

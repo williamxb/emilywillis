@@ -1,7 +1,7 @@
 import { Suspense } from "react";
-import Link from 'next/link'
 import Image from "next/image";
 import Video from "next-video";
+import { Container } from "../components/container";
 
 import animation from '../../videos/goovilleAnimation.mp4'
 import mindmap from '../assets/gooville/mindmap.png'
@@ -13,10 +13,9 @@ const fallback = (
 )
 
 export default function Page() {
-
   return (
     <>
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
+      <Container className="mb-8 md:mb-12 !w-full !max-w-full">
         <Suspense fallback={fallback}>
           <Video
             className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl"
@@ -24,9 +23,9 @@ export default function Page() {
             loop
             controls />
         </Suspense>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h1 className="uppercase">Gooville</h1>
         </div>
@@ -42,26 +41,30 @@ export default function Page() {
             <p><b>TOOLS:</b> Photoshop, After Effects</p>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="mt-8 mb-16">
         <div className="prose">
-          <h2 className="uppercase me-8!">Process</h2>
-          <div className="grid sm:grid-cols-2 gap-12">
+          <h2 className="uppercase mb-8!">Pop-up Store and Product Advertising</h2>
+        </div>
+
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6 md:col-span-3">
             <Image
               src={mindmap}
               alt=""
-              className="bg-white rounded-3xl"
+              className="rounded-3xl"
             />
+          </div>
+          <div className="col-span-6 md:col-span-3">
             <Image
               src={storyboard}
               alt=""
-              className="bg-white rounded-3xl"
+              className="rounded-3xl"
             />
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }
-

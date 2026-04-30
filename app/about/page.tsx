@@ -2,11 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import hey from '../assets/about/hey.svg'
 import emily from '../assets/about/emily.jpeg';
+import { Container } from '../components/container';
 
 export default function Page() {
   return (
     <>
-      <div className="block w-11/12 mx-auto 3xl:w-440 mb-12">
+      <Container className="mb-12">
         <div className="md:flex flex-row gap-24 justify-between">
           <div className="md:w-2/5 my-3 md:my-0 md:pt-12">
             <Image
@@ -32,9 +33,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="grid md:grid-cols-2 gap-12">
 
           <div className=''>
@@ -118,7 +119,7 @@ export default function Page() {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

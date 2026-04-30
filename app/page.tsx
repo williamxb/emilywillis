@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import HomeLink from './components/homeLink'
+import { Container } from './components/container'
 
 import oasen1 from './assets/home/home-oasen-1.png'
 import oasen2 from './assets/home/home-oasen-2.png'
@@ -17,12 +18,12 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <section className="pt-10 pb-32 3xl: text-center">
+      <section className="pt-10 pb-32 text-center w-full">
         <h1 className="uppercase text-3xl sm:text-5xl md:text-6xl 3xl:text-[5rem]/25 font-extrabold">Designing for <br />Positive Im<span className="tracking-[-0.075em]">pa</span>ct</h1>
         <p className="sm:text-xl lowercase">Branding - Digital - Illustration - More</p>
       </section>
 
-      <section className="block w-11/12 mx-auto 3xl:w-[1760px]">
+      <Container>
         <div className="grid sm:grid-cols-2 gap-12">
           <HomeLink
             href="/oasen"
@@ -62,7 +63,7 @@ export default function Page() {
             tags="Publication&nbsp;Design - Cover Design - Art&nbsp;Direction"
           />
         </div>
-      </section>
+      </Container>
     </>
   )
 }

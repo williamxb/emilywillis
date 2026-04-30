@@ -1,14 +1,8 @@
-"use client";
 import { Suspense } from "react";
 import Image from "next/image";
 import Video from "next-video";
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/a11y'
+import { Container } from "../components/container";
+import { ProjectCarousel } from "../components/projectCarousel";
 
 import book from '../../videos/Big Book Gif slow.mp4'
 import cover from '../assets/cautionary-tales-for-children/talesCover.jpg'
@@ -27,18 +21,18 @@ const fallback = (
 )
 
 export default function Page() {
+  const bookImages = [
+    bookPage13,
+    bookPage19,
+    bookPage20,
+    bookPage27,
+    bookPage29,
+    bookPage37,
+  ];
 
   return (
     <>
-      <style>{`
-        :root {
-          --swiper-theme-color: var(--color-brand-raisin);
-          --swiper-navigation-color: var(--color-brand-raisin);
-          --swiper-pagination-color: var(--color-brand-raisin);
-        }
-      `}</style>
-
-      <div className="block mx-auto 3xl:rounded-3xl 3xl:w-440 mb-8 md:mb-12">
+      <Container className="mb-8 md:mb-12 !w-full !max-w-full">
         <Suspense fallback={fallback}>
           <Video
             className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl content-center"
@@ -50,9 +44,9 @@ export default function Page() {
             controls={false}
           />
         </Suspense>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h1 className="uppercase">Cautionary Tales for Children</h1>
         </div>
@@ -75,94 +69,49 @@ export default function Page() {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h2 className="uppercase">Book Images</h2>
         </div>
-        <Swiper
-          modules={[Navigation, Pagination, A11y]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <Image
-              src={bookPage13}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={bookPage19}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={bookPage20}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={bookPage27}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={bookPage29}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src={bookPage37}
-              className="rounded-3xl"
-              alt=""
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+        <ProjectCarousel images={bookImages} themeColor="var(--color-brand-raisin)" />
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="my-8">
         <div className="prose">
           <h2 className="uppercase">Cover Design</h2>
         </div>
 
         <Image
           src={cover}
-          className="rounded-3xl"
+          className="rounded-3xl w-full h-auto"
           alt=""
         />
-      </div>
+      </Container>
 
-      <div className="block w-11/12 mx-auto 3xl:w-440 my-8">
+      <Container className="mt-8 mb-16">
         <div className="prose">
-          <h2 className="uppercase me-8!">Process</h2>
-          <div className="grid sm:grid-cols-2 gap-12">
+          <h2 className="uppercase mb-8!">Process</h2>
+        </div>
+
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6 md:col-span-3">
             <Image
               src={moodboard}
               alt=""
               className="bg-white rounded-3xl"
             />
+          </div>
+          <div className="col-span-6 md:col-span-3">
             <Image
               src={layout}
               alt=""
-              className="bg-white rounded-3xl"
+              className="rounded-3xl"
             />
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }
-
