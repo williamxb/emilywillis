@@ -24,6 +24,10 @@
     "yet-another-react-lightbox": "^3.29.1"
   },
   "devDependencies": {
-    "baseline-browser-mapping": "^2.10.0"
+    "baseline-browser-mapping": "^2.10.0",
+    "eslint": "^10.2.1",
+    "eslint-config-next": "^16.2.4",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.3"
   }
 }
