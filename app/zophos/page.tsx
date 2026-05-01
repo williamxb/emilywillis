@@ -145,25 +145,20 @@ export default function Page() {
         />
       </Container>
 
-      <Container className="my-8">
+      <Container className="mt-8 mb-16">
         <div className="prose">
           <h2 className="uppercase me-8!">Website</h2>
-          <div className="grid sm:grid-cols-2 gap-12">
-            <Image
-              src={home}
-              alt=""
-              className="bg-white rounded-3xl w-full h-auto"
-            />
-            <Image
-              src={experiences}
-              alt=""
-              className="bg-white rounded-3xl w-full h-auto"
-            />
-            <Image
-              src={websiteMockup}
-              alt=""
-              className="bg-white rounded-3xl w-full h-auto"
-            />
+        </div>
+
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6 md:col-span-3">
+            <Image src={home} alt="" className="w-full h-full rounded-3xl" />
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image src={experiences} alt="" className="w-full h-full rounded-3xl" />
+          </div>
+          <div className="col-span-6">
+            <Image src={websiteMockup} alt="" className="w-full h-full rounded-3xl" />
           </div>
         </div>
       </Container>
