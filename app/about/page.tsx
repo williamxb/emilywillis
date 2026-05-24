@@ -3,6 +3,12 @@ import Link from 'next/link';
 import hey from '../assets/about/hey.svg'
 import emily from '../assets/about/emily.jpeg';
 import { Container } from '../components/container';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Me',
+  description: "I'm Emily, bringing over a decade of design passion to every project"
+};
 
 export default function Page() {
   return (

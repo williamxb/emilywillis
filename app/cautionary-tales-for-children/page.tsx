@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Video from "next-video";
 import { Container } from "../components/container";
@@ -19,6 +20,12 @@ import bookPage37 from '../assets/cautionary-tales-for-children/talesPage37.jpg'
 const fallback = (
   <div className="aspect-video w-full"></div>
 )
+
+export const metadata: Metadata = {
+  title: 'Cautionary Tales for Children',
+  description:
+    "Group Project / Layout Design / Cover Design / Art Design / Print",
+};
 
 export default function Page() {
   const bookImages = [

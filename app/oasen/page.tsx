@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
 import Link from 'next/link'
 import Image from "next/image";
 import Video from 'next-video';
@@ -26,6 +27,11 @@ import colourPalette from '../../videos/colourPalette.mp4'
 const fallback = (
   <div className="aspect-video w-full"></div>
 )
+
+export const metadata: Metadata = {
+  title: 'Oasen',
+  description: "A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health.",
+};
 
 export default function Page() {
   return (

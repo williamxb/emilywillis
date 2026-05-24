@@ -1,9 +1,14 @@
 import * as React from "react";
+import { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "../components/container";
 import { ProjectCarousel } from "../components/projectCarousel";
 
+import websiteBooking from '../assets/zophos/book.jpg'
+import websiteDiscover from '../assets/zophos/discover.jpg'
+import websiteDawnExperience from '../assets/zophos/dawn.jpg'
 import dawnExperience from '../assets/zophos/dawnExperience.png'
+import websiteDuskExperience from '../assets/zophos/dusk.jpg'
 import duskExperience from '../assets/zophos/duskExperience.png'
 import websiteMockup from '../assets/zophos/websiteMockup.png'
 import brand from '../assets/zophos/brand.png'
@@ -19,6 +24,11 @@ import moodboard from '../assets/zophos/moodboard.png'
 import palette from '../assets/zophos/palette.png'
 import poster from '../assets/zophos/poster.jpg'
 import process from '../assets/zophos/process.png'
+
+export const metadata: Metadata = {
+  title: 'Zophos',
+  description: "A visual identity for a rare natural ghost experience; The Drosoulites of Crete.",
+};
 
 export default function Page() {
   const illustrationImages = [
@@ -151,14 +161,26 @@ export default function Page() {
         </div>
 
         <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+          <div className="col-span-6">
+            <Image src={websiteMockup} alt="" className="w-full h-full rounded-3xl" />
+          </div>
           <div className="col-span-6 md:col-span-3">
             <Image src={home} alt="" className="w-full h-full rounded-3xl" />
           </div>
           <div className="col-span-6 md:col-span-3">
             <Image src={experiences} alt="" className="w-full h-full rounded-3xl" />
           </div>
-          <div className="col-span-6">
-            <Image src={websiteMockup} alt="" className="w-full h-full rounded-3xl" />
+          <div className="col-span-6 md:col-span-3">
+            <Image src={websiteDawnExperience} alt="" className="w-full rounded-3xl"></Image>
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image src={websiteDuskExperience} alt="" className="w-full rounded-3xl"></Image>
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image src={websiteDiscover} alt="" className="w-full rounded-3xl"></Image>
+          </div>
+          <div className="col-span-6 md:col-span-3">
+            <Image src={websiteBooking} alt="" className="w-full rounded-3xl"></Image>
           </div>
         </div>
       </Container>

@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Video from "next-video";
 import { Container } from "../components/container";
@@ -11,6 +12,11 @@ import storyboard from '../assets/gooville/storyboard.png'
 const fallback = (
   <div className="aspect-video w-full"></div>
 )
+
+export const metadata: Metadata = {
+  title: 'Gooville',
+  description: "A theoretical Cadbury Creme Egg social media campaign (pre rebrand) exploding the chocolatey world of Gooville."
+};
 
 export default function Page() {
   return (
