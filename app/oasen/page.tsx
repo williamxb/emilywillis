@@ -27,7 +27,6 @@ export default function Page() {
   return (
     <>
       <Container className="mb-8 md:mb-12 w-full max-w-full">
-        <Suspense fallback={fallback}>
           <Video
             className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl"
             src={fullGraphic}
@@ -37,7 +36,6 @@ export default function Page() {
             playsInline
             controls={false}
           />
-        </Suspense>
       </Container>
 
       <Container className="my-8">

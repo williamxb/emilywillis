@@ -16,11 +16,6 @@ import bookPage27 from '../assets/cautionary-tales-for-children/talesPage27.jpg'
 import bookPage29 from '../assets/cautionary-tales-for-children/talesPage29.jpg'
 import bookPage37 from '../assets/cautionary-tales-for-children/talesPage37.jpg'
 
-// @TODO: Test if this actually helps with CLS
-const fallback = (
-  <div className="aspect-video w-full"></div>
-)
-
 export const metadata: Metadata = {
   title: 'Cautionary Tales for Children',
   description:
@@ -40,18 +35,16 @@ export default function Page() {
   return (
     <>
       <Container className="mb-8 md:mb-12 !w-full !max-w-full">
-        <Suspense fallback={fallback}>
-          <Video
-            className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl content-center"
-            src={book}
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls={false}
-          />
-        </Suspense>
-      </Container>
+        <Video
+          className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl content-center"
+          src={book}
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls={false}
+        />
+    </Container>
 
       <Container className="my-8">
         <div className="prose max-w-none">

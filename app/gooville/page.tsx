@@ -8,11 +8,6 @@ import animation from '../../videos/goovilleAnimation.mp4'
 import mindmap from '../assets/gooville/mindmap.png'
 import storyboard from '../assets/gooville/storyboard.png'
 
-// @TODO: Test if this actually helps with CLS
-const fallback = (
-  <div className="aspect-video w-full"></div>
-)
-
 export const metadata: Metadata = {
   title: 'Gooville',
   description: "A theoretical Cadbury Creme Egg social media campaign (pre rebrand) exploding the chocolatey world of Gooville."
@@ -22,13 +17,11 @@ export default function Page() {
   return (
     <>
       <Container className="mb-8 md:mb-12 !w-full !max-w-full">
-        <Suspense fallback={fallback}>
-          <Video
-            className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl"
-            src={animation}
-            loop
-            controls />
-        </Suspense>
+        <Video
+          className="3xl:rounded-3xl overflow-hidden shadow-xl 3xl:shadow-xl"
+          src={animation}
+          loop
+          controls />
       </Container>
 
       <Container className="my-8">
