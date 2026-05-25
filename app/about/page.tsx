@@ -19,7 +19,7 @@ export default function Page() {
             <Image
               src={hey}
               alt="Hey!"
-              className='w-48 mb-4'
+              className='w-40 mb-4 ms-4 md:ms-6'
             ></Image>
             <h2 className="uppercase text-3xl sm:text-5xl font-extrabold mb-12 ms-4 md:ms-6">I'm Emily, bringing over a decade of design passion to every project.</h2>
             <div className="prose">
@@ -119,6 +119,7 @@ export default function Page() {
               <li className='border p-5 text-center rounded-full'>Advertising</li>
               <li className='border p-5 text-center rounded-full'>Layout Design</li>
               <li className='border p-5 text-center rounded-full'>Web Design</li>
+              <li className='border p-5 text-center rounded-full'>Print Design</li>
               <li className='border p-5 text-center rounded-full'>Illustration</li>
               <li className='border p-5 text-center rounded-full'>Photography</li>
               <li className='border p-5 text-center rounded-full'>Video Editing</li>
