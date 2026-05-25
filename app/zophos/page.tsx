@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
+import { Container } from "../components/container";
+import { ProjectCarousel } from "../components/projectCarousel";
 
 import zophosWebsite from '../../videos/zophos-website.mov' 
 
