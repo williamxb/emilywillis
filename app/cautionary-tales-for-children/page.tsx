@@ -7,8 +7,8 @@ import { ProjectCarousel } from "../components/projectCarousel";
 
 import book from '../../videos/Big Book Gif slow.mp4'
 import cover from '../assets/cautionary-tales-for-children/talesCover.jpg'
-import layout from '../assets/cautionary-tales-for-children/layout.png'
-import moodboard from '../assets/cautionary-tales-for-children/moodboard.png'
+import layout from '../assets/cautionary-tales-for-children/layout.jpg'
+import moodboard from '../assets/cautionary-tales-for-children/moodboard.jpg'
 import bookPage13 from '../assets/cautionary-tales-for-children/talesPage13.jpg'
 import bookPage19 from '../assets/cautionary-tales-for-children/talesPage19.jpg'
 import bookPage20 from '../assets/cautionary-tales-for-children/talesPage20.jpg'
@@ -54,26 +54,26 @@ export default function Page() {
       </Container>
 
       <Container className="my-8">
-        <div className="prose">
+        <div className="prose max-w-none">
           <h1 className="uppercase">Cautionary Tales for Children</h1>
-        </div>
-        <div className="md:flex flex-row gap-24">
-          <div className="prose md:w-1/2 my-3 md:my-0">
-            <p>A true crime inspired version of Hilaire Belloc's Cautionary Tales for Children, laid out and illustrated as if it were the diary of a murderer.</p>
-            <p className="italic">Publication Design - Cover Design - Art Direction</p>
-            <p><b>TOOLS:</b> InDesign, Photoshop</p>
-          </div>
+          <div className="md:flex flex-row gap-24">
+            <div className="md:w-1/2 my-3 md:my-0">
+              <p className="!mt-0">A true crime inspired version of Hilaire Belloc's Cautionary Tales for Children, laid out and illustrated as if it were the diary of a murderer.</p>
+              <p className="italic">Publication Design - Cover Design - Art Direction</p>
+              <p><b>TOOLS:</b> InDesign, Photoshop</p>
+            </div>
 
-          <div className="prose md:w-1/2">
-            <h2 className="uppercase">Brief:</h2>
-            <p>Produce a version of Hilaire Belloc's Cautionary Tales for Children suitable for an adult audience.</p>
-            <h2 className="uppercase">Team:</h2>
-            <p>
-              Cover Design: Emily Willis<br />
-              Layout Design: Emily Willis and Katherine Sheldon<br />
-              Illustration: Grace Bradshaw, Amy Calladine and Dulcie Lanaghan<br />
-              Typography: Tobias Benedikt Reif
-            </p>
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <h2 className="uppercase !mt-0">Brief:</h2>
+              <p>Produce a version of Hilaire Belloc's Cautionary Tales for Children suitable for an adult audience.</p>
+              <h2 className="uppercase">Team:</h2>
+              <p>
+                Cover Design: Emily Willis<br />
+                Layout Design: Emily Willis and Katherine Sheldon<br />
+                Illustration: Grace Bradshaw, Amy Calladine and Dulcie Lanaghan<br />
+                Typography: Tobias Benedikt Reif
+              </p>
+            </div>
           </div>
         </div>
       </Container>
@@ -99,7 +99,7 @@ export default function Page() {
 
       <Container className="mt-8 mb-16">
         <div className="prose">
-          <h2 className="uppercase mb-8!">Process</h2>
+          <h2 className="uppercase">Process</h2>
         </div>
 
         <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">

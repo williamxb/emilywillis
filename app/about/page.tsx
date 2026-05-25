@@ -21,7 +21,7 @@ export default function Page() {
               alt="Hey!"
               className='w-48 mb-4'
             ></Image>
-            <h2 className="uppercase text-3xl sm:text-5xl font-extrabold mb-12">I'm Emily, bringing over a decade of design passion to every project.</h2>
+            <h2 className="uppercase text-3xl sm:text-5xl font-extrabold mb-12 ms-4 md:ms-6">I'm Emily, bringing over a decade of design passion to every project.</h2>
             <div className="prose">
               <p>Recently graduated from Loughborough University with a BA in Graphic Communication and Illustration. I excel at distilling complex ideas into compelling visual stories, with a passion for designing to create positive impact.</p>
               <p>I love challenging myself at the gym, anime, reading fantasy and cooking.</p>
@@ -45,7 +45,7 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-12">
 
           <div className=''>
-            <div className="flex flex-row items-center mb-2">
+            <div className="flex flex-row items-center mb-2 ms-4 md:ms-6">
               <h2 className="uppercase text-4xl font-extrabold pr-6">Awards</h2>
               <div className="w-full"><hr className="border-t-2 border-brand-raisin" /></div>
             </div>
@@ -58,7 +58,7 @@ export default function Page() {
           </div>
 
           <div className='md:col-start-1 md:row-start-2'>
-            <div className="flex flex-row items-center mb-2">
+            <div className="flex flex-row items-center mb-2 ms-4 md:ms-6">
               <h2 className="uppercase text-4xl font-extrabold pr-6">Education</h2>
               <div className="w-full"><hr className="border-t-2 border-brand-raisin" /></div>
             </div>
@@ -72,7 +72,7 @@ export default function Page() {
           </div>
 
           <div className='md:row-span-2 md:col-start-2 md:row-start-1'>
-            <div className="flex flex-row items-center mb-2">
+            <div className="flex flex-row items-center mb-2 ms-4 md:ms-6">
               <h2 className="uppercase text-4xl font-extrabold pr-6">Experience</h2>
               <div className="w-full"><hr className="border-t-2 border-brand-raisin" /></div>
             </div>
@@ -103,7 +103,7 @@ export default function Page() {
           </div>
 
           <div className='md:col-span-2 md:row-start-3'>
-            <div className="flex flex-row items-center mb-8">
+            <div className="flex flex-row items-center mb-8 ms-4 md:ms-6">
               <h2 className="uppercase text-4xl font-extrabold pr-6">Skills</h2>
               <div className="w-full"><hr className="border-t-2 border-brand-raisin" /></div>
             </div>

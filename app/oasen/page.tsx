@@ -51,34 +51,34 @@ export default function Page() {
       </Container>
 
       <Container className="my-8">
-        <div className="prose">
+        <div className="prose max-w-none">
           <h1 className="uppercase">Oasen</h1>
-        </div>
-        <div className="md:flex flex-row gap-24">
-          <div className="prose md:w-1/2 my-3 md:my-0">
-            <p>A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health.</p>
-            <p className="italic">Branding - Advertising - Motion Graphics</p>
-            <h2 className="uppercase">Awarded</h2>
-            <Link className="block max-w-80 group" target="_blank" href="https://www.thersa.org/student-design-awards/winners/2023-24/in-your-skin">
-              <Image
-                src={rsaAward}
-                alt="RSA Student Design Awards 2024 - Shortlisted, achieved Highly Commended"
-                className="rounded group-hover:opacity-70 bg-brand-off-white"
-                priority
-              />
-            </Link>
-          </div>
+          <div className="md:flex flex-row gap-24">
+            <div className="md:w-1/2 my-3 md:my-0">
+              <p className="!mt-0">A sensory-safe skincare brand empowering young neurodiverse individuals, fostering confidence and skin health.</p>
+              <p className="italic">Branding - Advertising - Motion Graphics</p>
+              <h2 className="uppercase">Awarded</h2>
+              <Link className="block max-w-80 group" target="_blank" href="https://www.thersa.org/student-design-awards/winners/2023-24/in-your-skin">
+                <Image
+                  src={rsaAward}
+                  alt="RSA Student Design Awards 2024 - Shortlisted, achieved Highly Commended"
+                  className="rounded group-hover:opacity-70 bg-brand-off-white"
+                  priority
+                />
+              </Link>
+            </div>
 
-          <div className="prose md:w-1/2">
-            <h2 className="uppercase">Brief</h2>
-            <p>How we might increase the skin confidence of every young person to enable their unique identity to flourish?</p>
-            <h2 className="uppercase">Team</h2>
-            <p>
-              Visual Identity, Advertising, Motion Design - Emily Willis<br />
-              3D and Packaging - Julia Barbagallo<br />
-              Research and Concept - Julia and Emily
-            </p>
-            <p><b>TOOLS:</b> Photoshop, After Effects, Illustrator</p>
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <h2 className="uppercase !mt-0">Brief</h2>
+              <p>How we might increase the skin confidence of every young person to enable their unique identity to flourish?</p>
+              <h2 className="uppercase">Team</h2>
+              <p>
+                Visual Identity, Advertising, Motion Design - Emily Willis<br />
+                3D and Packaging - Julia Barbagallo<br />
+                Research and Concept - Julia and Emily
+              </p>
+              <p><b>TOOLS:</b> Photoshop, After Effects, Illustrator</p>
+            </div>
           </div>
         </div>
       </Container>
@@ -101,13 +101,10 @@ export default function Page() {
         </div>
       </Container>
 
-      <Container className="my-8">
-        <div className="prose">
-          <h2 className="uppercase mb-8!">Visual Identity</h2>
-        </div>
-      </Container>
-
       <Container className="mt-8 mb-16">
+        <div className="prose">
+          <h2 className="uppercase">Visual Identity</h2>
+        </div>
         <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
           <div className="col-span-6 md:col-span-3">
             <Video
@@ -156,13 +153,10 @@ export default function Page() {
         </div>
       </Container>
 
-      <Container className="my-8">
-        <div className="prose">
-          <h2 className="uppercase mb-8!">Pop-up Store and Product Advertising</h2>
-        </div>
-      </Container>
-
       <Container className="mt-8 mb-16">
+        <div className="prose">
+          <h2 className="uppercase">Pop-up Store and Product Advertising</h2>
+        </div>
         <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
           <div className="col-span-6">
             <Image src={storefront} alt="" className="w-full h-full rounded-3xl" />

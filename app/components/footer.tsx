@@ -10,7 +10,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row gap-8">
         <Link href={'/'}>
           {/* @TODO: brand blue on hover (req: custom css, change to <svg>?) */}
-          <Image alt="Emily Willis" src={logo} className='w-30' />
+          <Image alt="Emily Willis" src={logo} className='w-20' />
         </Link>
 
         <div className='w-full'>

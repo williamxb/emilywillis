@@ -32,6 +32,10 @@ html {
   @apply z-1 min-w-90
 }
 
+.prose {
+  @apply ms-4 md:ms-6; /* Indent text to align with the image radius */
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline -ml-4 pr-2 w-4/5 max-w-175 cursor-pointer;
 }
@@ -54,6 +58,10 @@ html {
 
 .prose p {
   @apply my-3 text-neutral-800 md:text-lg text-pretty;
+}
+
+.prose img, .prose video, .prose a > img {
+  @apply my-3 block;
 }
 
 .prose h1 {

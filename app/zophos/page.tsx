@@ -21,7 +21,7 @@ import illustrationTent from '../assets/zophos/illustrationTent.jpg'
 import insight from '../assets/zophos/insight.png'
 import mainImage from '../assets/zophos/main.png'
 import moodboard from '../assets/zophos/moodboard.png'
-import palette from '../assets/zophos/palette.png'
+import palette from '../assets/zophos/palette.jpg'
 import poster from '../assets/zophos/poster.jpg'
 import process from '../assets/zophos/process.png'
 
@@ -50,19 +50,19 @@ export default function Page() {
       </Container>
 
       <Container className="my-8">
-        <div className="prose">
+        <div className="prose max-w-none">
           <h1 className="uppercase">Zophos</h1>
-        </div>
-        <div className="md:flex flex-row gap-24">
-          <div className="prose md:w-1/2 my-3 md:my-0">
-            <p>A visual identity for a rare natural ghost experience; The&nbsp;Drosoulites&nbsp;of&nbsp;Crete.</p>
-            <p className="italic">Branding - Website Design - Illustration</p>
-          </div>
+          <div className="md:flex flex-row gap-24">
+            <div className="md:w-1/2 my-3 md:my-0">
+              <p className="!mt-0">A visual identity for a rare natural ghost experience; The&nbsp;Drosoulites&nbsp;of&nbsp;Crete.</p>
+              <p className="italic">Branding - Website Design - Illustration</p>
+            </div>
 
-          <div className="prose md:w-1/2">
-            <h2 className="uppercase">Brief</h2>
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <h2 className="uppercase !mt-0">Brief</h2>
             <p>“How can we unlock rarity as a journey into the extroadinary?” Pearlfisher Fresh Pearls 2024.</p>
             <p><b>TOOLS:</b> Photoshop, Illustrator, Figma</p>
+            </div>
           </div>
         </div>
       </Container>
@@ -160,27 +160,33 @@ export default function Page() {
           <h2 className="uppercase me-8!">Website</h2>
         </div>
 
-        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
+        <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8 mb-6 sm:mb-8">
           <div className="col-span-6">
             <Image src={websiteMockup} alt="" className="w-full h-full rounded-3xl" />
           </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image src={home} alt="" className="w-full h-full rounded-3xl" />
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="md:hidden flex flex-col gap-6">
+          <Image src={home} alt="" className="w-full rounded-3xl" />
+          <Image src={experiences} alt="" className="w-full rounded-3xl" />
+          <Image src={websiteDawnExperience} alt="" className="w-full rounded-3xl" />
+          <Image src={websiteDuskExperience} alt="" className="w-full rounded-3xl" />
+          <Image src={websiteDiscover} alt="" className="w-full rounded-3xl" />
+          <Image src={websiteBooking} alt="" className="w-full rounded-3xl" />
+        </div>
+
+        {/* Desktop Layout (Masonry) */}
+        <div className="hidden md:flex flex-row gap-12">
+          <div className="w-1/2 flex flex-col gap-8">
+            <Image src={home} alt="" className="w-full rounded-3xl" />
+            <Image src={websiteDawnExperience} alt="" className="w-full rounded-3xl" />
+            <Image src={websiteDiscover} alt="" className="w-full rounded-3xl" />
           </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image src={experiences} alt="" className="w-full h-full rounded-3xl" />
-          </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image src={websiteDawnExperience} alt="" className="w-full rounded-3xl"></Image>
-          </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image src={websiteDuskExperience} alt="" className="w-full rounded-3xl"></Image>
-          </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image src={websiteDiscover} alt="" className="w-full rounded-3xl"></Image>
-          </div>
-          <div className="col-span-6 md:col-span-3">
-            <Image src={websiteBooking} alt="" className="w-full rounded-3xl"></Image>
+          <div className="w-1/2 flex flex-col gap-8">
+            <Image src={experiences} alt="" className="w-full rounded-3xl" />
+            <Image src={websiteDuskExperience} alt="" className="w-full rounded-3xl" />
+            <Image src={websiteBooking} alt="" className="w-full rounded-3xl" />
           </div>
         </div>
       </Container>

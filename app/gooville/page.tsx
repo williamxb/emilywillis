@@ -32,26 +32,26 @@ export default function Page() {
       </Container>
 
       <Container className="my-8">
-        <div className="prose">
+        <div className="prose max-w-none">
           <h1 className="uppercase">Gooville</h1>
-        </div>
-        <div className="md:flex flex-row gap-24">
-          <div className="prose md:w-1/2 my-3 md:my-0">
-            <p>A theoretical Cadbury Creme Egg social media campaign (pre rebrand) exploding the chocolatey world of Gooville.</p>
-            <p className="italic">Advertising - Animation - Social Media</p>
-          </div>
+          <div className="md:flex flex-row gap-24">
+            <div className="md:w-1/2 my-3 md:my-0">
+              <p className="!mt-0">A theoretical Cadbury Creme Egg social media campaign (pre rebrand) exploding the chocolatey world of Gooville.</p>
+              <p className="italic">Advertising - Animation - Social Media</p>
+            </div>
 
-          <div className="prose md:w-1/2">
-            <h3 className="uppercase">Brief:</h3>
-            <p>Produce an animated advert for Cadbury Creme Egg that is 1s or under for social media.</p>
-            <p><b>TOOLS:</b> Photoshop, After Effects</p>
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <h3 className="uppercase !mt-0">Brief:</h3>
+              <p>Produce an animated advert for Cadbury Creme Egg that is 1s or under for social media.</p>
+              <p><b>TOOLS:</b> Photoshop, After Effects</p>
+            </div>
           </div>
         </div>
       </Container>
 
       <Container className="mt-8 mb-16">
         <div className="prose">
-          <h2 className="uppercase mb-8!">Pop-up Store and Product Advertising</h2>
+          <h2 className="uppercase">Pop-up Store and Product Advertising</h2>
         </div>
 
         <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
