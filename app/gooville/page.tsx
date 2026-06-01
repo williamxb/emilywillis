@@ -44,7 +44,7 @@ export default function Page() {
 
       <Container className="mt-8 mb-16">
         <div className="prose">
-          <h2 className="uppercase">Pop-up Store and Product Advertising</h2>
+          <h2 className="uppercase">Process and Storyboard</h2>
         </div>
 
         <div className="grid grid-cols-6 gap-6 sm:gap-x-12 sm:gap-y-8">
